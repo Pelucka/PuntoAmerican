@@ -25,10 +25,12 @@ namespace Flujo_Contable
         Firma objfirma = new Firma();
         CrecionXML objCreaXML = new CrecionXML();
         string Clave = string.Empty;
+        int idventa = 0;
 
         public frm_IngresoCaja()
         {
             InitializeComponent();
+            
             lbl_ValidarEliminar.Text = "0";
         }
 
@@ -75,8 +77,7 @@ namespace Flujo_Contable
                 try
                 {
                     objCreaXML.qweasd = Convert.ToInt32( objCreaXML.Id_VentaTotal);
-                    frm_Factura ventana = new frm_Factura();
-
+                    
 
                 }
                 catch (Exception ex)
@@ -149,6 +150,13 @@ namespace Flujo_Contable
                     lbl_DineroaPagar.Text = "0";
                     lbl_IdCliente.Text = string.Empty;
                     MessageBox.Show("Factura Hecha Satisfactoriamente");
+
+                    using (frm_Factura ventana = new frm_Factura("162"))
+                    {
+                        ventana.ShowDialog();
+                    }
+
+                    
 
                 }
             }
@@ -866,7 +874,7 @@ namespace Flujo_Contable
             fe.AppendChild(Normativa);
             //--FINNORMATIVA--//
             doc.AppendChild(fe);
-            doc.Save("F:\\Documents\\New folder\\fe-"+clave.InnerText+".xml");
+            doc.Save("D:\\Documents\\Facturas\\fe-"+clave.InnerText+".xml");
             valor = 0;
             
 
@@ -876,7 +884,7 @@ namespace Flujo_Contable
 
         public void FIRMADOR(string clave) 
         {
-            string directorio = "F:\\Documents\\New folder\\";
+            string directorio = "D:\\Documents\\Facturas\\";
             string nombreArchivo = directorio + clave;
 
             objfirma.FirmaXML_Xades(nombreArchivo, "3480E97168E8C6ABEA0DEFCEA945CEF96A792FAE");

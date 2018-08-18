@@ -28,34 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rpv_Factura = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.DataFactura = new Flujo_Contable.Caja.Factura.DataFactura();
+            this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataTable1TableAdapter = new Flujo_Contable.Caja.Factura.DataFacturaTableAdapters.DataTable1TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.DataFactura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // rpv_Factura
+            // reportViewer1
             // 
-            this.rpv_Factura.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpv_Factura.LocalReport.ReportEmbeddedResource = "Flujo_Contable.Caja.Factura.Reporte.rdlc";
-            this.rpv_Factura.Location = new System.Drawing.Point(0, 0);
-            this.rpv_Factura.Name = "rpv_Factura";
-            this.rpv_Factura.ServerReport.BearerToken = null;
-            this.rpv_Factura.Size = new System.Drawing.Size(884, 761);
-            this.rpv_Factura.TabIndex = 0;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.DataTable1BindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Flujo_Contable.Caja.Factura.Factura.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(21, 12);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(767, 426);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // DataFactura
+            // 
+            this.DataFactura.DataSetName = "DataFactura";
+            this.DataFactura.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // DataTable1BindingSource
+            // 
+            this.DataTable1BindingSource.DataMember = "DataTable1";
+            this.DataTable1BindingSource.DataSource = this.DataFactura;
+            // 
+            // DataTable1TableAdapter
+            // 
+            this.DataTable1TableAdapter.ClearBeforeFill = true;
             // 
             // frm_Factura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 761);
-            this.Controls.Add(this.rpv_Factura);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reportViewer1);
             this.Name = "frm_Factura";
             this.Text = "frm_Factura";
             this.Load += new System.EventHandler(this.frm_Factura_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataFactura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public Microsoft.Reporting.WinForms.ReportViewer rpv_Factura;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource DataTable1BindingSource;
+        private DataFactura DataFactura;
+        private DataFacturaTableAdapters.DataTable1TableAdapter DataTable1TableAdapter;
     }
 }

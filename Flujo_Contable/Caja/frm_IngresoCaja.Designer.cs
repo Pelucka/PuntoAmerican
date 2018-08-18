@@ -29,19 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_IngresoCaja));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgv_Consecutivos = new System.Windows.Forms.DataGridView();
+            this.Departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ubicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Impuesto_1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cod_Articulo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unidad_Medida1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_Usuario = new System.Windows.Forms.Label();
             this.lbl_Ubicacion = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -93,16 +103,6 @@
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.rb_Articulo = new System.Windows.Forms.RadioButton();
             this.rb_Departamento = new System.Windows.Forms.RadioButton();
-            this.Unidad_Medida1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cod_Articulo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Impuesto_1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ubicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Consecutivos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Clientes)).BeginInit();
@@ -125,9 +125,11 @@
             this.groupBox4.Controls.Add(this.lbl_Usuario);
             this.groupBox4.Controls.Add(this.lbl_Ubicacion);
             this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.groupBox4.Location = new System.Drawing.Point(586, 54);
+            this.groupBox4.Location = new System.Drawing.Point(781, 66);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(768, 482);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(1024, 593);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Lista";
@@ -139,23 +141,23 @@
             this.dgv_Consecutivos.AllowUserToDeleteRows = false;
             this.dgv_Consecutivos.AllowUserToResizeColumns = false;
             this.dgv_Consecutivos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_Consecutivos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_Consecutivos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dgv_Consecutivos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Consecutivos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Consecutivos.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_Consecutivos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_Consecutivos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_Consecutivos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Consecutivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Consecutivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dgv_Consecutivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_Consecutivos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Departamento,
@@ -169,48 +171,117 @@
             this.Cod_Articulo1,
             this.Unidad_Medida1});
             this.dgv_Consecutivos.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Consecutivos.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Consecutivos.DefaultCellStyle = dataGridViewCellStyle23;
             this.dgv_Consecutivos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Consecutivos.EnableHeadersVisualStyles = false;
             this.dgv_Consecutivos.GridColor = System.Drawing.Color.DimGray;
-            this.dgv_Consecutivos.Location = new System.Drawing.Point(3, 22);
+            this.dgv_Consecutivos.Location = new System.Drawing.Point(4, 27);
+            this.dgv_Consecutivos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_Consecutivos.MultiSelect = false;
             this.dgv_Consecutivos.Name = "dgv_Consecutivos";
             this.dgv_Consecutivos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Consecutivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Consecutivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dgv_Consecutivos.RowHeadersVisible = false;
             this.dgv_Consecutivos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_Consecutivos.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_Consecutivos.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.dgv_Consecutivos.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgv_Consecutivos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
             this.dgv_Consecutivos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_Consecutivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Consecutivos.Size = new System.Drawing.Size(762, 457);
+            this.dgv_Consecutivos.Size = new System.Drawing.Size(1016, 562);
             this.dgv_Consecutivos.TabIndex = 15;
             this.dgv_Consecutivos.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Consecutivos_CellEndEdit);
+            // 
+            // Departamento
+            // 
+            this.Departamento.HeaderText = "Departamento";
+            this.Departamento.Name = "Departamento";
+            this.Departamento.ReadOnly = true;
+            this.Departamento.Visible = false;
+            // 
+            // Producto
+            // 
+            this.Producto.FillWeight = 30F;
+            this.Producto.HeaderText = "Producto";
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.FillWeight = 13.35668F;
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // Precio
+            // 
+            this.Precio.FillWeight = 13.35668F;
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Ubicacion
+            // 
+            this.Ubicacion.HeaderText = "Ubicacion";
+            this.Ubicacion.Name = "Ubicacion";
+            this.Ubicacion.ReadOnly = true;
+            this.Ubicacion.Visible = false;
+            // 
+            // Descuento
+            // 
+            this.Descuento.DataPropertyName = "Descuento";
+            this.Descuento.FillWeight = 13.35668F;
+            this.Descuento.HeaderText = "Desc";
+            this.Descuento.Name = "Descuento";
+            // 
+            // Impuesto_1
+            // 
+            this.Impuesto_1.FillWeight = 22.71544F;
+            this.Impuesto_1.HeaderText = "Impuesto";
+            this.Impuesto_1.Name = "Impuesto_1";
+            this.Impuesto_1.ReadOnly = true;
+            // 
+            // Total
+            // 
+            this.Total.FillWeight = 35F;
+            this.Total.HeaderText = "Total";
+            this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
+            // 
+            // Cod_Articulo1
+            // 
+            this.Cod_Articulo1.HeaderText = "Cod_Articulo";
+            this.Cod_Articulo1.Name = "Cod_Articulo1";
+            this.Cod_Articulo1.Visible = false;
+            // 
+            // Unidad_Medida1
+            // 
+            this.Unidad_Medida1.HeaderText = "Unidad_Medida";
+            this.Unidad_Medida1.Name = "Unidad_Medida1";
+            this.Unidad_Medida1.Visible = false;
             // 
             // lbl_Usuario
             // 
             this.lbl_Usuario.AutoSize = true;
             this.lbl_Usuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Usuario.Location = new System.Drawing.Point(37, 552);
+            this.lbl_Usuario.Location = new System.Drawing.Point(49, 679);
+            this.lbl_Usuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Usuario.Name = "lbl_Usuario";
-            this.lbl_Usuario.Size = new System.Drawing.Size(0, 20);
+            this.lbl_Usuario.Size = new System.Drawing.Size(0, 22);
             this.lbl_Usuario.TabIndex = 14;
             this.lbl_Usuario.Visible = false;
             // 
@@ -218,9 +289,10 @@
             // 
             this.lbl_Ubicacion.AutoSize = true;
             this.lbl_Ubicacion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Ubicacion.Location = new System.Drawing.Point(19, 500);
+            this.lbl_Ubicacion.Location = new System.Drawing.Point(25, 615);
+            this.lbl_Ubicacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Ubicacion.Name = "lbl_Ubicacion";
-            this.lbl_Ubicacion.Size = new System.Drawing.Size(0, 20);
+            this.lbl_Ubicacion.Size = new System.Drawing.Size(0, 22);
             this.lbl_Ubicacion.TabIndex = 13;
             this.lbl_Ubicacion.Visible = false;
             // 
@@ -228,9 +300,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(744, 599);
+            this.label20.Location = new System.Drawing.Point(992, 737);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 17);
+            this.label20.Size = new System.Drawing.Size(141, 21);
             this.label20.TabIndex = 32;
             this.label20.Text = "Medio de Pago";
             // 
@@ -238,9 +311,10 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(744, 541);
+            this.label19.Location = new System.Drawing.Point(992, 666);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(140, 17);
+            this.label19.Size = new System.Drawing.Size(181, 21);
             this.label19.TabIndex = 31;
             this.label19.Text = "Condicion de Venta";
             // 
@@ -248,26 +322,29 @@
             // 
             this.cbo_MediodePago.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_MediodePago.FormattingEnabled = true;
-            this.cbo_MediodePago.Location = new System.Drawing.Point(748, 623);
+            this.cbo_MediodePago.Location = new System.Drawing.Point(997, 767);
+            this.cbo_MediodePago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbo_MediodePago.Name = "cbo_MediodePago";
-            this.cbo_MediodePago.Size = new System.Drawing.Size(220, 25);
+            this.cbo_MediodePago.Size = new System.Drawing.Size(292, 29);
             this.cbo_MediodePago.TabIndex = 30;
             // 
             // cbo_CondiciondeVenta
             // 
             this.cbo_CondiciondeVenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_CondiciondeVenta.FormattingEnabled = true;
-            this.cbo_CondiciondeVenta.Location = new System.Drawing.Point(748, 565);
+            this.cbo_CondiciondeVenta.Location = new System.Drawing.Point(997, 695);
+            this.cbo_CondiciondeVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbo_CondiciondeVenta.Name = "cbo_CondiciondeVenta";
-            this.cbo_CondiciondeVenta.Size = new System.Drawing.Size(220, 25);
+            this.cbo_CondiciondeVenta.Size = new System.Drawing.Size(292, 29);
             this.cbo_CondiciondeVenta.TabIndex = 29;
             // 
             // lbl_IdCliente
             // 
             this.lbl_IdCliente.AutoSize = true;
-            this.lbl_IdCliente.Location = new System.Drawing.Point(633, 638);
+            this.lbl_IdCliente.Location = new System.Drawing.Point(844, 785);
+            this.lbl_IdCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_IdCliente.Name = "lbl_IdCliente";
-            this.lbl_IdCliente.Size = new System.Drawing.Size(0, 13);
+            this.lbl_IdCliente.Size = new System.Drawing.Size(0, 17);
             this.lbl_IdCliente.TabIndex = 28;
             this.lbl_IdCliente.Visible = false;
             // 
@@ -275,9 +352,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(618, 552);
+            this.label10.Location = new System.Drawing.Point(824, 679);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 20);
+            this.label10.Size = new System.Drawing.Size(81, 22);
             this.label10.TabIndex = 27;
             this.label10.Text = "Clientes";
             // 
@@ -286,9 +364,10 @@
             this.btn_Clientes.BackColor = System.Drawing.Color.Transparent;
             this.btn_Clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clientes.Image")));
             this.btn_Clientes.ImageActive = null;
-            this.btn_Clientes.Location = new System.Drawing.Point(627, 581);
+            this.btn_Clientes.Location = new System.Drawing.Point(836, 715);
+            this.btn_Clientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Clientes.Name = "btn_Clientes";
-            this.btn_Clientes.Size = new System.Drawing.Size(48, 52);
+            this.btn_Clientes.Size = new System.Drawing.Size(64, 64);
             this.btn_Clientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Clientes.TabIndex = 26;
             this.btn_Clientes.TabStop = false;
@@ -299,9 +378,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1046, 594);
+            this.label5.Location = new System.Drawing.Point(1395, 731);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 22);
+            this.label5.Size = new System.Drawing.Size(231, 30);
             this.label5.TabIndex = 9;
             this.label5.Text = "Dinero de Cliente:";
             // 
@@ -309,9 +389,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1046, 549);
+            this.label1.Location = new System.Drawing.Point(1395, 676);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 23);
+            this.label1.Size = new System.Drawing.Size(228, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cantidad a Pagar:";
             // 
@@ -320,19 +401,21 @@
             this.lbl_DineroaPagar.AutoSize = true;
             this.lbl_DineroaPagar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DineroaPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_DineroaPagar.Location = new System.Drawing.Point(1235, 549);
+            this.lbl_DineroaPagar.Location = new System.Drawing.Point(1647, 676);
+            this.lbl_DineroaPagar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_DineroaPagar.Name = "lbl_DineroaPagar";
             this.lbl_DineroaPagar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_DineroaPagar.Size = new System.Drawing.Size(21, 23);
+            this.lbl_DineroaPagar.Size = new System.Drawing.Size(25, 28);
             this.lbl_DineroaPagar.TabIndex = 0;
             this.lbl_DineroaPagar.Text = "0";
             // 
             // txt_ClientePago
             // 
             this.txt_ClientePago.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ClientePago.Location = new System.Drawing.Point(1050, 623);
+            this.txt_ClientePago.Location = new System.Drawing.Point(1400, 767);
+            this.txt_ClientePago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_ClientePago.Name = "txt_ClientePago";
-            this.txt_ClientePago.Size = new System.Drawing.Size(289, 31);
+            this.txt_ClientePago.Size = new System.Drawing.Size(384, 37);
             this.txt_ClientePago.TabIndex = 8;
             this.txt_ClientePago.TextChanged += new System.EventHandler(this.txt_ClientePago_TextChanged);
             this.txt_ClientePago.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ClientePago_KeyPress);
@@ -340,10 +423,9 @@
             // lb_Montos
             // 
             this.lb_Montos.AutoSize = true;
-            this.lb_Montos.Location = new System.Drawing.Point(1101, 700);
-            this.lb_Montos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Montos.Location = new System.Drawing.Point(1468, 862);
             this.lb_Montos.Name = "lb_Montos";
-            this.lb_Montos.Size = new System.Drawing.Size(41, 13);
+            this.lb_Montos.Size = new System.Drawing.Size(54, 17);
             this.lb_Montos.TabIndex = 18;
             this.lb_Montos.Text = "label10";
             this.lb_Montos.Visible = false;
@@ -351,10 +433,9 @@
             // lb_Articulos
             // 
             this.lb_Articulos.AutoSize = true;
-            this.lb_Articulos.Location = new System.Drawing.Point(917, 727);
-            this.lb_Articulos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Articulos.Location = new System.Drawing.Point(1223, 895);
             this.lb_Articulos.Name = "lb_Articulos";
-            this.lb_Articulos.Size = new System.Drawing.Size(41, 13);
+            this.lb_Articulos.Size = new System.Drawing.Size(54, 17);
             this.lb_Articulos.TabIndex = 17;
             this.lb_Articulos.Text = "label10";
             this.lb_Articulos.Visible = false;
@@ -362,9 +443,10 @@
             // lbl_CodFactura
             // 
             this.lbl_CodFactura.AutoSize = true;
-            this.lbl_CodFactura.Location = new System.Drawing.Point(894, 705);
+            this.lbl_CodFactura.Location = new System.Drawing.Point(1193, 868);
+            this.lbl_CodFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_CodFactura.Name = "lbl_CodFactura";
-            this.lbl_CodFactura.Size = new System.Drawing.Size(13, 13);
+            this.lbl_CodFactura.Size = new System.Drawing.Size(16, 17);
             this.lbl_CodFactura.TabIndex = 16;
             this.lbl_CodFactura.Text = "0";
             this.lbl_CodFactura.Visible = false;
@@ -372,9 +454,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(917, 705);
+            this.label7.Location = new System.Drawing.Point(1223, 868);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 13);
+            this.label7.Size = new System.Drawing.Size(128, 17);
             this.label7.TabIndex = 15;
             this.label7.Text = "Codigo de Factura:";
             this.label7.Visible = false;
@@ -383,9 +466,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1257, 670);
+            this.label8.Location = new System.Drawing.Point(1676, 825);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 20);
+            this.label8.Size = new System.Drawing.Size(127, 22);
             this.label8.TabIndex = 11;
             this.label8.Text = "Eliminar Todo";
             // 
@@ -393,9 +477,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1195, 670);
+            this.label3.Location = new System.Drawing.Point(1593, 825);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.Size = new System.Drawing.Size(77, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Eliminar";
             // 
@@ -403,18 +488,20 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(794, 670);
+            this.label9.Location = new System.Drawing.Point(1059, 825);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 20);
+            this.label9.Size = new System.Drawing.Size(125, 22);
             this.label9.TabIndex = 13;
             this.label9.Text = "Calculadora";
             // 
             // lbl_ValidarEliminar
             // 
             this.lbl_ValidarEliminar.AutoSize = true;
-            this.lbl_ValidarEliminar.Location = new System.Drawing.Point(895, 735);
+            this.lbl_ValidarEliminar.Location = new System.Drawing.Point(1193, 905);
+            this.lbl_ValidarEliminar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ValidarEliminar.Name = "lbl_ValidarEliminar";
-            this.lbl_ValidarEliminar.Size = new System.Drawing.Size(13, 13);
+            this.lbl_ValidarEliminar.Size = new System.Drawing.Size(16, 17);
             this.lbl_ValidarEliminar.TabIndex = 8;
             this.lbl_ValidarEliminar.Text = "0";
             this.lbl_ValidarEliminar.Visible = false;
@@ -423,9 +510,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1017, 670);
+            this.label2.Location = new System.Drawing.Point(1356, 825);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.Size = new System.Drawing.Size(66, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Pagar";
             // 
@@ -433,9 +521,10 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(688, 670);
+            this.label18.Location = new System.Drawing.Point(917, 825);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(86, 20);
+            this.label18.Size = new System.Drawing.Size(109, 22);
             this.label18.TabIndex = 16;
             this.label18.Text = "Apartados";
             // 
@@ -447,16 +536,18 @@
             this.panel1.Controls.Add(this.btn_Salir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1366, 40);
+            this.panel1.Size = new System.Drawing.Size(1821, 49);
             this.panel1.TabIndex = 17;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(49, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -466,9 +557,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(51, 8);
+            this.label4.Location = new System.Drawing.Point(68, 10);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 20);
+            this.label4.Size = new System.Drawing.Size(155, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "Caja";
             // 
@@ -477,9 +569,10 @@
             this.btn_Salir.BackColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
             this.btn_Salir.ImageActive = null;
-            this.btn_Salir.Location = new System.Drawing.Point(1331, 4);
+            this.btn_Salir.Location = new System.Drawing.Point(1775, 5);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(30, 30);
+            this.btn_Salir.Size = new System.Drawing.Size(40, 37);
             this.btn_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Salir.TabIndex = 11;
             this.btn_Salir.TabStop = false;
@@ -496,10 +589,10 @@
             this.btn_Apartados.BackColor = System.Drawing.Color.Transparent;
             this.btn_Apartados.Image = ((System.Drawing.Image)(resources.GetObject("btn_Apartados.Image")));
             this.btn_Apartados.ImageActive = null;
-            this.btn_Apartados.Location = new System.Drawing.Point(707, 705);
-            this.btn_Apartados.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Apartados.Location = new System.Drawing.Point(943, 868);
+            this.btn_Apartados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Apartados.Name = "btn_Apartados";
-            this.btn_Apartados.Size = new System.Drawing.Size(48, 52);
+            this.btn_Apartados.Size = new System.Drawing.Size(64, 64);
             this.btn_Apartados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Apartados.TabIndex = 18;
             this.btn_Apartados.TabStop = false;
@@ -511,10 +604,10 @@
             this.btn_Calculadora.BackColor = System.Drawing.Color.Transparent;
             this.btn_Calculadora.Image = ((System.Drawing.Image)(resources.GetObject("btn_Calculadora.Image")));
             this.btn_Calculadora.ImageActive = null;
-            this.btn_Calculadora.Location = new System.Drawing.Point(817, 705);
-            this.btn_Calculadora.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Calculadora.Location = new System.Drawing.Point(1089, 868);
+            this.btn_Calculadora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Calculadora.Name = "btn_Calculadora";
-            this.btn_Calculadora.Size = new System.Drawing.Size(48, 52);
+            this.btn_Calculadora.Size = new System.Drawing.Size(64, 64);
             this.btn_Calculadora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Calculadora.TabIndex = 19;
             this.btn_Calculadora.TabStop = false;
@@ -526,10 +619,10 @@
             this.btn_Pagar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Pagar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Pagar.Image")));
             this.btn_Pagar.ImageActive = null;
-            this.btn_Pagar.Location = new System.Drawing.Point(1021, 705);
-            this.btn_Pagar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Pagar.Location = new System.Drawing.Point(1361, 868);
+            this.btn_Pagar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Pagar.Name = "btn_Pagar";
-            this.btn_Pagar.Size = new System.Drawing.Size(48, 52);
+            this.btn_Pagar.Size = new System.Drawing.Size(64, 64);
             this.btn_Pagar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Pagar.TabIndex = 20;
             this.btn_Pagar.TabStop = false;
@@ -541,10 +634,10 @@
             this.btn_EliminarCelda.BackColor = System.Drawing.Color.Transparent;
             this.btn_EliminarCelda.Image = ((System.Drawing.Image)(resources.GetObject("btn_EliminarCelda.Image")));
             this.btn_EliminarCelda.ImageActive = null;
-            this.btn_EliminarCelda.Location = new System.Drawing.Point(1204, 705);
-            this.btn_EliminarCelda.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_EliminarCelda.Location = new System.Drawing.Point(1605, 868);
+            this.btn_EliminarCelda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_EliminarCelda.Name = "btn_EliminarCelda";
-            this.btn_EliminarCelda.Size = new System.Drawing.Size(48, 52);
+            this.btn_EliminarCelda.Size = new System.Drawing.Size(64, 64);
             this.btn_EliminarCelda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_EliminarCelda.TabIndex = 21;
             this.btn_EliminarCelda.TabStop = false;
@@ -556,10 +649,10 @@
             this.btn_EliminarTodo.BackColor = System.Drawing.Color.Transparent;
             this.btn_EliminarTodo.Image = ((System.Drawing.Image)(resources.GetObject("btn_EliminarTodo.Image")));
             this.btn_EliminarTodo.ImageActive = null;
-            this.btn_EliminarTodo.Location = new System.Drawing.Point(1280, 705);
-            this.btn_EliminarTodo.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_EliminarTodo.Location = new System.Drawing.Point(1707, 868);
+            this.btn_EliminarTodo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_EliminarTodo.Name = "btn_EliminarTodo";
-            this.btn_EliminarTodo.Size = new System.Drawing.Size(48, 52);
+            this.btn_EliminarTodo.Size = new System.Drawing.Size(64, 64);
             this.btn_EliminarTodo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_EliminarTodo.TabIndex = 22;
             this.btn_EliminarTodo.TabStop = false;
@@ -570,9 +663,10 @@
             // 
             this.lbl_Caja.AutoSize = true;
             this.lbl_Caja.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Caja.Location = new System.Drawing.Point(602, 670);
+            this.lbl_Caja.Location = new System.Drawing.Point(803, 825);
+            this.lbl_Caja.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Caja.Name = "lbl_Caja";
-            this.lbl_Caja.Size = new System.Drawing.Size(59, 20);
+            this.lbl_Caja.Size = new System.Drawing.Size(73, 22);
             this.lbl_Caja.TabIndex = 24;
             this.lbl_Caja.Text = "Gastos";
             // 
@@ -581,9 +675,10 @@
             this.btn_Gastos.BackColor = System.Drawing.Color.Transparent;
             this.btn_Gastos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Gastos.Image")));
             this.btn_Gastos.ImageActive = null;
-            this.btn_Gastos.Location = new System.Drawing.Point(607, 705);
+            this.btn_Gastos.Location = new System.Drawing.Point(809, 868);
+            this.btn_Gastos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Gastos.Name = "btn_Gastos";
-            this.btn_Gastos.Size = new System.Drawing.Size(48, 52);
+            this.btn_Gastos.Size = new System.Drawing.Size(64, 64);
             this.btn_Gastos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Gastos.TabIndex = 25;
             this.btn_Gastos.TabStop = false;
@@ -596,9 +691,11 @@
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.groupBox1.Location = new System.Drawing.Point(12, 126);
+            this.groupBox1.Location = new System.Drawing.Point(16, 155);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(568, 630);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(757, 775);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Productos";
@@ -610,23 +707,23 @@
             this.dgv_ListadeProductos.AllowUserToDeleteRows = false;
             this.dgv_ListadeProductos.AllowUserToResizeColumns = false;
             this.dgv_ListadeProductos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_ListadeProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_ListadeProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
             this.dgv_ListadeProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_ListadeProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_ListadeProductos.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_ListadeProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_ListadeProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_ListadeProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ListadeProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ListadeProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.dgv_ListadeProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_ListadeProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cod_Articulo,
@@ -637,39 +734,40 @@
             this.Activo,
             this.Precio_1});
             this.dgv_ListadeProductos.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ListadeProductos.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ListadeProductos.DefaultCellStyle = dataGridViewCellStyle28;
             this.dgv_ListadeProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_ListadeProductos.EnableHeadersVisualStyles = false;
             this.dgv_ListadeProductos.GridColor = System.Drawing.Color.DimGray;
-            this.dgv_ListadeProductos.Location = new System.Drawing.Point(3, 22);
+            this.dgv_ListadeProductos.Location = new System.Drawing.Point(4, 27);
+            this.dgv_ListadeProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_ListadeProductos.MultiSelect = false;
             this.dgv_ListadeProductos.Name = "dgv_ListadeProductos";
             this.dgv_ListadeProductos.ReadOnly = true;
             this.dgv_ListadeProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ListadeProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ListadeProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.dgv_ListadeProductos.RowHeadersVisible = false;
             this.dgv_ListadeProductos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_ListadeProductos.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_ListadeProductos.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.dgv_ListadeProductos.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgv_ListadeProductos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
             this.dgv_ListadeProductos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_ListadeProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ListadeProductos.Size = new System.Drawing.Size(562, 605);
+            this.dgv_ListadeProductos.Size = new System.Drawing.Size(749, 744);
             this.dgv_ListadeProductos.TabIndex = 15;
             this.dgv_ListadeProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListadeProductos_CellContentClick);
             // 
@@ -733,9 +831,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(37, 552);
+            this.label12.Location = new System.Drawing.Point(49, 679);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 20);
+            this.label12.Size = new System.Drawing.Size(0, 22);
             this.label12.TabIndex = 14;
             this.label12.Visible = false;
             // 
@@ -743,9 +842,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(19, 500);
+            this.label13.Location = new System.Drawing.Point(25, 615);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 20);
+            this.label13.Size = new System.Drawing.Size(0, 22);
             this.label13.TabIndex = 13;
             this.label13.Visible = false;
             // 
@@ -754,9 +854,10 @@
             this.cbo_Articulo.Enabled = false;
             this.cbo_Articulo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_Articulo.FormattingEnabled = true;
-            this.cbo_Articulo.Location = new System.Drawing.Point(111, 54);
+            this.cbo_Articulo.Location = new System.Drawing.Point(148, 66);
+            this.cbo_Articulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbo_Articulo.Name = "cbo_Articulo";
-            this.cbo_Articulo.Size = new System.Drawing.Size(341, 29);
+            this.cbo_Articulo.Size = new System.Drawing.Size(453, 31);
             this.cbo_Articulo.TabIndex = 35;
             // 
             // cbo_Departamento
@@ -764,9 +865,10 @@
             this.cbo_Departamento.Enabled = false;
             this.cbo_Departamento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_Departamento.FormattingEnabled = true;
-            this.cbo_Departamento.Location = new System.Drawing.Point(169, 89);
+            this.cbo_Departamento.Location = new System.Drawing.Point(225, 110);
+            this.cbo_Departamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbo_Departamento.Name = "cbo_Departamento";
-            this.cbo_Departamento.Size = new System.Drawing.Size(283, 29);
+            this.cbo_Departamento.Size = new System.Drawing.Size(376, 31);
             this.cbo_Departamento.TabIndex = 37;
             // 
             // btn_Buscar
@@ -778,9 +880,10 @@
             this.btn_Buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(161)))));
             this.btn_Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(177)))));
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Buscar.Location = new System.Drawing.Point(458, 55);
+            this.btn_Buscar.Location = new System.Drawing.Point(611, 68);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(122, 65);
+            this.btn_Buscar.Size = new System.Drawing.Size(163, 80);
             this.btn_Buscar.TabIndex = 38;
             this.btn_Buscar.UseVisualStyleBackColor = false;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
@@ -789,9 +892,10 @@
             // 
             this.rb_Articulo.AutoSize = true;
             this.rb_Articulo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_Articulo.Location = new System.Drawing.Point(12, 55);
+            this.rb_Articulo.Location = new System.Drawing.Point(16, 68);
+            this.rb_Articulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rb_Articulo.Name = "rb_Articulo";
-            this.rb_Articulo.Size = new System.Drawing.Size(93, 25);
+            this.rb_Articulo.Size = new System.Drawing.Size(112, 27);
             this.rb_Articulo.TabIndex = 39;
             this.rb_Articulo.TabStop = true;
             this.rb_Articulo.Text = "Artículo:";
@@ -803,9 +907,10 @@
             // 
             this.rb_Departamento.AutoSize = true;
             this.rb_Departamento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_Departamento.Location = new System.Drawing.Point(12, 90);
+            this.rb_Departamento.Location = new System.Drawing.Point(16, 111);
+            this.rb_Departamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rb_Departamento.Name = "rb_Departamento";
-            this.rb_Departamento.Size = new System.Drawing.Size(151, 25);
+            this.rb_Departamento.Size = new System.Drawing.Size(183, 27);
             this.rb_Departamento.TabIndex = 40;
             this.rb_Departamento.TabStop = true;
             this.rb_Departamento.Text = "Departamento:";
@@ -813,79 +918,12 @@
             this.rb_Departamento.UseVisualStyleBackColor = true;
             this.rb_Departamento.CheckedChanged += new System.EventHandler(this.rb_Departamento_CheckedChanged);
             // 
-            // Unidad_Medida1
-            // 
-            this.Unidad_Medida1.HeaderText = "Unidad_Medida";
-            this.Unidad_Medida1.Name = "Unidad_Medida1";
-            this.Unidad_Medida1.Visible = false;
-            // 
-            // Cod_Articulo1
-            // 
-            this.Cod_Articulo1.HeaderText = "Cod_Articulo";
-            this.Cod_Articulo1.Name = "Cod_Articulo1";
-            this.Cod_Articulo1.Visible = false;
-            // 
-            // Total
-            // 
-            this.Total.FillWeight = 35F;
-            this.Total.HeaderText = "Total";
-            this.Total.Name = "Total";
-            this.Total.ReadOnly = true;
-            // 
-            // Impuesto_1
-            // 
-            this.Impuesto_1.FillWeight = 22.71544F;
-            this.Impuesto_1.HeaderText = "Impuesto";
-            this.Impuesto_1.Name = "Impuesto_1";
-            this.Impuesto_1.ReadOnly = true;
-            // 
-            // Descuento
-            // 
-            this.Descuento.DataPropertyName = "Descuento";
-            this.Descuento.FillWeight = 13.35668F;
-            this.Descuento.HeaderText = "Desc";
-            this.Descuento.Name = "Descuento";
-            // 
-            // Ubicacion
-            // 
-            this.Ubicacion.HeaderText = "Ubicacion";
-            this.Ubicacion.Name = "Ubicacion";
-            this.Ubicacion.ReadOnly = true;
-            this.Ubicacion.Visible = false;
-            // 
-            // Precio
-            // 
-            this.Precio.FillWeight = 13.35668F;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.FillWeight = 13.35668F;
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Producto
-            // 
-            this.Producto.FillWeight = 30F;
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            // 
-            // Departamento
-            // 
-            this.Departamento.HeaderText = "Departamento";
-            this.Departamento.Name = "Departamento";
-            this.Departamento.ReadOnly = true;
-            this.Departamento.Visible = false;
-            // 
             // frm_IngresoCaja
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1821, 945);
             this.ControlBox = false;
             this.Controls.Add(this.rb_Departamento);
             this.Controls.Add(this.rb_Articulo);
@@ -925,6 +963,7 @@
             this.Controls.Add(this.groupBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_IngresoCaja";
