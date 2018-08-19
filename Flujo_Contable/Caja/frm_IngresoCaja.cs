@@ -13,6 +13,7 @@ using Flujo_Contable.Otros;
 using Flujo_Contable.Clientes;
 using System.Xml;
 using Flujo_Contable.Caja.Factura;
+using BLL.FacturaElect;
 
 namespace Flujo_Contable
 {
@@ -53,7 +54,6 @@ namespace Flujo_Contable
             objCreaXML.SELECT_SECUENCIA();
             objCreaXML.CREAR_COD_SEGURIDAD();
             CREAR_XML();
-            
             objCreaXML.FechaFull = Convert.ToDateTime( objCreaXML.Año + "-" + objCreaXML.Mes + "-" + objCreaXML.Dia + " " + objCreaXML.Fecha);
             objCreaXML.DineroTotal = lbl_DineroaPagar.Text;
             objCreaXML.Login = lbl_Usuario.Text;
@@ -84,15 +84,54 @@ namespace Flujo_Contable
                 {
                     MessageBox.Show(ex.Message + "CARGA_FACTURA()");
                 }
-                this.FIRMADOR("fe-" + "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad);
-                objCreaXML.Secuencia =  Convert.ToString(Convert.ToInt32(objCreaXML.Secuencia) + 1);
+                
                 objCreaXML.UPDATE_SECUENCIA();
                 valor = 0;
                 if(objCreaXML.Validacion == "Actualizado")
                 {
+                    string Clave = "fe-" + "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
+                    string Clave2 = "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
                     //--AQUI VA EL FIRMADOR DEL CERTIFICADO--//
-
+                    this.FIRMADOR(Clave,objCreaXML.Certificado);
+                    objCreaXML.Secuencia = Convert.ToString(Convert.ToInt32(objCreaXML.Secuencia) + 1);
                     //--AQUI TERMINA EL FIRMADOR DEL CERTIFICADO--//
+                    //--AQUI VA EL INICIO DE ENVIO A HACIENDA--//
+
+                    XmlDocument xmlElectronica = new XmlDocument();
+                    //xmlElectronica.Load("D:\\Documents\\Facturas\\" + Clave + "firmado.xml");
+                    xmlElectronica.Load("F:\\Documents\\New Folder\\" + Clave + "firmado.xml");
+                    Emisor myEmisor = new Emisor();
+                    myEmisor.numeroIdentificacion = objCreaXML.Cedula;
+                    myEmisor.TipoIdentificacion = objCreaXML.Tipo_Identificacion;
+
+                    Receptor myReceptor = new Receptor();
+                    if ((objCreaXML.Tipo_IdentificacionRE.Trim().Length > 0))
+                    {
+                        myReceptor.sinReceptor = false;
+                        myReceptor.numeroIdentificacion = objCreaXML.CedulaRE;
+                        myReceptor.TipoIdentificacion = objCreaXML.Tipo_IdentificacionRE;
+                    }
+                    else
+                    {
+                        myReceptor.sinReceptor = true;
+                    }
+
+                    Recepcion myRecepcion = new Recepcion();
+                    myRecepcion.emisor = myEmisor;
+                    myRecepcion.receptor = myReceptor;
+
+                    myRecepcion.clave = Clave2;
+                    myRecepcion.fecha = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz");
+                    myRecepcion.comprobanteXml = Funciones.EncodeStrToBase64(xmlElectronica.OuterXml);
+
+
+                    string Token = "";
+                    Token = getToken();
+                    Comunicacion enviaFactura = new Comunicacion();
+                    enviaFactura.EnvioDatos(Token,myRecepcion);
+
+
+                    //--AQUI TERMINA EL ENVIO A HACIENDA--//
                     objCreaXML.Año= string.Empty;
                     objCreaXML.Mes = string.Empty;
                     objCreaXML.Mesfin = string.Empty;
@@ -874,7 +913,8 @@ namespace Flujo_Contable
             fe.AppendChild(Normativa);
             //--FINNORMATIVA--//
             doc.AppendChild(fe);
-            doc.Save("D:\\Documents\\Facturas\\fe-"+clave.InnerText+".xml");
+            doc.Save("F:\\Documents\\New folder\\fe-"+clave.InnerText+".xml");
+            //doc.Save("D:\\Documents\\Facturas\\fe-"+clave.InnerText+".xml");
             valor = 0;
             
 
@@ -882,17 +922,29 @@ namespace Flujo_Contable
         }
 
 
-        public void FIRMADOR(string clave) 
+        public void FIRMADOR(string clave,string certificado) 
         {
-            string directorio = "D:\\Documents\\Facturas\\";
+            string directorio = "F:\\Documents\\New folder\\";
+            //string directorio = "D:\\Documents\\Facturas\\";
             string nombreArchivo = directorio + clave;
 
-            objfirma.FirmaXML_Xades(nombreArchivo, "3480E97168E8C6ABEA0DEFCEA945CEF96A792FAE");
-         
-
+            objfirma.FirmaXML_Xades(nombreArchivo, certificado);
 
         }
 
+        public string getToken()
+        {
+            try
+            {
+                TokenHacienda iTokenHacienda = new TokenHacienda();
+                iTokenHacienda.GetTokenHacienda(objCreaXML.Usuario_Hacienda,objCreaXML.Password_Hacienda);
+                return iTokenHacienda.accessToken;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
     }
 

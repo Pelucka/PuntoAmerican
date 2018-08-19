@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -253,6 +252,31 @@ namespace BLL
             get { return _Barriofin; }
             set { _Barriofin = value; }
         }
+
+        private string _Certificado;
+
+        public string Certificado
+        {
+            get { return _Certificado; }
+            set { _Certificado = value; }
+        }
+
+        private string _Usuario_Hacienda;
+
+        public string Usuario_Hacienda
+        {
+            get { return _Usuario_Hacienda; }
+            set { _Usuario_Hacienda = value; }
+        }
+
+        private string _Password_Hacienda;
+
+        public string Password_Hacienda
+        {
+            get { return _Password_Hacienda; }
+            set { _Password_Hacienda = value; }
+        }
+
 
         //----------------------------------------//
         //----------DATOS DE SELECT_DATOS_XML_RECEPTOR----------//
@@ -805,6 +829,10 @@ namespace BLL
                         _Barrio = ds.Tables[0].Rows[0]["Barrio"].ToString();
                         _Desc_Ubica = ds.Tables[0].Rows[0]["Desc_Ubica"].ToString();
                         _Telefono = ds.Tables[0].Rows[0]["Telefono"].ToString();
+                        _Certificado = ds.Tables[0].Rows[0]["Certificado"].ToString();
+                        _Usuario_Hacienda = ds.Tables[0].Rows[0]["Usuario_Hacienda"].ToString();
+                        _Password_Hacienda = ds.Tables[0].Rows[0]["Password_Hacienda"].ToString();
+
                         cls_DAL.desconectar(conexion, ref mensaje_error, ref numero_error);
                         if (_Tipo_Identificacion.Length < 2)
                         {

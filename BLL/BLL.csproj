@@ -64,7 +64,11 @@
     <Compile Include="Envios.cs" />
     <Compile Include="Errores.cs" />
     <Compile Include="factura.cs" />
-    <Compile Include="Firma.cs" />
+    <Compile Include="FacturaElect\ClasesJson.cs" />
+    <Compile Include="FacturaElect\Comunicacion.cs" />
+    <Compile Include="FacturaElect\Firma.cs" />
+    <Compile Include="FacturaElect\Funciones.cs" />
+    <Compile Include="FacturaElect\TokenHacienda.cs" />
     <Compile Include="Gastos e Ingresos.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="Login.cs" />

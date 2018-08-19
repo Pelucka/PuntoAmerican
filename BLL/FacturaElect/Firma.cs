@@ -44,7 +44,6 @@ namespace BLL
                 // Esta libreria fue creada por Departamento de Nuevas Tecnologias - Direccion General de Urbanismo Ayuntamiento de Cartagena
                 // 'Fuente original se puede descargar en administracionelectronica.gob.es/ctt/firmaxadesnet
                 // 'La libreria se modifico levemente para que pueda funcionar para Costa Rica.
-                // 'Cambios por Roy Rojas - royrojas@dotnetcr.com - 06/Febrero/2018
 
                 fs.Close();
                 docFirmado = null;
