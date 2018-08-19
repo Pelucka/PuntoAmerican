@@ -131,8 +131,32 @@ namespace Flujo_Contable
                     enviaFactura.EnvioDatos(Token,myRecepcion);
 
 
-                    //--AQUI TERMINA EL ENVIO A HACIENDA--//
-                    objCreaXML.Año= string.Empty;
+                    string jsonEnvio = "";
+                    jsonEnvio = enviaFactura.jsonEnvio;
+                    string jsonRespuesta = "";
+                    jsonRespuesta = enviaFactura.jsonRespuesta;
+                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\"+ Clave + "_03_jsonEnvio.txt");
+                    outputFile.Write(jsonEnvio);
+                    outputFile.Close();
+                    outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\"+ Clave + "_04_jsonRespuesta.txt");
+                    outputFile.Write(jsonRespuesta);
+                    outputFile.Close();
+                    if (!(enviaFactura.xmlRespuesta == null))
+                    {
+                        enviaFactura.xmlRespuesta.Save("F:\\Documents\\New folder\\"+ Clave + "_05_RESP.xml");
+                    }
+                    else
+                    {
+                        outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\" +Clave + "_05_RESP_SinRespuesta.txt");
+                        outputFile.Write("");
+                        outputFile.Close();
+                        
+                    }
+                    MessageBox.Show(enviaFactura.mensajeRespuesta);
+                
+
+                //--AQUI TERMINA EL ENVIO A HACIENDA--//
+                objCreaXML.Año= string.Empty;
                     objCreaXML.Mes = string.Empty;
                     objCreaXML.Mesfin = string.Empty;
                     objCreaXML.Dia = string.Empty;

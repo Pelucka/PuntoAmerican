@@ -68,8 +68,6 @@ namespace BLL.FacturaElect
                     xmlRespuesta = Funciones.DecodeBase64ToXML(RH.respuesta_xml);
                 }
 
-                try { }
-                catch { }
 
                 estadoFactura = RH.ind_estado;
                 statusCode = response.StatusCode.ToString();
