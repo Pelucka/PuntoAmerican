@@ -102,14 +102,14 @@ namespace Flujo_Contable
                     xmlElectronica.Load("F:\\Documents\\New Folder\\" + Clave + "firmado.xml");
                     Emisor myEmisor = new Emisor();
                     myEmisor.numeroIdentificacion = objCreaXML.Cedula;
-                    myEmisor.TipoIdentificacion = objCreaXML.Tipo_Identificacion;
+                    myEmisor.TipoIdentificacion = objCreaXML.TipoIdentificacionfin;
 
                     Receptor myReceptor = new Receptor();
                     if ((objCreaXML.Tipo_IdentificacionRE.Trim().Length > 0))
                     {
                         myReceptor.sinReceptor = false;
                         myReceptor.numeroIdentificacion = objCreaXML.CedulaRE;
-                        myReceptor.TipoIdentificacion = objCreaXML.Tipo_IdentificacionRE;
+                        myReceptor.TipoIdentificacion = objCreaXML.TipoIdentificacionfinRE;
                     }
                     else
                     {
@@ -128,35 +128,35 @@ namespace Flujo_Contable
                     string Token = "";
                     Token = getToken();
                     Comunicacion enviaFactura = new Comunicacion();
-                    enviaFactura.EnvioDatos(Token,myRecepcion);
+                    enviaFactura.EnvioDatos(Token, myRecepcion);
 
 
                     string jsonEnvio = "";
                     jsonEnvio = enviaFactura.jsonEnvio;
                     string jsonRespuesta = "";
                     jsonRespuesta = enviaFactura.jsonRespuesta;
-                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\"+ Clave + "_03_jsonEnvio.txt");
+                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\" + Clave + "_03_jsonEnvio.txt");
                     outputFile.Write(jsonEnvio);
                     outputFile.Close();
-                    outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\"+ Clave + "_04_jsonRespuesta.txt");
+                    outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\" + Clave + "_04_jsonRespuesta.txt");
                     outputFile.Write(jsonRespuesta);
                     outputFile.Close();
                     if (!(enviaFactura.xmlRespuesta == null))
                     {
-                        enviaFactura.xmlRespuesta.Save("F:\\Documents\\New folder\\"+ Clave + "_05_RESP.xml");
+                        enviaFactura.xmlRespuesta.Save("F:\\Documents\\New folder\\" + Clave + "_05_RESP.xml");
                     }
                     else
                     {
-                        outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\" +Clave + "_05_RESP_SinRespuesta.txt");
+                        outputFile = new System.IO.StreamWriter("F:\\Documents\\New folder\\" + Clave + "_05_RESP_SinRespuesta.txt");
                         outputFile.Write("");
                         outputFile.Close();
-                        
+
                     }
                     MessageBox.Show(enviaFactura.mensajeRespuesta);
-                
 
-                //--AQUI TERMINA EL ENVIO A HACIENDA--//
-                objCreaXML.Año= string.Empty;
+
+                    //--AQUI TERMINA EL ENVIO A HACIENDA--//
+                    objCreaXML.Año= string.Empty;
                     objCreaXML.Mes = string.Empty;
                     objCreaXML.Mesfin = string.Empty;
                     objCreaXML.Dia = string.Empty;
