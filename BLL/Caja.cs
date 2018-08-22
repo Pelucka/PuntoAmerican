@@ -324,9 +324,7 @@ namespace BLL
                     /*Se obtienen los datos deseados por medio de la busqueda realizada*/
                     if (ds.Tables[0].Rows.Count > 0)
                     {
-                        _Prefijo = ds.Tables[0].Rows[0]["Prefijo"].ToString();
-                        _Secuencia = ds.Tables[0].Rows[0]["Secuencia"].ToString();
-                        _CodigoFinalFactura = _Prefijo + _Secuencia;
+                        _CodigoFinalFactura = ds.Tables[0].Rows[0]["id"].ToString();
                     }
                     else
                     {

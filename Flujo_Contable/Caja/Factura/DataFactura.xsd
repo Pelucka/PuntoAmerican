@@ -12,7 +12,8 @@
               <DbSource ConnectionRef="PuntoAmericano (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT tbl_VentasTotales.Cod_Factura, tbl_VentasTotales.Fecha, tbl_Clientes.Nombre, tbl_Ventas.Cod_Articulo, tbl_Ventas.Descripcion, tbl_VentasTotales.Impuesto_Total, tbl_Articulos.Precio
+                    <CommandText>SELECT tbl_VentasTotales.Cod_Factura, tbl_VentasTotales.Fecha, tbl_Clientes.Nombre, tbl_Ventas.Cod_Articulo, tbl_Ventas.Descripcion, tbl_VentasTotales.Impuesto_Total, tbl_Articulos.Precio, CONVERT(varchar(50), 
+                  DECRYPTBYPASSPHRASE('Am3riadrijos3', tbl_VentasTotales.DineroTotal)) AS Expr1
 FROM     tbl_VentasTotales INNER JOIN
                   tbl_Clientes ON tbl_VentasTotales.Id_Cliente = tbl_Clientes.Id_Cliente INNER JOIN
                   tbl_Ventas ON tbl_VentasTotales.Cod_Factura = tbl_Ventas.Id_Ventaltotal INNER JOIN
@@ -33,6 +34,7 @@ WHERE  (tbl_VentasTotales.Cod_Factura = @x)</CommandText>
               <Mapping SourceColumn="Descripcion" DataSetColumn="Descripcion" />
               <Mapping SourceColumn="Impuesto_Total" DataSetColumn="Impuesto_Total" />
               <Mapping SourceColumn="Precio" DataSetColumn="Precio" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -44,7 +46,7 @@ WHERE  (tbl_VentasTotales.Cod_Factura = @x)</CommandText>
   <xs:element name="DataFactura" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataFactura" msprop:Generator_UserDSName="DataFactura">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Cod_Factura" msprop:Generator_ColumnVarNameInTable="columnCod_Factura" msprop:Generator_ColumnPropNameInRow="Cod_Factura" msprop:Generator_ColumnPropNameInTable="Cod_FacturaColumn" msprop:Generator_UserColumnName="Cod_Factura">
@@ -72,6 +74,13 @@ WHERE  (tbl_VentasTotales.Cod_Factura = @x)</CommandText>
               </xs:element>
               <xs:element name="Impuesto_Total" msprop:Generator_ColumnVarNameInTable="columnImpuesto_Total" msprop:Generator_ColumnPropNameInRow="Impuesto_Total" msprop:Generator_ColumnPropNameInTable="Impuesto_TotalColumn" msprop:Generator_UserColumnName="Impuesto_Total" type="xs:int" />
               <xs:element name="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" msprop:Generator_UserColumnName="Precio" type="xs:int" />
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

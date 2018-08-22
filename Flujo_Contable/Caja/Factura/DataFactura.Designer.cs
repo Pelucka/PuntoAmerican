@@ -293,6 +293,8 @@ namespace Flujo_Contable.Caja.Factura {
             
             private global::System.Data.DataColumn columnPrecio;
             
+            private global::System.Data.DataColumn columnExpr1;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DataTable1DataTable() {
@@ -384,6 +386,14 @@ namespace Flujo_Contable.Caja.Factura {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn Expr1Column {
+                get {
+                    return this.columnExpr1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +429,7 @@ namespace Flujo_Contable.Caja.Factura {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string Cod_Factura, System.DateTime Fecha, string Nombre, int Cod_Articulo, string Descripcion, int Impuesto_Total, int Precio) {
+            public DataTable1Row AddDataTable1Row(string Cod_Factura, System.DateTime Fecha, string Nombre, int Cod_Articulo, string Descripcion, int Impuesto_Total, int Precio, string Expr1) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cod_Factura,
@@ -428,7 +438,8 @@ namespace Flujo_Contable.Caja.Factura {
                         Cod_Articulo,
                         Descripcion,
                         Impuesto_Total,
-                        Precio};
+                        Precio,
+                        Expr1};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -465,6 +476,7 @@ namespace Flujo_Contable.Caja.Factura {
                 this.columnDescripcion = base.Columns["Descripcion"];
                 this.columnImpuesto_Total = base.Columns["Impuesto_Total"];
                 this.columnPrecio = base.Columns["Precio"];
+                this.columnExpr1 = base.Columns["Expr1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -484,6 +496,8 @@ namespace Flujo_Contable.Caja.Factura {
                 base.Columns.Add(this.columnImpuesto_Total);
                 this.columnPrecio = new global::System.Data.DataColumn("Precio", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPrecio);
+                this.columnExpr1 = new global::System.Data.DataColumn("Expr1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnExpr1);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnCod_Factura}, true));
                 this.columnCod_Factura.AllowDBNull = false;
@@ -496,6 +510,8 @@ namespace Flujo_Contable.Caja.Factura {
                 this.columnDescripcion.MaxLength = 25;
                 this.columnImpuesto_Total.AllowDBNull = false;
                 this.columnPrecio.AllowDBNull = false;
+                this.columnExpr1.ReadOnly = true;
+                this.columnExpr1.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -720,6 +736,22 @@ namespace Flujo_Contable.Caja.Factura {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string Expr1 {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.Expr1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Expr1\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.Expr1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsDescripcionNull() {
                 return this.IsNull(this.tableDataTable1.DescripcionColumn);
             }
@@ -728,6 +760,18 @@ namespace Flujo_Contable.Caja.Factura {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetDescripcionNull() {
                 this[this.tableDataTable1.DescripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsExpr1Null() {
+                return this.IsNull(this.tableDataTable1.Expr1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetExpr1Null() {
+                this[this.tableDataTable1.Expr1Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -897,6 +941,7 @@ namespace Flujo_Contable.Caja.Factura.DataFacturaTableAdapters {
             tableMapping.ColumnMappings.Add("Descripcion", "Descripcion");
             tableMapping.ColumnMappings.Add("Impuesto_Total", "Impuesto_Total");
             tableMapping.ColumnMappings.Add("Precio", "Precio");
+            tableMapping.ColumnMappings.Add("Expr1", "Expr1");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -913,7 +958,8 @@ namespace Flujo_Contable.Caja.Factura.DataFacturaTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT tbl_VentasTotales.Cod_Factura, tbl_VentasTotales.Fecha, tbl_Clientes.Nombre, tbl_Ventas.Cod_Articulo, tbl_Ventas.Descripcion, tbl_VentasTotales.Impuesto_Total, tbl_Articulos.Precio
+            this._commandCollection[0].CommandText = @"SELECT tbl_VentasTotales.Cod_Factura, tbl_VentasTotales.Fecha, tbl_Clientes.Nombre, tbl_Ventas.Cod_Articulo, tbl_Ventas.Descripcion, tbl_VentasTotales.Impuesto_Total, tbl_Articulos.Precio, CONVERT(varchar(50), 
+                  DECRYPTBYPASSPHRASE('Am3riadrijos3', tbl_VentasTotales.DineroTotal)) AS Expr1
 FROM     tbl_VentasTotales INNER JOIN
                   tbl_Clientes ON tbl_VentasTotales.Id_Cliente = tbl_Clientes.Id_Cliente INNER JOIN
                   tbl_Ventas ON tbl_VentasTotales.Cod_Factura = tbl_Ventas.Id_Ventaltotal INNER JOIN

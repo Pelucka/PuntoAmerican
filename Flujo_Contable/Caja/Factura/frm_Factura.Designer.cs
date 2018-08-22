@@ -31,34 +31,35 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DataFactura = new Flujo_Contable.Caja.Factura.DataFactura();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataFactura = new Flujo_Contable.Caja.Factura.DataFactura();
             this.DataTable1TableAdapter = new Flujo_Contable.Caja.Factura.DataFacturaTableAdapters.DataTable1TableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.DataFactura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataFactura)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.DataTable1BindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Flujo_Contable.Caja.Factura.Factura.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(21, 12);
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(767, 426);
+            this.reportViewer1.Size = new System.Drawing.Size(512, 497);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // DataFactura
-            // 
-            this.DataFactura.DataSetName = "DataFactura";
-            this.DataFactura.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // DataTable1BindingSource
             // 
             this.DataTable1BindingSource.DataMember = "DataTable1";
             this.DataTable1BindingSource.DataSource = this.DataFactura;
+            // 
+            // DataFactura
+            // 
+            this.DataFactura.DataSetName = "DataFactura";
+            this.DataFactura.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // DataTable1TableAdapter
             // 
@@ -68,13 +69,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(512, 497);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frm_Factura";
             this.Text = "frm_Factura";
             this.Load += new System.EventHandler(this.frm_Factura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataFactura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataFactura)).EndInit();
             this.ResumeLayout(false);
 
         }
