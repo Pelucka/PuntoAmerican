@@ -92,14 +92,14 @@ namespace Flujo_Contable
                     string Clave = "fe-" + "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
                     string Clave2 = "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
                     //--AQUI VA EL FIRMADOR DEL CERTIFICADO--//
-                    //this.FIRMADOR(Clave,objCreaXML.Certificado);
+                    this.FIRMADOR(Clave,objCreaXML.Certificado);
                     objCreaXML.Secuencia = Convert.ToString(Convert.ToInt32(objCreaXML.Secuencia) + 1);
                     //--AQUI TERMINA EL FIRMADOR DEL CERTIFICADO--//
                     //--AQUI VA EL INICIO DE ENVIO A HACIENDA--//
 
-                    /*XmlDocument xmlElectronica = new XmlDocument();
+                    XmlDocument xmlElectronica = new XmlDocument();
                     //xmlElectronica.Load("D:\\Documents\\Facturas\\" + Clave + "firmado.xml");
-                    xmlElectronica.Load("D:\\Documents\\New Folder\\" + Clave + "firmado.xml");
+                    xmlElectronica.Load("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "firmado.xml");
                     Emisor myEmisor = new Emisor();
                     myEmisor.numeroIdentificacion = objCreaXML.Cedula;
                     myEmisor.TipoIdentificacion = objCreaXML.TipoIdentificacionfin;
@@ -124,6 +124,7 @@ namespace Flujo_Contable
                     myRecepcion.fecha = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz");
                     myRecepcion.comprobanteXml = Funciones.EncodeStrToBase64(xmlElectronica.OuterXml);
 
+                    xmlElectronica = null;
 
                     string Token = "";
                     Token = getToken();
@@ -135,26 +136,26 @@ namespace Flujo_Contable
                     jsonEnvio = enviaFactura.jsonEnvio;
                     string jsonRespuesta = "";
                     jsonRespuesta = enviaFactura.jsonRespuesta;
-                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("D:\\Documents\\New folder\\" + Clave + "_03_jsonEnvio.txt");
+                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_03_jsonEnvio.txt");
                     outputFile.Write(jsonEnvio);
                     outputFile.Close();
-                    outputFile = new System.IO.StreamWriter("D:\\Documents\\New folder\\" + Clave + "_04_jsonRespuesta.txt");
+                    outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_04_jsonRespuesta.txt");
                     outputFile.Write(jsonRespuesta);
                     outputFile.Close();
                     if (!(enviaFactura.xmlRespuesta == null))
                     {
-                        enviaFactura.xmlRespuesta.Save("D:\\Documents\\New folder\\" + Clave + "_05_RESP.xml");
+                        enviaFactura.xmlRespuesta.Save("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP.xml");
                     }
                     else
                     {
-                        outputFile = new System.IO.StreamWriter("D:\\Documents\\New folder\\" + Clave + "_05_RESP_SinRespuesta.txt");
+                        outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP_SinRespuesta.txt");
                         outputFile.Write("");
                         outputFile.Close();
 
                     }
                     MessageBox.Show(enviaFactura.mensajeRespuesta);
 
-                    */
+
                     //--AQUI TERMINA EL ENVIO A HACIENDA--//
                     objCreaXML.Año= string.Empty;
                     objCreaXML.Mes = string.Empty;
@@ -942,7 +943,7 @@ namespace Flujo_Contable
             fe.AppendChild(Normativa);
             //--FINNORMATIVA--//
             doc.AppendChild(fe);
-            doc.Save("D:\\Documents\\New folder\\fe-"+clave.InnerText+".xml");
+            doc.Save("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\fe-" + clave.InnerText+".xml");
             //doc.Save("D:\\Documents\\Facturas\\fe-"+clave.InnerText+".xml");
             valor = 0;
             
@@ -953,7 +954,7 @@ namespace Flujo_Contable
 
         public void FIRMADOR(string clave,string certificado) 
         {
-            string directorio = "D:\\Documents\\New folder\\";
+            string directorio = "F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\";
             //string directorio = "D:\\Documents\\Facturas\\";
             string nombreArchivo = directorio + clave;
 

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FacturaElectronica xmlns="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Clave>50623081800011339044900300001010000000029185476783</Clave>
+  <NumeroConsecutivo>00300001010000000029</NumeroConsecutivo>
+  <FechaEmision>2018-08-23T13:52:32</FechaEmision>
+  <Emisor>
+    <Nombre>Adriana Vanessa Rivera Rapson</Nombre>
+    <Identificacion>
+      <Tipo>01</Tipo>
+      <Numero>113390449</Numero>
+    </Identificacion>
+    <Ubicacion>
+      <Provincia>3</Provincia>
+      <Canton>01</Canton>
+      <Distrito>02</Distrito>
+      <Barrio>06</Barrio>
+      <OtrasSenas>Frente a los Bomberos</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>25522522</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>puntoamericano@gmail.com</CorreoElectronico>
+  </Emisor>
+  <Receptor>
+    <Nombre>Bryan Vargas Monge</Nombre>
+    <Identificacion>
+      <Tipo>01</Tipo>
+      <Numero>116540066</Numero>
+    </Identificacion>
+    <Ubicacion>
+      <Provincia>3</Provincia>
+      <Canton>02</Canton>
+      <Distrito>03</Distrito>
+      <Barrio>05</Barrio>
+      <OtrasSenas>Residencial Nuevo Horizonte</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>84411446</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>bryvmonge@gmail.com</CorreoElectronico>
+  </Receptor>
+  <CondicionVenta>01</CondicionVenta>
+  <MedioPago>01</MedioPago>
+  <DetalleServicio>
+    <LineaDetalle>
+      <NumeroLinea>1</NumeroLinea>
+      <Codigo>
+        <Tipo>04</Tipo>
+        <Codigo>2</Codigo>
+      </Codigo>
+      <Cantidad>1</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <Detalle>Camisero</Detalle>
+      <PrecioUnitario>4500</PrecioUnitario>
+      <MontoTotal>4500</MontoTotal>
+      <SubTotal>4500</SubTotal>
+      <MontoTotalLinea>4500</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>2</NumeroLinea>
+      <Codigo>
+        <Tipo>04</Tipo>
+        <Codigo>1</Codigo>
+      </Codigo>
+      <Cantidad>1</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <Detalle>Jeans</Detalle>
+      <PrecioUnitario>3000</PrecioUnitario>
+      <MontoTotal>3000</MontoTotal>
+      <SubTotal>3000</SubTotal>
+      <MontoTotalLinea>3000</MontoTotalLinea>
+    </LineaDetalle>
+  </DetalleServicio>
+  <ResumenFactura>
+    <CodigoMoneda>CRC</CodigoMoneda>
+    <TipoCambio>1.00000</TipoCambio>
+    <TotalServGravados>0.00000</TotalServGravados>
+    <TotalServExentos>0.00000</TotalServExentos>
+    <TotalMercanciasExentas>7500.00000</TotalMercanciasExentas>
+    <TotalGravado>0.00000</TotalGravado>
+    <TotalExento>7500.00000</TotalExento>
+    <TotalVenta>7500.00000</TotalVenta>
+    <TotalDescuentos>0.00000</TotalDescuentos>
+    <TotalVentaNeta>7500.00000</TotalVentaNeta>
+    <TotalImpuesto>0.00000</TotalImpuesto>
+    <TotalComprobante>7500</TotalComprobante>
+  </ResumenFactura>
+  <Normativa>
+    <NumeroResolucion>DGT-R-48-2016</NumeroResolucion>
+    <FechaResolucion>07-10-2016 01:00:00</FechaResolucion>
+  </Normativa>
+</FacturaElectronica>

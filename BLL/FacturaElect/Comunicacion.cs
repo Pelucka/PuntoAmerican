@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json.Linq;
 using System.Xml;
+using System.Windows.Forms;
 
 namespace BLL.FacturaElect
 {
@@ -52,7 +53,7 @@ namespace BLL.FacturaElect
                 string res = await response.Content.ReadAsStringAsync();
 
                 object Localizacion = response.StatusCode;
-                // mensajeRespuesta = Localizacion
+                MessageBox.Show(Convert.ToString(Localizacion));
 
                 http = new HttpClient();
                 http.DefaultRequestHeaders.Add("authorization", ("Bearer " + TK));
@@ -67,6 +68,7 @@ namespace BLL.FacturaElect
                 {
                     xmlRespuesta = Funciones.DecodeBase64ToXML(RH.respuesta_xml);
                 }
+
 
 
                 estadoFactura = RH.ind_estado;
