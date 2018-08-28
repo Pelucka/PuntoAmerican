@@ -99,7 +99,7 @@ namespace Flujo_Contable
 
                     XmlDocument xmlElectronica = new XmlDocument();
                     //xmlElectronica.Load("D:\\Documents\\Facturas\\" + Clave + "firmado.xml");
-                    xmlElectronica.Load("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "firmado.xml");
+                    xmlElectronica.Load("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "firmado.xml");
                     Emisor myEmisor = new Emisor();
                     myEmisor.numeroIdentificacion = objCreaXML.Cedula;
                     myEmisor.TipoIdentificacion = objCreaXML.TipoIdentificacionfin;
@@ -136,19 +136,19 @@ namespace Flujo_Contable
                     jsonEnvio = enviaFactura.jsonEnvio;
                     string jsonRespuesta = "";
                     jsonRespuesta = enviaFactura.jsonRespuesta;
-                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_03_jsonEnvio.txt");
+                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_03_jsonEnvio.txt");
                     outputFile.Write(jsonEnvio);
                     outputFile.Close();
-                    outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_04_jsonRespuesta.txt");
+                    outputFile = new System.IO.StreamWriter("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_04_jsonRespuesta.txt");
                     outputFile.Write(jsonRespuesta);
                     outputFile.Close();
                     if (!(enviaFactura.xmlRespuesta == null))
                     {
-                        enviaFactura.xmlRespuesta.Save("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP.xml");
+                        enviaFactura.xmlRespuesta.Save("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP.xml");
                     }
                     else
                     {
-                        outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP_SinRespuesta.txt");
+                        outputFile = new System.IO.StreamWriter("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP_SinRespuesta.txt");
                         outputFile.Write("");
                         outputFile.Close();
 
@@ -943,7 +943,7 @@ namespace Flujo_Contable
             fe.AppendChild(Normativa);
             //--FINNORMATIVA--//
             doc.AppendChild(fe);
-            doc.Save("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\fe-" + clave.InnerText+".xml");
+            doc.Save("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\fe-" + clave.InnerText+".xml");
             //doc.Save("D:\\Documents\\Facturas\\fe-"+clave.InnerText+".xml");
             valor = 0;
             
@@ -954,7 +954,7 @@ namespace Flujo_Contable
 
         public void FIRMADOR(string clave,string certificado) 
         {
-            string directorio = "F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\";
+            string directorio = "D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\";
             //string directorio = "D:\\Documents\\Facturas\\";
             string nombreArchivo = directorio + clave;
 

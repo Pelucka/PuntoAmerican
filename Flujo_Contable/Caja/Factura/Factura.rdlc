@@ -28,7 +28,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Cod Articulo</Value>
+                              <Value>Cantidad</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -122,14 +122,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Cod_Articulo">
+                    <Textbox Name="Cantidad">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Cod_Articulo.Value</Value>
+                              <Value>=Fields!Cantidad.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -138,7 +138,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Cod_Articulo</rd:DefaultName>
+                      <rd:DefaultName>Cantidad</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -150,6 +150,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -602,6 +603,10 @@
         <Field Name="Expr1">
           <DataField>Expr1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>

@@ -295,6 +295,8 @@ namespace Flujo_Contable.Caja.Factura {
             
             private global::System.Data.DataColumn columnExpr1;
             
+            private global::System.Data.DataColumn columnCantidad;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DataTable1DataTable() {
@@ -394,6 +396,14 @@ namespace Flujo_Contable.Caja.Factura {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CantidadColumn {
+                get {
+                    return this.columnCantidad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -429,7 +439,7 @@ namespace Flujo_Contable.Caja.Factura {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string Cod_Factura, System.DateTime Fecha, string Nombre, int Cod_Articulo, string Descripcion, int Impuesto_Total, int Precio, string Expr1) {
+            public DataTable1Row AddDataTable1Row(string Cod_Factura, System.DateTime Fecha, string Nombre, int Cod_Articulo, string Descripcion, int Impuesto_Total, int Precio, string Expr1, int Cantidad) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cod_Factura,
@@ -439,7 +449,8 @@ namespace Flujo_Contable.Caja.Factura {
                         Descripcion,
                         Impuesto_Total,
                         Precio,
-                        Expr1};
+                        Expr1,
+                        Cantidad};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -477,6 +488,7 @@ namespace Flujo_Contable.Caja.Factura {
                 this.columnImpuesto_Total = base.Columns["Impuesto_Total"];
                 this.columnPrecio = base.Columns["Precio"];
                 this.columnExpr1 = base.Columns["Expr1"];
+                this.columnCantidad = base.Columns["Cantidad"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -498,6 +510,8 @@ namespace Flujo_Contable.Caja.Factura {
                 base.Columns.Add(this.columnPrecio);
                 this.columnExpr1 = new global::System.Data.DataColumn("Expr1", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnExpr1);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnCod_Factura}, true));
                 this.columnCod_Factura.AllowDBNull = false;
@@ -512,6 +526,7 @@ namespace Flujo_Contable.Caja.Factura {
                 this.columnPrecio.AllowDBNull = false;
                 this.columnExpr1.ReadOnly = true;
                 this.columnExpr1.MaxLength = 50;
+                this.columnCantidad.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -752,6 +767,17 @@ namespace Flujo_Contable.Caja.Factura {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int Cantidad {
+                get {
+                    return ((int)(this[this.tableDataTable1.CantidadColumn]));
+                }
+                set {
+                    this[this.tableDataTable1.CantidadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsDescripcionNull() {
                 return this.IsNull(this.tableDataTable1.DescripcionColumn);
             }
@@ -942,6 +968,7 @@ namespace Flujo_Contable.Caja.Factura.DataFacturaTableAdapters {
             tableMapping.ColumnMappings.Add("Impuesto_Total", "Impuesto_Total");
             tableMapping.ColumnMappings.Add("Precio", "Precio");
             tableMapping.ColumnMappings.Add("Expr1", "Expr1");
+            tableMapping.ColumnMappings.Add("Cantidad", "Cantidad");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -959,7 +986,7 @@ namespace Flujo_Contable.Caja.Factura.DataFacturaTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT tbl_VentasTotales.Cod_Factura, tbl_VentasTotales.Fecha, tbl_Clientes.Nombre, tbl_Ventas.Cod_Articulo, tbl_Ventas.Descripcion, tbl_VentasTotales.Impuesto_Total, tbl_Articulos.Precio, CONVERT(varchar(50), 
-                  DECRYPTBYPASSPHRASE('Am3riadrijos3', tbl_VentasTotales.DineroTotal)) AS Expr1
+                  DECRYPTBYPASSPHRASE('Am3riadrijos3', tbl_VentasTotales.DineroTotal)) AS Expr1, tbl_Ventas.Cantidad
 FROM     tbl_VentasTotales INNER JOIN
                   tbl_Clientes ON tbl_VentasTotales.Id_Cliente = tbl_Clientes.Id_Cliente INNER JOIN
                   tbl_Ventas ON tbl_VentasTotales.Cod_Factura = tbl_Ventas.Id_Ventaltotal INNER JOIN
