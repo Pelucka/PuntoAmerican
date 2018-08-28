@@ -108,7 +108,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // lbl_UsuarioLog
             // 
@@ -183,7 +182,7 @@
             this.cbo_Ubicacion.Name = "cbo_Ubicacion";
             this.cbo_Ubicacion.Size = new System.Drawing.Size(131, 28);
             this.cbo_Ubicacion.TabIndex = 9;
-            this.cbo_Ubicacion.SelectedIndexChanged += new System.EventHandler(this.cbo_Ubicacion_SelectedIndexChanged);
+
             // 
             // label7
             // 

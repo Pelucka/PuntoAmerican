@@ -55,6 +55,7 @@ namespace BLL.FacturaElect
                 object Localizacion = response.StatusCode;
                 MessageBox.Show(Convert.ToString(Localizacion));
 
+
                 http = new HttpClient();
                 http.DefaultRequestHeaders.Add("authorization", ("Bearer " + TK));
                 response = http.GetAsync((URL_RECEPCION + ("recepcion/" + objRecepcion.clave))).Result;

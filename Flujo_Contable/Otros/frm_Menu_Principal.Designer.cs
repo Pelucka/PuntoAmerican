@@ -35,7 +35,6 @@
             this.btn_Caja = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_ControlCaja = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_Inventario = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Usuarios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsl_Rol = new System.Windows.Forms.ToolStripStatusLabel();
@@ -56,6 +55,7 @@
             this.ubicacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.articulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Administracion = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +65,9 @@
             this.recibidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tm_Hora = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.articulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_Usuarios = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -75,11 +77,13 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.btn_Usuarios);
             this.groupBox1.Controls.Add(this.btn_Ventas);
             this.groupBox1.Controls.Add(this.btn_Caja);
             this.groupBox1.Controls.Add(this.btn_ControlCaja);
             this.groupBox1.Controls.Add(this.btn_Inventario);
-            this.groupBox1.Controls.Add(this.btn_Usuarios);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
@@ -241,44 +245,6 @@
             this.btn_Inventario.Textcolor = System.Drawing.Color.Black;
             this.btn_Inventario.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Inventario.Click += new System.EventHandler(this.btn_Inventario_Click_2);
-            // 
-            // btn_Usuarios
-            // 
-            this.btn_Usuarios.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Usuarios.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Usuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Usuarios.BorderRadius = 0;
-            this.btn_Usuarios.ButtonText = "Usuarios";
-            this.btn_Usuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Usuarios.DisabledColor = System.Drawing.Color.White;
-            this.btn_Usuarios.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Usuarios.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Usuarios.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Usuarios.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Usuarios.Iconimage")));
-            this.btn_Usuarios.Iconimage_right = null;
-            this.btn_Usuarios.Iconimage_right_Selected = null;
-            this.btn_Usuarios.Iconimage_Selected = null;
-            this.btn_Usuarios.IconMarginLeft = 0;
-            this.btn_Usuarios.IconMarginRight = 0;
-            this.btn_Usuarios.IconRightVisible = true;
-            this.btn_Usuarios.IconRightZoom = 0D;
-            this.btn_Usuarios.IconVisible = true;
-            this.btn_Usuarios.IconZoom = 64D;
-            this.btn_Usuarios.IsTab = false;
-            this.btn_Usuarios.Location = new System.Drawing.Point(7, 7);
-            this.btn_Usuarios.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Usuarios.Name = "btn_Usuarios";
-            this.btn_Usuarios.Normalcolor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Usuarios.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_Usuarios.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Usuarios.selected = false;
-            this.btn_Usuarios.Size = new System.Drawing.Size(384, 172);
-            this.btn_Usuarios.TabIndex = 26;
-            this.btn_Usuarios.Text = "Usuarios";
-            this.btn_Usuarios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Usuarios.Textcolor = System.Drawing.Color.Black;
-            this.btn_Usuarios.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Usuarios.Click += new System.EventHandler(this.btn_Usuarios_Click_2);
             // 
             // pictureBox1
             // 
@@ -487,6 +453,13 @@
             this.departamentosToolStripMenuItem.Text = "Departamentos";
             this.departamentosToolStripMenuItem.Click += new System.EventHandler(this.departamentosToolStripMenuItem_Click);
             // 
+            // articulosToolStripMenuItem
+            // 
+            this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.articulosToolStripMenuItem.Text = "Articulos";
+            this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
+            // 
             // informacionToolStripMenuItem
             // 
             this.informacionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -556,12 +529,53 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // articulosToolStripMenuItem
+            // btn_Usuarios
             // 
-            this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
-            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
-            this.articulosToolStripMenuItem.Text = "Articulos";
-            this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
+            this.btn_Usuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Usuarios.FlatAppearance.BorderSize = 0;
+            this.btn_Usuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Usuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Usuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Usuarios.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Usuarios.ForeColor = System.Drawing.Color.White;
+            this.btn_Usuarios.Image = ((System.Drawing.Image)(resources.GetObject("btn_Usuarios.Image")));
+            this.btn_Usuarios.Location = new System.Drawing.Point(0, 7);
+            this.btn_Usuarios.Name = "btn_Usuarios";
+            this.btn_Usuarios.Size = new System.Drawing.Size(392, 172);
+            this.btn_Usuarios.TabIndex = 31;
+            this.btn_Usuarios.Text = "Usuarios";
+            this.btn_Usuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Usuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Usuarios.UseVisualStyleBackColor = false;
+            this.btn_Usuarios.Click += new System.EventHandler(this.btn_Usuarios_Click_2);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
+            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1379, 4);
+            this.panel1.TabIndex = 32;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(398, 462);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(392, 172);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Usuarios";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btn_Caja_Click_2);
             // 
             // frm_Menu_Principal
             // 
@@ -623,7 +637,6 @@
         private System.Windows.Forms.ToolStripMenuItem enviosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recibidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cambioContraseñaToolStripMenuItem;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_Usuarios;
         private Bunifu.Framework.UI.BunifuFlatButton btn_Inventario;
         private Bunifu.Framework.UI.BunifuFlatButton btn_ControlCaja;
         private Bunifu.Framework.UI.BunifuFlatButton btn_Ventas;
@@ -631,5 +644,8 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem articulosToolStripMenuItem;
+        private System.Windows.Forms.Button btn_Usuarios;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }

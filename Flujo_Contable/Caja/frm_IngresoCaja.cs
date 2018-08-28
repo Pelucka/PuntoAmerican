@@ -34,197 +34,145 @@ namespace Flujo_Contable
             
             lbl_ValidarEliminar.Text = "0";
         }
-
-
-
-
         /*Metodo para ingresar informacion a la tabla Ventas y Ventas Totales, por medio de la instancia a un metodo
          dentro de la clase Caja*/
         private void btn_Pagar_Click(object sender, EventArgs e)
         {
-            objCreaXML.MediodePago = cbo_MediodePago.SelectedValue.ToString();
-            objCreaXML.CondificionVenta = cbo_CondiciondeVenta.SelectedValue.ToString();
-            objCreaXML.Ubicacion = lbl_Ubicacion.Text;
-            objCreaXML.Clientes = Convert.ToInt32(lbl_IdCliente.Text);
-            objCreaXML.SELECT_DATOS_XML();
-            objCreaXML.SELECT_DATOS_XML_RECEPTOR();
-            objCreaXML.SELECT_DATOS_XML_TRAIDOS();
-            objCreaXML.SELECT_FECHA();
-            objCreaXML.SELECT_SUCURSAL();
-            objCreaXML.SELECT_SECUENCIA();
-            objCreaXML.CREAR_COD_SEGURIDAD();
-            CREAR_XML();
-            objCreaXML.FechaFull = Convert.ToDateTime( objCreaXML.Año + "-" + objCreaXML.Mes + "-" + objCreaXML.Dia + " " + objCreaXML.Fecha);
-            objCreaXML.DineroTotal = lbl_DineroaPagar.Text;
-            objCreaXML.Login = lbl_Usuario.Text;
-            objCreaXML.INSERT_VENTATOTALES();
-            if(objCreaXML.Validacion =="Insertado")
+
+            #region Validaciones
+            if (dgv_ListadeProductos.RowCount == 0)
             {
-                int valor = 0;
-                valor = dgv_Consecutivos.Rows.Count;
-                for (int i = 0; i < valor; i++)
-                {
-                    objCreaXML.Descripcion = dgv_Consecutivos.Rows[i].Cells[1].Value.ToString();
-                    objCreaXML.Descuento = dgv_Consecutivos.Rows[i].Cells[5].Value.ToString();
-                    objCreaXML.Cantidad = dgv_Consecutivos.Rows[i].Cells[2].Value.ToString();
-                    objCreaXML.Precio = dgv_Consecutivos.Rows[i].Cells[3].Value.ToString();
-                    objCreaXML.Total = dgv_Consecutivos.Rows[i].Cells[7].Value.ToString();
-                    objCreaXML.Cod_Articulo = dgv_Consecutivos.Rows[i].Cells[8].Value.ToString();
-                    objCreaXML.Id_VentaTotal = objCreaXML.Secuencia;
-                    objCreaXML.INSERT_VENTAS();
-
-                }
-                try
-                {
-                    objCreaXML.qweasd = Convert.ToInt32( objCreaXML.Id_VentaTotal);
-                    
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message + "CARGA_FACTURA()");
-                }
-                
-                objCreaXML.UPDATE_SECUENCIA();
-                valor = 0;
-                if(objCreaXML.Validacion == "Actualizado")
-                {
-                    string Clave = "fe-" + "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
-                    string Clave2 = "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
-                    //--AQUI VA EL FIRMADOR DEL CERTIFICADO--//
-                    this.FIRMADOR(Clave,objCreaXML.Certificado);
-                    objCreaXML.Secuencia = Convert.ToString(Convert.ToInt32(objCreaXML.Secuencia) + 1);
-                    //--AQUI TERMINA EL FIRMADOR DEL CERTIFICADO--//
-                    //--AQUI VA EL INICIO DE ENVIO A HACIENDA--//
-
-                    XmlDocument xmlElectronica = new XmlDocument();
-                    //xmlElectronica.Load("D:\\Documents\\Facturas\\" + Clave + "firmado.xml");
-                    xmlElectronica.Load("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "firmado.xml");
-                    Emisor myEmisor = new Emisor();
-                    myEmisor.numeroIdentificacion = objCreaXML.Cedula;
-                    myEmisor.TipoIdentificacion = objCreaXML.TipoIdentificacionfin;
-
-                    Receptor myReceptor = new Receptor();
-                    if ((objCreaXML.Tipo_IdentificacionRE.Trim().Length > 0))
-                    {
-                        myReceptor.sinReceptor = false;
-                        myReceptor.numeroIdentificacion = objCreaXML.CedulaRE;
-                        myReceptor.TipoIdentificacion = objCreaXML.TipoIdentificacionfinRE;
-                    }
-                    else
-                    {
-                        myReceptor.sinReceptor = true;
-                    }
-
-                    Recepcion myRecepcion = new Recepcion();
-                    myRecepcion.emisor = myEmisor;
-                    myRecepcion.receptor = myReceptor;
-
-                    myRecepcion.clave = Clave2;
-                    myRecepcion.fecha = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz");
-                    myRecepcion.comprobanteXml = Funciones.EncodeStrToBase64(xmlElectronica.OuterXml);
-
-                    xmlElectronica = null;
-
-                    string Token = "";
-                    Token = getToken();
-                    Comunicacion enviaFactura = new Comunicacion();
-                    enviaFactura.EnvioDatos(Token, myRecepcion);
-
-
-                    string jsonEnvio = "";
-                    jsonEnvio = enviaFactura.jsonEnvio;
-                    string jsonRespuesta = "";
-                    jsonRespuesta = enviaFactura.jsonRespuesta;
-                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_03_jsonEnvio.txt");
-                    outputFile.Write(jsonEnvio);
-                    outputFile.Close();
-                    outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_04_jsonRespuesta.txt");
-                    outputFile.Write(jsonRespuesta);
-                    outputFile.Close();
-                    if (!(enviaFactura.xmlRespuesta == null))
-                    {
-                        enviaFactura.xmlRespuesta.Save("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP.xml");
-                    }
-                    else
-                    {
-                        outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP_SinRespuesta.txt");
-                        outputFile.Write("");
-                        outputFile.Close();
-
-                    }
-                    MessageBox.Show(enviaFactura.mensajeRespuesta);
-
-
-                    //--AQUI TERMINA EL ENVIO A HACIENDA--//
-                    objCreaXML.Año= string.Empty;
-                    objCreaXML.Mes = string.Empty;
-                    objCreaXML.Mesfin = string.Empty;
-                    objCreaXML.Dia = string.Empty;
-                    objCreaXML.Diafin = string.Empty;
-                    objCreaXML.Ubicacion = string.Empty;
-                    objCreaXML.Consecutivo = string.Empty;
-                    objCreaXML.Consecutivofin = string.Empty;
-                    objCreaXML.Secuencia = string.Empty;
-                    objCreaXML.Secuenciafin = string.Empty;
-                    objCreaXML.CodSeguridad = string.Empty;
-                    objCreaXML.Fecha = string.Empty;
-                    objCreaXML.Fechafin = string.Empty;
-                    objCreaXML.Añofin = string.Empty;
-                    objCreaXML.Nombre = string.Empty;
-                    objCreaXML.Tipo_Identificacion = string.Empty;
-                    objCreaXML.Cedula = string.Empty;
-                    objCreaXML.Provincia = string.Empty;
-                    objCreaXML.Canton = string.Empty;
-                    objCreaXML.Distrito = string.Empty;
-                    objCreaXML.Barrio = string.Empty;
-                    objCreaXML.Desv_Ubica = string.Empty;
-                    objCreaXML.Telefono = string.Empty;
-                    objCreaXML.TipoIdentificacionfin = string.Empty;
-                    objCreaXML.Cedulafin = string.Empty;
-                    objCreaXML.Provinciafin = string.Empty;
-                    objCreaXML.Cantonfin = string.Empty;
-                    objCreaXML.Distritofin = string.Empty;
-                    objCreaXML.Barriofin = string.Empty;
-                    objCreaXML.NombreRE = string.Empty;
-                    objCreaXML.CedulaRE = string.Empty;
-                    objCreaXML.ProvinciaRE = string.Empty;
-                    objCreaXML.CantonRE = string.Empty;
-                    objCreaXML.DistritoRE = string.Empty;
-                    objCreaXML.BarrioRE = string.Empty;
-                    objCreaXML.Desv_UbicaRE = string.Empty;
-                    objCreaXML.TelefonoRE = string.Empty;
-                    objCreaXML.TipoIdentificacionfinRE = string.Empty;
-                    objCreaXML.CedulafinRE = string.Empty;
-                    objCreaXML.ProvinciafinRE = string.Empty;
-                    objCreaXML.CantonfinRE = string.Empty;
-                    objCreaXML.DistritofinRE = string.Empty;
-                    objCreaXML.BarriofinRE = string.Empty;
-                    objCreaXML.CorreoRE = string.Empty;
-                    objCreaXML.Clientes = 0;
-                    objCreaXML.CondificionVenta = string.Empty;
-                    objCreaXML.CondicionVentafin = string.Empty;
-                    objCreaXML.MediodePago = string.Empty;
-                    objCreaXML.MediodePagofin = string.Empty;
-                    objCreaXML.FechaFull = Convert.ToDateTime(null);
-                    objCreaXML.DineroTotal = string.Empty;
-                    objCreaXML.Login = string.Empty;
-                    objCreaXML.Validacion = string.Empty;
-                    dgv_Consecutivos.Rows.Clear();
-                    lbl_DineroaPagar.Text = "0";
-                    lbl_IdCliente.Text = string.Empty;
-                    MessageBox.Show("Factura Hecha Satisfactoriamente");
-
-                    
-
-
-
-                }
+                MessageBox.Show("Se tienen que agregar productos para la venta", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if(txt_ClientePago.Text == string.Empty)
+            {
+                MessageBox.Show("Precio de Cliente no puede ser nulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (lbl_IdCliente.Text == string.Empty)
+            {
+                MessageBox.Show("Cliente no Agregado", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (Convert.ToInt32(txt_ClientePago.Text) < Convert.ToInt32(lbl_DineroaPagar.Text))
+            {
+                MessageBox.Show("Cliente esta pagando de Menos", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
 
-            CARGA_COD_FACTURA();
+
+                #endregion
+                objCreaXML.MediodePago = cbo_MediodePago.SelectedValue.ToString();
+                objCreaXML.CondificionVenta = cbo_CondiciondeVenta.SelectedValue.ToString();
+                objCreaXML.Ubicacion = lbl_Ubicacion.Text;
+                objCreaXML.Clientes = Convert.ToInt32(lbl_IdCliente.Text);
+                objCreaXML.SELECT_DATOS_XML();
+                objCreaXML.SELECT_DATOS_XML_RECEPTOR();
+                objCreaXML.SELECT_DATOS_XML_TRAIDOS();
+                objCreaXML.SELECT_FECHA();
+                objCreaXML.SELECT_SUCURSAL();
+                objCreaXML.SELECT_SECUENCIA();
+                objCreaXML.CREAR_COD_SEGURIDAD();
+                CREAR_XML();
+                objCreaXML.FechaFull = Convert.ToDateTime(objCreaXML.Año + "-" + objCreaXML.Mes + "-" + objCreaXML.Dia + " " + objCreaXML.Fecha);
+                objCreaXML.DineroTotal = lbl_DineroaPagar.Text;
+                objCreaXML.Login = lbl_Usuario.Text;
+                objCreaXML.INSERT_VENTATOTALES();
+                if (objCreaXML.Validacion == "Insertado")
+                {
+                    int valor = 0;
+                    valor = dgv_Consecutivos.Rows.Count;
+                    for (int i = 0; i < valor; i++)
+                    {
+                        objCreaXML.Descripcion = dgv_Consecutivos.Rows[i].Cells[1].Value.ToString();
+                        objCreaXML.Descuento = dgv_Consecutivos.Rows[i].Cells[5].Value.ToString();
+                        objCreaXML.Cantidad = dgv_Consecutivos.Rows[i].Cells[2].Value.ToString();
+                        objCreaXML.Precio = dgv_Consecutivos.Rows[i].Cells[3].Value.ToString();
+                        objCreaXML.Total = dgv_Consecutivos.Rows[i].Cells[7].Value.ToString();
+                        objCreaXML.Cod_Articulo = dgv_Consecutivos.Rows[i].Cells[8].Value.ToString();
+                        objCreaXML.Id_VentaTotal = objCreaXML.Secuencia;
+                        objCreaXML.INSERT_VENTAS();
+                    }
+                    try
+                    {
+                        objCreaXML.qweasd = Convert.ToInt32(objCreaXML.Id_VentaTotal);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message + "CARGA_FACTURA()");
+                    }
+                    objCreaXML.SecuenciaUpdate = Convert.ToString(Convert.ToInt32(objCreaXML.Secuencia) + 1);
+                    objCreaXML.UPDATE_SECUENCIA();
+                    valor = 0;
+                    if (objCreaXML.Validacion == "Actualizado")
+                    {
+                        #region Firmador
+                        string Clave = "fe-" + "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
+                        string Clave2 = "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
+                        this.FIRMADOR(Clave, objCreaXML.Certificado);
+                        #endregion
+                        #region Enviar Hacienda
+                        XmlDocument xmlElectronica = new XmlDocument();
+                        //xmlElectronica.Load("D:\\Documents\\Facturas\\" + Clave + "firmado.xml");
+                        xmlElectronica.Load("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "firmado.xml");
+                        Emisor myEmisor = new Emisor();
+                        myEmisor.numeroIdentificacion = objCreaXML.Cedula;
+                        myEmisor.TipoIdentificacion = objCreaXML.TipoIdentificacionfin;
+
+                        Receptor myReceptor = new Receptor();
+                        if ((objCreaXML.Tipo_IdentificacionRE.Trim().Length > 0))
+                        {
+                            myReceptor.sinReceptor = false;
+                            myReceptor.numeroIdentificacion = objCreaXML.CedulaRE;
+                            myReceptor.TipoIdentificacion = objCreaXML.TipoIdentificacionfinRE;
+                        }
+                        else
+                        {
+                            myReceptor.sinReceptor = true;
+                        }
+
+                        Recepcion myRecepcion = new Recepcion();
+                        myRecepcion.emisor = myEmisor;
+                        myRecepcion.receptor = myReceptor;
+
+                        myRecepcion.clave = Clave2;
+                        myRecepcion.fecha = objCreaXML.Año + "-" + objCreaXML.Mesfin + "-" + objCreaXML.Diafin + "T" + objCreaXML.Fecha;
+                        myRecepcion.comprobanteXml = Funciones.EncodeStrToBase64(xmlElectronica.OuterXml);
+
+                        xmlElectronica = null;
+
+                        string Token = "";
+                        Token = getToken();
+                        Comunicacion enviaFactura = new Comunicacion();
+                        enviaFactura.EnvioDatos(Token, myRecepcion);
 
 
+                        string jsonEnvio = "";
+                        jsonEnvio = enviaFactura.jsonEnvio;
+                        string jsonRespuesta = "";
+                        jsonRespuesta = enviaFactura.jsonRespuesta;
+                        System.IO.StreamWriter outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_03_jsonEnvio.txt");
+                        outputFile.Write(jsonEnvio);
+                        outputFile.Close();
+                        outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_04_jsonRespuesta.txt");
+                        outputFile.Write(jsonRespuesta);
+                        outputFile.Close();
+                        if (!(enviaFactura.xmlRespuesta == null))
+                        {
+                            enviaFactura.xmlRespuesta.Save("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP.xml");
+                        }
+                        else
+                        {
+                            outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP_SinRespuesta.txt");
+                            outputFile.Write("");
+                            outputFile.Close();
+                        }
+                        MessageBox.Show(enviaFactura.mensajeRespuesta);
+                        #endregion
+                        this.Limpieza();
+                    }
+                }
+                CARGA_COD_FACTURA();
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -346,16 +294,6 @@ namespace Flujo_Contable
                 MessageBox.Show(ex.Message + "dgv_Caja_CellContentClick");
 
             }
-
-        }
-
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_ClientePago_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -587,11 +525,6 @@ namespace Flujo_Contable
             }
         }
 
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Gastos_Click(object sender, EventArgs e)
         {
             frm_Gastos ventana = new frm_Gastos();
@@ -640,11 +573,6 @@ namespace Flujo_Contable
             }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void dgv_ListadeProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -689,17 +617,8 @@ namespace Flujo_Contable
                     dgv_Consecutivos.Rows[n].Cells[8].Value = row.Cells["Cod_Articulo"].Value;
                     dgv_Consecutivos.Rows[n].Cells[9].Value = row.Cells["Unidad_Medida"].Value;
                     PRECIO_FINAL();
-                }
-                
-            }
-
-
-
-
-
-     
-
-            
+                }     
+            }         
         }
 
         public void CREAR_XML()
@@ -945,21 +864,18 @@ namespace Flujo_Contable
             doc.AppendChild(fe);
             doc.Save("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\fe-" + clave.InnerText+".xml");
             //doc.Save("D:\\Documents\\Facturas\\fe-"+clave.InnerText+".xml");
+            XmlTextWriter xmltextwriter = new XmlTextWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\fe-" + clave.InnerText + ".xml",new System.Text.UTF8Encoding(false));
+            doc.WriteTo(xmltextwriter);
+            xmltextwriter.Close();
+            doc = null;
             valor = 0;
-            
-
-
         }
-
-
         public void FIRMADOR(string clave,string certificado) 
         {
             string directorio = "F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\";
             //string directorio = "D:\\Documents\\Facturas\\";
             string nombreArchivo = directorio + clave;
-
             objfirma.FirmaXML_Xades(nombreArchivo, certificado);
-
         }
 
         public string getToken()
@@ -976,9 +892,72 @@ namespace Flujo_Contable
             }
         }
 
+        private void Limpieza()
+        {
+            objCreaXML.Año = string.Empty;
+            objCreaXML.Mes = string.Empty;
+            objCreaXML.Mesfin = string.Empty;
+            objCreaXML.Dia = string.Empty;
+            objCreaXML.Diafin = string.Empty;
+            objCreaXML.Ubicacion = string.Empty;
+            objCreaXML.Consecutivo = string.Empty;
+            objCreaXML.Consecutivofin = string.Empty;
+            objCreaXML.Secuencia = string.Empty;
+            objCreaXML.Secuenciafin = string.Empty;
+            objCreaXML.CodSeguridad = string.Empty;
+            objCreaXML.Fecha = string.Empty;
+            objCreaXML.Fechafin = string.Empty;
+            objCreaXML.Añofin = string.Empty;
+            objCreaXML.Nombre = string.Empty;
+            objCreaXML.Tipo_Identificacion = string.Empty;
+            objCreaXML.Cedula = string.Empty;
+            objCreaXML.Provincia = string.Empty;
+            objCreaXML.Canton = string.Empty;
+            objCreaXML.Distrito = string.Empty;
+            objCreaXML.Barrio = string.Empty;
+            objCreaXML.Desv_Ubica = string.Empty;
+            objCreaXML.Telefono = string.Empty;
+            objCreaXML.TipoIdentificacionfin = string.Empty;
+            objCreaXML.Cedulafin = string.Empty;
+            objCreaXML.Provinciafin = string.Empty;
+            objCreaXML.Cantonfin = string.Empty;
+            objCreaXML.Distritofin = string.Empty;
+            objCreaXML.Barriofin = string.Empty;
+            objCreaXML.NombreRE = string.Empty;
+            objCreaXML.CedulaRE = string.Empty;
+            objCreaXML.ProvinciaRE = string.Empty;
+            objCreaXML.CantonRE = string.Empty;
+            objCreaXML.DistritoRE = string.Empty;
+            objCreaXML.BarrioRE = string.Empty;
+            objCreaXML.Desv_UbicaRE = string.Empty;
+            objCreaXML.TelefonoRE = string.Empty;
+            objCreaXML.TipoIdentificacionfinRE = string.Empty;
+            objCreaXML.CedulafinRE = string.Empty;
+            objCreaXML.ProvinciafinRE = string.Empty;
+            objCreaXML.CantonfinRE = string.Empty;
+            objCreaXML.DistritofinRE = string.Empty;
+            objCreaXML.BarriofinRE = string.Empty;
+            objCreaXML.CorreoRE = string.Empty;
+            objCreaXML.Clientes = 0;
+            objCreaXML.CondificionVenta = string.Empty;
+            objCreaXML.CondicionVentafin = string.Empty;
+            objCreaXML.MediodePago = string.Empty;
+            objCreaXML.MediodePagofin = string.Empty;
+            objCreaXML.FechaFull = Convert.ToDateTime(null);
+            objCreaXML.DineroTotal = string.Empty;
+            objCreaXML.Login = string.Empty;
+            objCreaXML.Validacion = string.Empty;
+            dgv_Consecutivos.Rows.Clear();
+            lbl_DineroaPagar.Text = "0";
+            lbl_IdCliente.Text = string.Empty;
+        }
+
+
     }
 
 
     
+
+
 
 }
