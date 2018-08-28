@@ -101,6 +101,15 @@ namespace BLL
             set { _Secuenciafin = value; }
         }
 
+        private string _SecuenciaUpdate;
+
+        public string SecuenciaUpdate
+        {
+            get { return _SecuenciaUpdate; }
+            set { _SecuenciaUpdate = value; }
+        }
+
+
         private string _CodSeguridad;
 
         public string CodSeguridad
@@ -1174,7 +1183,7 @@ namespace BLL
                 sql = "USP_UBICACION_UPDATE_SECUENCIA";
                 ParamStruct[] parametros = new ParamStruct[2];
                 cls_DAL.agregar_datos_estructura_parametros(ref parametros, 0, "@ubica", SqlDbType.VarChar, _Ubicacion);
-                cls_DAL.agregar_datos_estructura_parametros(ref parametros, 1, "@secuencia", SqlDbType.Int, _Secuencia);
+                cls_DAL.agregar_datos_estructura_parametros(ref parametros, 1, "@secuencia", SqlDbType.Int, _SecuenciaUpdate);
                 cls_DAL.conectar(conexion, ref mensaje_error, ref numero_error);
                 cls_DAL.ejecuta_sqlcommand(conexion, sql, true, parametros, ref mensaje_error, ref numero_error);
                 if (numero_error != 0)
