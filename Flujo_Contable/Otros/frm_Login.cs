@@ -70,11 +70,6 @@ namespace Flujo_Contable
                     if (objlogin.LoginSalida == txt_Login.Text)
                     {
                         frm_Mensaje objmensaje = new frm_Mensaje();
-                        objBitacora.Usuario = txt_Login.Text;
-                        objBitacora.Accion = "Ingreso";
-                        objBitacora.Formulario = "Login";
-                        objBitacora.Descripcion = "Nuevo Ingreso al Sistema";
-                        objBitacora.INSERT_BITACORA();
                         objmensaje.pic_Lock.Visible = true;
                         objmensaje.lbl_Mensaje.Text = "Bienvenido: " + txt_Login.Text;
                         objmensaje.Show();

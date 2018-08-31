@@ -541,7 +541,8 @@ namespace Flujo_Contable
             {
                 frm_Menu_Inventario ventana = new frm_Menu_Inventario();
                 ventana.lbl_Ubicacion.Text = tsl_Ubicacion.Text;
-                ventana.lbl_Usuario.Text = tsl_Usuario.Text;                
+                ventana.lbl_Usuario.Text = tsl_Usuario.Text;
+                ventana.lbl_Rol.Text = tsl_Rol.Text;
                 ventana.Show();
 
             }

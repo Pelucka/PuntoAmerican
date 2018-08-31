@@ -63,11 +63,11 @@
             // 
             this.groupBox1.Controls.Add(this.dgv_Entregas);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.groupBox1.Location = new System.Drawing.Point(12, 73);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(9, 59);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(721, 372);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(541, 302);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Entregas";
@@ -107,12 +107,12 @@
             this.dgv_Entregas.GridColor = System.Drawing.Color.Gray;
             this.dgv_Entregas.HeaderBgColor = System.Drawing.Color.MidnightBlue;
             this.dgv_Entregas.HeaderForeColor = System.Drawing.Color.White;
-            this.dgv_Entregas.Location = new System.Drawing.Point(5, 27);
-            this.dgv_Entregas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_Entregas.Location = new System.Drawing.Point(4, 22);
+            this.dgv_Entregas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_Entregas.Name = "dgv_Entregas";
             this.dgv_Entregas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_Entregas.RowTemplate.Height = 24;
-            this.dgv_Entregas.Size = new System.Drawing.Size(709, 341);
+            this.dgv_Entregas.Size = new System.Drawing.Size(532, 277);
             this.dgv_Entregas.TabIndex = 0;
             // 
             // Id_Envio
@@ -197,9 +197,10 @@
             // 
             this.lb_Sucursal.AutoSize = true;
             this.lb_Sucursal.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Sucursal.Location = new System.Drawing.Point(536, 490);
+            this.lb_Sucursal.Location = new System.Drawing.Point(402, 398);
+            this.lb_Sucursal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Sucursal.Name = "lb_Sucursal";
-            this.lb_Sucursal.Size = new System.Drawing.Size(65, 19);
+            this.lb_Sucursal.Size = new System.Drawing.Size(52, 16);
             this.lb_Sucursal.TabIndex = 3;
             this.lb_Sucursal.Text = "Sucursal";
             // 
@@ -207,9 +208,10 @@
             // 
             this.lb_Usuario.AutoSize = true;
             this.lb_Usuario.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Usuario.Location = new System.Drawing.Point(657, 490);
+            this.lb_Usuario.Location = new System.Drawing.Point(493, 398);
+            this.lb_Usuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Usuario.Name = "lb_Usuario";
-            this.lb_Usuario.Size = new System.Drawing.Size(58, 19);
+            this.lb_Usuario.Size = new System.Drawing.Size(47, 16);
             this.lb_Usuario.TabIndex = 4;
             this.lb_Usuario.Text = "Usuario";
             // 
@@ -236,14 +238,14 @@
             this.btn_Aceptar.IconVisible = true;
             this.btn_Aceptar.IconZoom = 50D;
             this.btn_Aceptar.IsTab = false;
-            this.btn_Aceptar.Location = new System.Drawing.Point(25, 455);
-            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Aceptar.Location = new System.Drawing.Point(19, 370);
+            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Normalcolor = System.Drawing.Color.White;
             this.btn_Aceptar.OnHovercolor = System.Drawing.Color.Transparent;
             this.btn_Aceptar.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Aceptar.selected = false;
-            this.btn_Aceptar.Size = new System.Drawing.Size(184, 44);
+            this.btn_Aceptar.Size = new System.Drawing.Size(138, 36);
             this.btn_Aceptar.TabIndex = 5;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -274,14 +276,14 @@
             this.btn_Cancelar.IconVisible = true;
             this.btn_Cancelar.IconZoom = 50D;
             this.btn_Cancelar.IsTab = false;
-            this.btn_Cancelar.Location = new System.Drawing.Point(235, 455);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Cancelar.Location = new System.Drawing.Point(176, 370);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Normalcolor = System.Drawing.Color.White;
             this.btn_Cancelar.OnHovercolor = System.Drawing.Color.Transparent;
             this.btn_Cancelar.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Cancelar.selected = false;
-            this.btn_Cancelar.Size = new System.Drawing.Size(180, 44);
+            this.btn_Cancelar.Size = new System.Drawing.Size(135, 36);
             this.btn_Cancelar.TabIndex = 6;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -296,9 +298,8 @@
             this.panel1.Controls.Add(this.btn_Salir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(749, 49);
+            this.panel1.Size = new System.Drawing.Size(562, 40);
             this.panel1.TabIndex = 8;
             // 
             // label4
@@ -306,10 +307,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(21, 11);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(16, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 27);
+            this.label4.Size = new System.Drawing.Size(131, 22);
             this.label4.TabIndex = 14;
             this.label4.Text = "Entregas";
             // 
@@ -318,10 +318,9 @@
             this.btn_Salir.BackColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
             this.btn_Salir.ImageActive = null;
-            this.btn_Salir.Location = new System.Drawing.Point(697, 5);
-            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Salir.Location = new System.Drawing.Point(523, 4);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(47, 41);
+            this.btn_Salir.Size = new System.Drawing.Size(35, 33);
             this.btn_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Salir.TabIndex = 12;
             this.btn_Salir.TabStop = false;
@@ -330,10 +329,10 @@
             // 
             // frm_Formulario_Entrega
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(749, 518);
+            this.ClientSize = new System.Drawing.Size(562, 421);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Aceptar);
@@ -341,7 +340,8 @@
             this.Controls.Add(this.lb_Sucursal);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frm_Formulario_Entrega";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Formulario_Entrega";

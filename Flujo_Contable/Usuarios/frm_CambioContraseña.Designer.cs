@@ -77,7 +77,7 @@
             this.txt_ContraActual.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(92)))));
             this.txt_ContraActual.LineThickness = 3;
             this.txt_ContraActual.Location = new System.Drawing.Point(36, 220);
-            this.txt_ContraActual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_ContraActual.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ContraActual.Name = "txt_ContraActual";
             this.txt_ContraActual.Size = new System.Drawing.Size(241, 33);
             this.txt_ContraActual.TabIndex = 1;
@@ -98,7 +98,7 @@
             this.txt_ContraNueva.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(92)))));
             this.txt_ContraNueva.LineThickness = 3;
             this.txt_ContraNueva.Location = new System.Drawing.Point(34, 319);
-            this.txt_ContraNueva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_ContraNueva.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ContraNueva.Name = "txt_ContraNueva";
             this.txt_ContraNueva.Size = new System.Drawing.Size(243, 33);
             this.txt_ContraNueva.TabIndex = 2;
@@ -145,9 +145,9 @@
             this.btn_Cambiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Cambiar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cambiar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cambiar.Image")));
-            this.btn_Cambiar.Location = new System.Drawing.Point(90, 381);
+            this.btn_Cambiar.Location = new System.Drawing.Point(34, 367);
             this.btn_Cambiar.Name = "btn_Cambiar";
-            this.btn_Cambiar.Size = new System.Drawing.Size(132, 58);
+            this.btn_Cambiar.Size = new System.Drawing.Size(243, 85);
             this.btn_Cambiar.TabIndex = 42;
             this.btn_Cambiar.UseVisualStyleBackColor = false;
             this.btn_Cambiar.Click += new System.EventHandler(this.btn_Cambiar_Click);
@@ -171,7 +171,7 @@
             this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageActive = null;
             this.btn_Cancelar.Location = new System.Drawing.Point(282, 5);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(30, 30);
             this.btn_Cancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,6 +217,7 @@
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_CambioContraseña";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

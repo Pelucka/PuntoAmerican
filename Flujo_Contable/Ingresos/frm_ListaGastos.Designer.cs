@@ -48,15 +48,13 @@
             this.rb_TipoGasto = new System.Windows.Forms.RadioButton();
             this.dtp_Fecha2 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_Buscar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Refrescar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_Refrescar = new System.Windows.Forms.Button();
+            this.btn_Buscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Gastos)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Buscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Refrescar)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -112,7 +110,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(6, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 29);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -122,7 +120,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(53, 9);
+            this.label4.Location = new System.Drawing.Point(42, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 20);
             this.label4.TabIndex = 19;
@@ -264,35 +262,37 @@
             this.label5.TabIndex = 45;
             this.label5.Text = "y";
             // 
+            // btn_Refrescar
+            // 
+            this.btn_Refrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.btn_Refrescar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Refrescar.BackgroundImage")));
+            this.btn_Refrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Refrescar.FlatAppearance.BorderSize = 0;
+            this.btn_Refrescar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btn_Refrescar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(179)))), ((int)(((byte)(215)))));
+            this.btn_Refrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Refrescar.Location = new System.Drawing.Point(526, 86);
+            this.btn_Refrescar.Name = "btn_Refrescar";
+            this.btn_Refrescar.Size = new System.Drawing.Size(94, 85);
+            this.btn_Refrescar.TabIndex = 48;
+            this.btn_Refrescar.UseVisualStyleBackColor = false;
+            this.btn_Refrescar.Click += new System.EventHandler(this.btn_Refrescar_Click);
+            // 
             // btn_Buscar
             // 
             this.btn_Buscar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.Image")));
-            this.btn_Buscar.ImageActive = null;
-            this.btn_Buscar.Location = new System.Drawing.Point(463, 98);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.BackgroundImage")));
+            this.btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Buscar.FlatAppearance.BorderSize = 0;
+            this.btn_Buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.btn_Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Buscar.Location = new System.Drawing.Point(431, 86);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(55, 55);
-            this.btn_Buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Buscar.TabIndex = 46;
-            this.btn_Buscar.TabStop = false;
-            this.btn_Buscar.Zoom = 10;
+            this.btn_Buscar.Size = new System.Drawing.Size(94, 85);
+            this.btn_Buscar.TabIndex = 49;
+            this.btn_Buscar.UseVisualStyleBackColor = false;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
-            // 
-            // btn_Refrescar
-            // 
-            this.btn_Refrescar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Refrescar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refrescar.Image")));
-            this.btn_Refrescar.ImageActive = null;
-            this.btn_Refrescar.Location = new System.Drawing.Point(533, 98);
-            this.btn_Refrescar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Refrescar.Name = "btn_Refrescar";
-            this.btn_Refrescar.Size = new System.Drawing.Size(55, 55);
-            this.btn_Refrescar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Refrescar.TabIndex = 47;
-            this.btn_Refrescar.TabStop = false;
-            this.btn_Refrescar.Zoom = 10;
-            this.btn_Refrescar.Click += new System.EventHandler(this.btn_Refrescar_Click);
             // 
             // frm_ListaGastos
             // 
@@ -300,8 +300,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(627, 626);
-            this.Controls.Add(this.btn_Refrescar);
             this.Controls.Add(this.btn_Buscar);
+            this.Controls.Add(this.btn_Refrescar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dtp_Fecha2);
             this.Controls.Add(this.rb_TipoGasto);
@@ -316,6 +316,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgv_Gastos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_ListaGastos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_ListaGastos";
@@ -325,8 +326,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Buscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Refrescar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,7 +351,7 @@
         private System.Windows.Forms.RadioButton rb_Ubicacion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtp_Fecha2;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Refrescar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Buscar;
+        private System.Windows.Forms.Button btn_Refrescar;
+        private System.Windows.Forms.Button btn_Buscar;
     }
 }

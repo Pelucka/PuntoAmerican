@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_IngresoCaja));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgv_Consecutivos = new System.Windows.Forms.DataGridView();
             this.Departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +60,6 @@
             this.cbo_CondiciondeVenta = new System.Windows.Forms.ComboBox();
             this.lbl_IdCliente = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btn_Clientes = new Bunifu.Framework.UI.BunifuImageButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_DineroaPagar = new System.Windows.Forms.Label();
@@ -70,7 +69,6 @@
             this.lbl_CodFactura = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lbl_ValidarEliminar = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -80,12 +78,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btn_Apartados = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Calculadora = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_EliminarCelda = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_EliminarTodo = new Bunifu.Framework.UI.BunifuImageButton();
             this.lbl_Caja = new System.Windows.Forms.Label();
-            this.btn_Gastos = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgv_ListadeProductos = new System.Windows.Forms.DataGridView();
             this.Cod_Articulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,21 +92,22 @@
             this.label13 = new System.Windows.Forms.Label();
             this.cbo_Articulo = new System.Windows.Forms.ComboBox();
             this.cbo_Departamento = new System.Windows.Forms.ComboBox();
-            this.btn_Buscar = new System.Windows.Forms.Button();
             this.rb_Articulo = new System.Windows.Forms.RadioButton();
             this.rb_Departamento = new System.Windows.Forms.RadioButton();
             this.btn_Pagar = new System.Windows.Forms.Button();
+            this.btn_Calculator = new System.Windows.Forms.Button();
+            this.btn_Apartados = new System.Windows.Forms.Button();
+            this.btn_Gastos = new System.Windows.Forms.Button();
+            this.btn_Eliminar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_EliminarTODO = new System.Windows.Forms.Button();
+            this.btn_Clientes = new System.Windows.Forms.Button();
+            this.btn_Buscar = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Consecutivos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Clientes)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Apartados)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Calculadora)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarCelda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarTodo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Gastos)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListadeProductos)).BeginInit();
             this.SuspendLayout();
@@ -137,23 +131,23 @@
             this.dgv_Consecutivos.AllowUserToDeleteRows = false;
             this.dgv_Consecutivos.AllowUserToResizeColumns = false;
             this.dgv_Consecutivos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_Consecutivos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle71;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_Consecutivos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Consecutivos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Consecutivos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Consecutivos.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_Consecutivos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_Consecutivos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_Consecutivos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
-            dataGridViewCellStyle72.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle72.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle72.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Consecutivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle72;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Consecutivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Consecutivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_Consecutivos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Departamento,
@@ -167,14 +161,14 @@
             this.Cod_Articulo1,
             this.Unidad_Medida1});
             this.dgv_Consecutivos.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle73.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle73.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle73.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle73.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
-            dataGridViewCellStyle73.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle73.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Consecutivos.DefaultCellStyle = dataGridViewCellStyle73;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Consecutivos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Consecutivos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Consecutivos.EnableHeadersVisualStyles = false;
             this.dgv_Consecutivos.GridColor = System.Drawing.Color.DimGray;
@@ -182,24 +176,25 @@
             this.dgv_Consecutivos.MultiSelect = false;
             this.dgv_Consecutivos.Name = "dgv_Consecutivos";
             this.dgv_Consecutivos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle74.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle74.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle74.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Consecutivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle74;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Consecutivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_Consecutivos.RowHeadersVisible = false;
             this.dgv_Consecutivos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_Consecutivos.RowsDefaultCellStyle = dataGridViewCellStyle75;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_Consecutivos.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Consecutivos.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgv_Consecutivos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
             this.dgv_Consecutivos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_Consecutivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Consecutivos.Size = new System.Drawing.Size(789, 457);
             this.dgv_Consecutivos.TabIndex = 15;
+            this.dgv_Consecutivos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Consecutivos_CellContentClick);
             this.dgv_Consecutivos.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Consecutivos_CellEndEdit);
             // 
             // Departamento
@@ -293,7 +288,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(744, 599);
+            this.label20.Location = new System.Drawing.Point(744, 592);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(108, 17);
             this.label20.TabIndex = 32;
@@ -303,7 +298,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(744, 541);
+            this.label19.Location = new System.Drawing.Point(744, 539);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(140, 17);
             this.label19.TabIndex = 31;
@@ -313,7 +308,7 @@
             // 
             this.cbo_MediodePago.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_MediodePago.FormattingEnabled = true;
-            this.cbo_MediodePago.Location = new System.Drawing.Point(748, 623);
+            this.cbo_MediodePago.Location = new System.Drawing.Point(748, 616);
             this.cbo_MediodePago.Name = "cbo_MediodePago";
             this.cbo_MediodePago.Size = new System.Drawing.Size(220, 25);
             this.cbo_MediodePago.TabIndex = 30;
@@ -322,7 +317,7 @@
             // 
             this.cbo_CondiciondeVenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_CondiciondeVenta.FormattingEnabled = true;
-            this.cbo_CondiciondeVenta.Location = new System.Drawing.Point(748, 565);
+            this.cbo_CondiciondeVenta.Location = new System.Drawing.Point(748, 563);
             this.cbo_CondiciondeVenta.Name = "cbo_CondiciondeVenta";
             this.cbo_CondiciondeVenta.Size = new System.Drawing.Size(220, 25);
             this.cbo_CondiciondeVenta.TabIndex = 29;
@@ -330,7 +325,7 @@
             // lbl_IdCliente
             // 
             this.lbl_IdCliente.AutoSize = true;
-            this.lbl_IdCliente.Location = new System.Drawing.Point(588, 638);
+            this.lbl_IdCliente.Location = new System.Drawing.Point(624, 632);
             this.lbl_IdCliente.Name = "lbl_IdCliente";
             this.lbl_IdCliente.Size = new System.Drawing.Size(0, 13);
             this.lbl_IdCliente.TabIndex = 28;
@@ -340,31 +335,17 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(610, 554);
+            this.label10.Location = new System.Drawing.Point(614, 538);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 20);
             this.label10.TabIndex = 27;
             this.label10.Text = "Clientes";
             // 
-            // btn_Clientes
-            // 
-            this.btn_Clientes.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clientes.Image")));
-            this.btn_Clientes.ImageActive = null;
-            this.btn_Clientes.Location = new System.Drawing.Point(612, 577);
-            this.btn_Clientes.Name = "btn_Clientes";
-            this.btn_Clientes.Size = new System.Drawing.Size(65, 65);
-            this.btn_Clientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Clientes.TabIndex = 26;
-            this.btn_Clientes.TabStop = false;
-            this.btn_Clientes.Zoom = 10;
-            this.btn_Clientes.Click += new System.EventHandler(this.btn_Clientes_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1046, 594);
+            this.label5.Location = new System.Drawing.Point(1046, 585);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(173, 22);
             this.label5.TabIndex = 9;
@@ -395,7 +376,7 @@
             // txt_ClientePago
             // 
             this.txt_ClientePago.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ClientePago.Location = new System.Drawing.Point(1050, 623);
+            this.txt_ClientePago.Location = new System.Drawing.Point(1050, 614);
             this.txt_ClientePago.Name = "txt_ClientePago";
             this.txt_ClientePago.Size = new System.Drawing.Size(289, 31);
             this.txt_ClientePago.TabIndex = 8;
@@ -415,7 +396,7 @@
             // lb_Articulos
             // 
             this.lb_Articulos.AutoSize = true;
-            this.lb_Articulos.Location = new System.Drawing.Point(636, 657);
+            this.lb_Articulos.Location = new System.Drawing.Point(987, 594);
             this.lb_Articulos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Articulos.Name = "lb_Articulos";
             this.lb_Articulos.Size = new System.Drawing.Size(41, 13);
@@ -426,7 +407,7 @@
             // lbl_CodFactura
             // 
             this.lbl_CodFactura.AutoSize = true;
-            this.lbl_CodFactura.Location = new System.Drawing.Point(614, 635);
+            this.lbl_CodFactura.Location = new System.Drawing.Point(1015, 611);
             this.lbl_CodFactura.Name = "lbl_CodFactura";
             this.lbl_CodFactura.Size = new System.Drawing.Size(13, 13);
             this.lbl_CodFactura.TabIndex = 16;
@@ -436,7 +417,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(636, 635);
+            this.label7.Location = new System.Drawing.Point(943, 541);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 13);
             this.label7.TabIndex = 15;
@@ -447,27 +428,17 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1257, 670);
+            this.label8.Location = new System.Drawing.Point(1263, 649);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 20);
             this.label8.TabIndex = 11;
             this.label8.Text = "Eliminar Todo";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1195, 670);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Eliminar";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(755, 670);
+            this.label9.Location = new System.Drawing.Point(744, 649);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(101, 20);
             this.label9.TabIndex = 13;
@@ -476,18 +447,17 @@
             // lbl_ValidarEliminar
             // 
             this.lbl_ValidarEliminar.AutoSize = true;
-            this.lbl_ValidarEliminar.Location = new System.Drawing.Point(636, 668);
+            this.lbl_ValidarEliminar.Location = new System.Drawing.Point(987, 616);
             this.lbl_ValidarEliminar.Name = "lbl_ValidarEliminar";
             this.lbl_ValidarEliminar.Size = new System.Drawing.Size(13, 13);
             this.lbl_ValidarEliminar.TabIndex = 8;
             this.lbl_ValidarEliminar.Text = "0";
-            this.lbl_ValidarEliminar.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(999, 670);
+            this.label2.Location = new System.Drawing.Point(981, 649);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 4;
@@ -497,7 +467,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(649, 670);
+            this.label18.Location = new System.Drawing.Point(657, 649);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(86, 20);
             this.label18.TabIndex = 16;
@@ -518,9 +488,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -530,7 +500,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(51, 8);
+            this.label4.Location = new System.Drawing.Point(43, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 20);
             this.label4.TabIndex = 12;
@@ -555,89 +525,15 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // btn_Apartados
-            // 
-            this.btn_Apartados.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Apartados.Image = ((System.Drawing.Image)(resources.GetObject("btn_Apartados.Image")));
-            this.btn_Apartados.ImageActive = null;
-            this.btn_Apartados.Location = new System.Drawing.Point(661, 692);
-            this.btn_Apartados.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Apartados.Name = "btn_Apartados";
-            this.btn_Apartados.Size = new System.Drawing.Size(65, 65);
-            this.btn_Apartados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Apartados.TabIndex = 18;
-            this.btn_Apartados.TabStop = false;
-            this.btn_Apartados.Zoom = 10;
-            this.btn_Apartados.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // btn_Calculadora
-            // 
-            this.btn_Calculadora.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Calculadora.Image = ((System.Drawing.Image)(resources.GetObject("btn_Calculadora.Image")));
-            this.btn_Calculadora.ImageActive = null;
-            this.btn_Calculadora.Location = new System.Drawing.Point(770, 692);
-            this.btn_Calculadora.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Calculadora.Name = "btn_Calculadora";
-            this.btn_Calculadora.Size = new System.Drawing.Size(65, 65);
-            this.btn_Calculadora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Calculadora.TabIndex = 19;
-            this.btn_Calculadora.TabStop = false;
-            this.btn_Calculadora.Zoom = 10;
-            this.btn_Calculadora.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // btn_EliminarCelda
-            // 
-            this.btn_EliminarCelda.BackColor = System.Drawing.Color.Transparent;
-            this.btn_EliminarCelda.Image = ((System.Drawing.Image)(resources.GetObject("btn_EliminarCelda.Image")));
-            this.btn_EliminarCelda.ImageActive = null;
-            this.btn_EliminarCelda.Location = new System.Drawing.Point(1204, 692);
-            this.btn_EliminarCelda.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_EliminarCelda.Name = "btn_EliminarCelda";
-            this.btn_EliminarCelda.Size = new System.Drawing.Size(65, 65);
-            this.btn_EliminarCelda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_EliminarCelda.TabIndex = 21;
-            this.btn_EliminarCelda.TabStop = false;
-            this.btn_EliminarCelda.Zoom = 10;
-            this.btn_EliminarCelda.Click += new System.EventHandler(this.btn_EliminarCelda_Click);
-            // 
-            // btn_EliminarTodo
-            // 
-            this.btn_EliminarTodo.BackColor = System.Drawing.Color.Transparent;
-            this.btn_EliminarTodo.Image = ((System.Drawing.Image)(resources.GetObject("btn_EliminarTodo.Image")));
-            this.btn_EliminarTodo.ImageActive = null;
-            this.btn_EliminarTodo.Location = new System.Drawing.Point(1281, 692);
-            this.btn_EliminarTodo.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_EliminarTodo.Name = "btn_EliminarTodo";
-            this.btn_EliminarTodo.Size = new System.Drawing.Size(65, 65);
-            this.btn_EliminarTodo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_EliminarTodo.TabIndex = 22;
-            this.btn_EliminarTodo.TabStop = false;
-            this.btn_EliminarTodo.Zoom = 10;
-            this.btn_EliminarTodo.Click += new System.EventHandler(this.button1_Click);
-            // 
             // lbl_Caja
             // 
             this.lbl_Caja.AutoSize = true;
             this.lbl_Caja.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Caja.Location = new System.Drawing.Point(557, 670);
+            this.lbl_Caja.Location = new System.Drawing.Point(577, 649);
             this.lbl_Caja.Name = "lbl_Caja";
             this.lbl_Caja.Size = new System.Drawing.Size(59, 20);
             this.lbl_Caja.TabIndex = 24;
             this.lbl_Caja.Text = "Gastos";
-            // 
-            // btn_Gastos
-            // 
-            this.btn_Gastos.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Gastos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Gastos.Image")));
-            this.btn_Gastos.ImageActive = null;
-            this.btn_Gastos.Location = new System.Drawing.Point(560, 692);
-            this.btn_Gastos.Name = "btn_Gastos";
-            this.btn_Gastos.Size = new System.Drawing.Size(65, 65);
-            this.btn_Gastos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Gastos.TabIndex = 25;
-            this.btn_Gastos.TabStop = false;
-            this.btn_Gastos.Zoom = 10;
-            this.btn_Gastos.Click += new System.EventHandler(this.btn_Gastos_Click);
             // 
             // groupBox1
             // 
@@ -658,23 +554,23 @@
             this.dgv_ListadeProductos.AllowUserToDeleteRows = false;
             this.dgv_ListadeProductos.AllowUserToResizeColumns = false;
             this.dgv_ListadeProductos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle76.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_ListadeProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle76;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_ListadeProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_ListadeProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_ListadeProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_ListadeProductos.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_ListadeProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_ListadeProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_ListadeProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle77.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
-            dataGridViewCellStyle77.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle77.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle77.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            dataGridViewCellStyle77.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle77.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle77.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ListadeProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle77;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ListadeProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_ListadeProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_ListadeProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cod_Articulo,
@@ -685,14 +581,14 @@
             this.Activo,
             this.Precio_1});
             this.dgv_ListadeProductos.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle78.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle78.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle78.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
-            dataGridViewCellStyle78.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle78.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ListadeProductos.DefaultCellStyle = dataGridViewCellStyle78;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ListadeProductos.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_ListadeProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_ListadeProductos.EnableHeadersVisualStyles = false;
             this.dgv_ListadeProductos.GridColor = System.Drawing.Color.DimGray;
@@ -701,18 +597,18 @@
             this.dgv_ListadeProductos.Name = "dgv_ListadeProductos";
             this.dgv_ListadeProductos.ReadOnly = true;
             this.dgv_ListadeProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle79.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle79.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle79.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle79.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle79.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle79.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ListadeProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle79;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ListadeProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_ListadeProductos.RowHeadersVisible = false;
             this.dgv_ListadeProductos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle80.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_ListadeProductos.RowsDefaultCellStyle = dataGridViewCellStyle80;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_ListadeProductos.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_ListadeProductos.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgv_ListadeProductos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
             this.dgv_ListadeProductos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
@@ -804,7 +700,7 @@
             this.cbo_Articulo.FormattingEnabled = true;
             this.cbo_Articulo.Location = new System.Drawing.Point(111, 54);
             this.cbo_Articulo.Name = "cbo_Articulo";
-            this.cbo_Articulo.Size = new System.Drawing.Size(341, 29);
+            this.cbo_Articulo.Size = new System.Drawing.Size(336, 29);
             this.cbo_Articulo.TabIndex = 35;
             // 
             // cbo_Departamento
@@ -814,24 +710,8 @@
             this.cbo_Departamento.FormattingEnabled = true;
             this.cbo_Departamento.Location = new System.Drawing.Point(169, 89);
             this.cbo_Departamento.Name = "cbo_Departamento";
-            this.cbo_Departamento.Size = new System.Drawing.Size(283, 29);
+            this.cbo_Departamento.Size = new System.Drawing.Size(278, 29);
             this.cbo_Departamento.TabIndex = 37;
-            // 
-            // btn_Buscar
-            // 
-            this.btn_Buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.BackgroundImage")));
-            this.btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_Buscar.FlatAppearance.BorderSize = 0;
-            this.btn_Buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(107)))), ((int)(((byte)(161)))));
-            this.btn_Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(177)))));
-            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Buscar.Location = new System.Drawing.Point(458, 55);
-            this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(95, 65);
-            this.btn_Buscar.TabIndex = 38;
-            this.btn_Buscar.UseVisualStyleBackColor = false;
-            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // rb_Articulo
             // 
@@ -870,12 +750,140 @@
             this.btn_Pagar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
             this.btn_Pagar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
             this.btn_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Pagar.Location = new System.Drawing.Point(856, 692);
+            this.btn_Pagar.Location = new System.Drawing.Point(841, 671);
             this.btn_Pagar.Name = "btn_Pagar";
-            this.btn_Pagar.Size = new System.Drawing.Size(343, 65);
+            this.btn_Pagar.Size = new System.Drawing.Size(332, 85);
             this.btn_Pagar.TabIndex = 41;
             this.btn_Pagar.UseVisualStyleBackColor = false;
             this.btn_Pagar.Click += new System.EventHandler(this.btn_Pagar_Click);
+            // 
+            // btn_Calculator
+            // 
+            this.btn_Calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.btn_Calculator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Calculator.BackgroundImage")));
+            this.btn_Calculator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Calculator.FlatAppearance.BorderSize = 0;
+            this.btn_Calculator.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btn_Calculator.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(179)))), ((int)(((byte)(215)))));
+            this.btn_Calculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Calculator.Location = new System.Drawing.Point(747, 671);
+            this.btn_Calculator.Name = "btn_Calculator";
+            this.btn_Calculator.Size = new System.Drawing.Size(94, 85);
+            this.btn_Calculator.TabIndex = 42;
+            this.btn_Calculator.UseVisualStyleBackColor = false;
+            this.btn_Calculator.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btn_Apartados
+            // 
+            this.btn_Apartados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.btn_Apartados.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Apartados.BackgroundImage")));
+            this.btn_Apartados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Apartados.FlatAppearance.BorderSize = 0;
+            this.btn_Apartados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btn_Apartados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(179)))), ((int)(((byte)(215)))));
+            this.btn_Apartados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Apartados.Location = new System.Drawing.Point(653, 671);
+            this.btn_Apartados.Name = "btn_Apartados";
+            this.btn_Apartados.Size = new System.Drawing.Size(94, 85);
+            this.btn_Apartados.TabIndex = 43;
+            this.btn_Apartados.UseVisualStyleBackColor = false;
+            this.btn_Apartados.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // btn_Gastos
+            // 
+            this.btn_Gastos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.btn_Gastos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Gastos.BackgroundImage")));
+            this.btn_Gastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Gastos.FlatAppearance.BorderSize = 0;
+            this.btn_Gastos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btn_Gastos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(179)))), ((int)(((byte)(215)))));
+            this.btn_Gastos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Gastos.Location = new System.Drawing.Point(559, 671);
+            this.btn_Gastos.Name = "btn_Gastos";
+            this.btn_Gastos.Size = new System.Drawing.Size(94, 85);
+            this.btn_Gastos.TabIndex = 44;
+            this.btn_Gastos.UseVisualStyleBackColor = false;
+            this.btn_Gastos.Click += new System.EventHandler(this.btn_Gastos_Click);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_Eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.ForeColor = System.Drawing.Color.White;
+            this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
+            this.btn_Eliminar.Location = new System.Drawing.Point(1173, 671);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(94, 85);
+            this.btn_Eliminar.TabIndex = 45;
+            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Eliminar.UseVisualStyleBackColor = false;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_EliminarCelda_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1189, 649);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Eliminar";
+            // 
+            // btn_EliminarTODO
+            // 
+            this.btn_EliminarTODO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_EliminarTODO.FlatAppearance.BorderSize = 0;
+            this.btn_EliminarTODO.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_EliminarTODO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_EliminarTODO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_EliminarTODO.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EliminarTODO.ForeColor = System.Drawing.Color.White;
+            this.btn_EliminarTODO.Image = ((System.Drawing.Image)(resources.GetObject("btn_EliminarTODO.Image")));
+            this.btn_EliminarTODO.Location = new System.Drawing.Point(1267, 671);
+            this.btn_EliminarTODO.Name = "btn_EliminarTODO";
+            this.btn_EliminarTODO.Size = new System.Drawing.Size(94, 85);
+            this.btn_EliminarTODO.TabIndex = 46;
+            this.btn_EliminarTODO.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_EliminarTODO.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_EliminarTODO.UseVisualStyleBackColor = false;
+            this.btn_EliminarTODO.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_Clientes
+            // 
+            this.btn_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            this.btn_Clientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Clientes.BackgroundImage")));
+            this.btn_Clientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Clientes.FlatAppearance.BorderSize = 0;
+            this.btn_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(145)))), ((int)(((byte)(37)))));
+            this.btn_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(156)))), ((int)(((byte)(40)))));
+            this.btn_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Clientes.Location = new System.Drawing.Point(600, 558);
+            this.btn_Clientes.Name = "btn_Clientes";
+            this.btn_Clientes.Size = new System.Drawing.Size(94, 85);
+            this.btn_Clientes.TabIndex = 47;
+            this.btn_Clientes.UseVisualStyleBackColor = false;
+            this.btn_Clientes.Click += new System.EventHandler(this.btn_Clientes_Click);
+            // 
+            // btn_Buscar
+            // 
+            this.btn_Buscar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.BackgroundImage")));
+            this.btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Buscar.FlatAppearance.BorderSize = 0;
+            this.btn_Buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.btn_Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Buscar.Location = new System.Drawing.Point(453, 46);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(94, 85);
+            this.btn_Buscar.TabIndex = 48;
+            this.btn_Buscar.UseVisualStyleBackColor = false;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // frm_IngresoCaja
             // 
@@ -884,16 +892,21 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Buscar);
+            this.Controls.Add(this.btn_Clientes);
+            this.Controls.Add(this.btn_EliminarTODO);
+            this.Controls.Add(this.btn_Eliminar);
+            this.Controls.Add(this.btn_Gastos);
+            this.Controls.Add(this.btn_Apartados);
+            this.Controls.Add(this.btn_Calculator);
             this.Controls.Add(this.btn_Pagar);
             this.Controls.Add(this.rb_Departamento);
             this.Controls.Add(this.rb_Articulo);
-            this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.lb_Montos);
             this.Controls.Add(this.cbo_Departamento);
             this.Controls.Add(this.cbo_Articulo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.btn_Gastos);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbl_CodFactura);
@@ -903,15 +916,10 @@
             this.Controls.Add(this.lbl_ValidarEliminar);
             this.Controls.Add(this.cbo_CondiciondeVenta);
             this.Controls.Add(this.lbl_IdCliente);
-            this.Controls.Add(this.btn_EliminarTodo);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.btn_Clientes);
-            this.Controls.Add(this.btn_EliminarCelda);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Calculadora);
             this.Controls.Add(this.lbl_DineroaPagar);
-            this.Controls.Add(this.btn_Apartados);
             this.Controls.Add(this.txt_ClientePago);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label18);
@@ -931,15 +939,9 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Consecutivos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Clientes)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Apartados)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Calculadora)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarCelda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarTodo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Gastos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListadeProductos)).EndInit();
@@ -952,7 +954,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label lbl_DineroaPagar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_ClientePago;
         private System.Windows.Forms.Label label8;
@@ -970,14 +971,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lb_Articulos;
         private System.Windows.Forms.Label lb_Montos;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Apartados;
-        private Bunifu.Framework.UI.BunifuImageButton btn_EliminarTodo;
-        private Bunifu.Framework.UI.BunifuImageButton btn_EliminarCelda;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Calculadora;
         private System.Windows.Forms.Label lbl_Caja;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Gastos;
         private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Clientes;
         private System.Windows.Forms.Label lbl_IdCliente;
         private System.Windows.Forms.ComboBox cbo_MediodePago;
         private System.Windows.Forms.ComboBox cbo_CondiciondeVenta;
@@ -991,7 +986,6 @@
         public System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbo_Articulo;
         private System.Windows.Forms.ComboBox cbo_Departamento;
-        private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.RadioButton rb_Departamento;
         private System.Windows.Forms.RadioButton rb_Articulo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cod_Articulo;
@@ -1012,5 +1006,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cod_Articulo1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Unidad_Medida1;
         private System.Windows.Forms.Button btn_Pagar;
+        private System.Windows.Forms.Button btn_Calculator;
+        private System.Windows.Forms.Button btn_Apartados;
+        private System.Windows.Forms.Button btn_Gastos;
+        private System.Windows.Forms.Button btn_Eliminar;
+        private System.Windows.Forms.Button btn_EliminarTODO;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_Clientes;
+        private System.Windows.Forms.Button btn_Buscar;
     }
 }

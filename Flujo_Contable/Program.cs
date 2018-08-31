@@ -20,7 +20,7 @@ namespace Flujo_Contable
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new frm_InicioSesion());
+            Application.Run(new frm_InicioPagina());
 
 
         }

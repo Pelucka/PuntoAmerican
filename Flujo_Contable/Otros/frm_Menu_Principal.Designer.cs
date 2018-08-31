@@ -31,11 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Menu_Principal));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_Ventas = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Caja = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_ControlCaja = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Inventario = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Ventas = new System.Windows.Forms.Button();
+            this.btn_ControlCaja = new System.Windows.Forms.Button();
+            this.btn_Inventario = new System.Windows.Forms.Button();
+            this.btn_Caja = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Usuarios = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsl_Rol = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsl_Ubicacion = new System.Windows.Forms.ToolStripStatusLabel();
@@ -65,9 +68,6 @@
             this.recibidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tm_Hora = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btn_Usuarios = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -77,14 +77,14 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.btn_Usuarios);
             this.groupBox1.Controls.Add(this.btn_Ventas);
-            this.groupBox1.Controls.Add(this.btn_Caja);
             this.groupBox1.Controls.Add(this.btn_ControlCaja);
             this.groupBox1.Controls.Add(this.btn_Inventario);
+            this.groupBox1.Controls.Add(this.btn_Caja);
+            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.btn_Usuarios);
             this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(0, 21);
@@ -96,170 +96,135 @@
             // 
             // btn_Ventas
             // 
-            this.btn_Ventas.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Ventas.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Ventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Ventas.BorderRadius = 0;
-            this.btn_Ventas.ButtonText = " Ventas";
-            this.btn_Ventas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Ventas.DisabledColor = System.Drawing.Color.White;
-            this.btn_Ventas.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Ventas.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Ventas.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Ventas.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Ventas.Iconimage")));
-            this.btn_Ventas.Iconimage_right = null;
-            this.btn_Ventas.Iconimage_right_Selected = null;
-            this.btn_Ventas.Iconimage_Selected = null;
-            this.btn_Ventas.IconMarginLeft = 0;
-            this.btn_Ventas.IconMarginRight = 0;
-            this.btn_Ventas.IconRightVisible = true;
-            this.btn_Ventas.IconRightZoom = 0D;
-            this.btn_Ventas.IconVisible = true;
-            this.btn_Ventas.IconZoom = 64D;
-            this.btn_Ventas.IsTab = false;
-            this.btn_Ventas.Location = new System.Drawing.Point(399, 235);
-            this.btn_Ventas.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Ventas.FlatAppearance.BorderSize = 0;
+            this.btn_Ventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Ventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Ventas.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Ventas.ForeColor = System.Drawing.Color.White;
+            this.btn_Ventas.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ventas.Image")));
+            this.btn_Ventas.Location = new System.Drawing.Point(0, 579);
             this.btn_Ventas.Name = "btn_Ventas";
-            this.btn_Ventas.Normalcolor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Ventas.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_Ventas.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Ventas.selected = false;
-            this.btn_Ventas.Size = new System.Drawing.Size(384, 172);
-            this.btn_Ventas.TabIndex = 30;
-            this.btn_Ventas.Text = " Ventas";
-            this.btn_Ventas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Ventas.Textcolor = System.Drawing.Color.Black;
-            this.btn_Ventas.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Ventas.Size = new System.Drawing.Size(584, 143);
+            this.btn_Ventas.TabIndex = 36;
+            this.btn_Ventas.Text = "Ventas";
+            this.btn_Ventas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Ventas.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Ventas.UseVisualStyleBackColor = false;
             this.btn_Ventas.Click += new System.EventHandler(this.btn_Ventas_Click_2);
-            // 
-            // btn_Caja
-            // 
-            this.btn_Caja.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Caja.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Caja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Caja.BorderRadius = 0;
-            this.btn_Caja.ButtonText = " Caja ";
-            this.btn_Caja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Caja.DisabledColor = System.Drawing.Color.White;
-            this.btn_Caja.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Caja.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Caja.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Caja.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Caja.Iconimage")));
-            this.btn_Caja.Iconimage_right = null;
-            this.btn_Caja.Iconimage_right_Selected = null;
-            this.btn_Caja.Iconimage_Selected = null;
-            this.btn_Caja.IconMarginLeft = 0;
-            this.btn_Caja.IconMarginRight = 0;
-            this.btn_Caja.IconRightVisible = true;
-            this.btn_Caja.IconRightZoom = 0D;
-            this.btn_Caja.IconVisible = true;
-            this.btn_Caja.IconZoom = 64D;
-            this.btn_Caja.IsTab = false;
-            this.btn_Caja.Location = new System.Drawing.Point(399, 7);
-            this.btn_Caja.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Caja.Name = "btn_Caja";
-            this.btn_Caja.Normalcolor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Caja.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_Caja.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Caja.selected = false;
-            this.btn_Caja.Size = new System.Drawing.Size(384, 172);
-            this.btn_Caja.TabIndex = 29;
-            this.btn_Caja.Text = " Caja ";
-            this.btn_Caja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Caja.Textcolor = System.Drawing.Color.Black;
-            this.btn_Caja.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Caja.Click += new System.EventHandler(this.btn_Caja_Click_2);
             // 
             // btn_ControlCaja
             // 
-            this.btn_ControlCaja.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_ControlCaja.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_ControlCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_ControlCaja.BorderRadius = 0;
-            this.btn_ControlCaja.ButtonText = "Control Caja ";
-            this.btn_ControlCaja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ControlCaja.DisabledColor = System.Drawing.Color.White;
-            this.btn_ControlCaja.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ControlCaja.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_ControlCaja.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_ControlCaja.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_ControlCaja.Iconimage")));
-            this.btn_ControlCaja.Iconimage_right = null;
-            this.btn_ControlCaja.Iconimage_right_Selected = null;
-            this.btn_ControlCaja.Iconimage_Selected = null;
-            this.btn_ControlCaja.IconMarginLeft = 0;
-            this.btn_ControlCaja.IconMarginRight = 0;
-            this.btn_ControlCaja.IconRightVisible = true;
-            this.btn_ControlCaja.IconRightZoom = 0D;
-            this.btn_ControlCaja.IconVisible = true;
-            this.btn_ControlCaja.IconZoom = 64D;
-            this.btn_ControlCaja.IsTab = false;
-            this.btn_ControlCaja.Location = new System.Drawing.Point(7, 485);
-            this.btn_ControlCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ControlCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_ControlCaja.FlatAppearance.BorderSize = 0;
+            this.btn_ControlCaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_ControlCaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_ControlCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ControlCaja.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ControlCaja.ForeColor = System.Drawing.Color.White;
+            this.btn_ControlCaja.Image = ((System.Drawing.Image)(resources.GetObject("btn_ControlCaja.Image")));
+            this.btn_ControlCaja.Location = new System.Drawing.Point(0, 436);
             this.btn_ControlCaja.Name = "btn_ControlCaja";
-            this.btn_ControlCaja.Normalcolor = System.Drawing.Color.WhiteSmoke;
-            this.btn_ControlCaja.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_ControlCaja.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_ControlCaja.selected = false;
-            this.btn_ControlCaja.Size = new System.Drawing.Size(384, 172);
-            this.btn_ControlCaja.TabIndex = 28;
-            this.btn_ControlCaja.Text = "Control Caja ";
-            this.btn_ControlCaja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ControlCaja.Textcolor = System.Drawing.Color.Black;
-            this.btn_ControlCaja.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ControlCaja.Size = new System.Drawing.Size(584, 143);
+            this.btn_ControlCaja.TabIndex = 35;
+            this.btn_ControlCaja.Text = "Control Caja";
+            this.btn_ControlCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_ControlCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_ControlCaja.UseVisualStyleBackColor = false;
             this.btn_ControlCaja.Click += new System.EventHandler(this.btn_ControlCaja_Click_2);
             // 
             // btn_Inventario
             // 
-            this.btn_Inventario.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Inventario.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Inventario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Inventario.BorderRadius = 0;
-            this.btn_Inventario.ButtonText = " Inventario ";
-            this.btn_Inventario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Inventario.DisabledColor = System.Drawing.Color.White;
-            this.btn_Inventario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Inventario.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Inventario.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Inventario.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Inventario.Iconimage")));
-            this.btn_Inventario.Iconimage_right = null;
-            this.btn_Inventario.Iconimage_right_Selected = null;
-            this.btn_Inventario.Iconimage_Selected = null;
-            this.btn_Inventario.IconMarginLeft = 0;
-            this.btn_Inventario.IconMarginRight = 0;
-            this.btn_Inventario.IconRightVisible = true;
-            this.btn_Inventario.IconRightZoom = 0D;
-            this.btn_Inventario.IconVisible = true;
-            this.btn_Inventario.IconZoom = 64D;
-            this.btn_Inventario.IsTab = false;
-            this.btn_Inventario.Location = new System.Drawing.Point(7, 235);
-            this.btn_Inventario.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Inventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Inventario.FlatAppearance.BorderSize = 0;
+            this.btn_Inventario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Inventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Inventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Inventario.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Inventario.ForeColor = System.Drawing.Color.White;
+            this.btn_Inventario.Image = ((System.Drawing.Image)(resources.GetObject("btn_Inventario.Image")));
+            this.btn_Inventario.Location = new System.Drawing.Point(0, 293);
             this.btn_Inventario.Name = "btn_Inventario";
-            this.btn_Inventario.Normalcolor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Inventario.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_Inventario.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Inventario.selected = false;
-            this.btn_Inventario.Size = new System.Drawing.Size(384, 172);
-            this.btn_Inventario.TabIndex = 27;
-            this.btn_Inventario.Text = " Inventario ";
-            this.btn_Inventario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Inventario.Textcolor = System.Drawing.Color.Black;
-            this.btn_Inventario.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Inventario.Size = new System.Drawing.Size(584, 143);
+            this.btn_Inventario.TabIndex = 34;
+            this.btn_Inventario.Text = "Inventario";
+            this.btn_Inventario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Inventario.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Inventario.UseVisualStyleBackColor = false;
             this.btn_Inventario.Click += new System.EventHandler(this.btn_Inventario_Click_2);
+            // 
+            // btn_Caja
+            // 
+            this.btn_Caja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Caja.FlatAppearance.BorderSize = 0;
+            this.btn_Caja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Caja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Caja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Caja.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Caja.ForeColor = System.Drawing.Color.White;
+            this.btn_Caja.Image = ((System.Drawing.Image)(resources.GetObject("btn_Caja.Image")));
+            this.btn_Caja.Location = new System.Drawing.Point(0, 150);
+            this.btn_Caja.Name = "btn_Caja";
+            this.btn_Caja.Size = new System.Drawing.Size(584, 143);
+            this.btn_Caja.TabIndex = 33;
+            this.btn_Caja.Text = "Caja";
+            this.btn_Caja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Caja.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Caja.UseVisualStyleBackColor = false;
+            this.btn_Caja.Click += new System.EventHandler(this.btn_Caja_Click_2);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
+            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1379, 4);
+            this.panel1.TabIndex = 32;
+            // 
+            // btn_Usuarios
+            // 
+            this.btn_Usuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Usuarios.FlatAppearance.BorderSize = 0;
+            this.btn_Usuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Usuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Usuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Usuarios.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Usuarios.ForeColor = System.Drawing.Color.White;
+            this.btn_Usuarios.Image = ((System.Drawing.Image)(resources.GetObject("btn_Usuarios.Image")));
+            this.btn_Usuarios.Location = new System.Drawing.Point(0, 7);
+            this.btn_Usuarios.Name = "btn_Usuarios";
+            this.btn_Usuarios.Size = new System.Drawing.Size(584, 143);
+            this.btn_Usuarios.TabIndex = 31;
+            this.btn_Usuarios.Text = "Usuarios";
+            this.btn_Usuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Usuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Usuarios.UseVisualStyleBackColor = false;
+            this.btn_Usuarios.Click += new System.EventHandler(this.btn_Usuarios_Click_2);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(805, 94);
+            this.pictureBox1.Location = new System.Drawing.Point(722, 108);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(525, 500);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.panel2.Location = new System.Drawing.Point(0, 7);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(584, 718);
+            this.panel2.TabIndex = 37;
+            // 
             // statusStrip1
             // 
             this.statusStrip1.AllowMerge = false;
             this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
+            this.statusStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.statusStrip1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -529,54 +494,6 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // btn_Usuarios
-            // 
-            this.btn_Usuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
-            this.btn_Usuarios.FlatAppearance.BorderSize = 0;
-            this.btn_Usuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
-            this.btn_Usuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
-            this.btn_Usuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Usuarios.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Usuarios.ForeColor = System.Drawing.Color.White;
-            this.btn_Usuarios.Image = ((System.Drawing.Image)(resources.GetObject("btn_Usuarios.Image")));
-            this.btn_Usuarios.Location = new System.Drawing.Point(0, 7);
-            this.btn_Usuarios.Name = "btn_Usuarios";
-            this.btn_Usuarios.Size = new System.Drawing.Size(392, 172);
-            this.btn_Usuarios.TabIndex = 31;
-            this.btn_Usuarios.Text = "Usuarios";
-            this.btn_Usuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Usuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_Usuarios.UseVisualStyleBackColor = false;
-            this.btn_Usuarios.Click += new System.EventHandler(this.btn_Usuarios_Click_2);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
-            this.panel1.Location = new System.Drawing.Point(0, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1379, 4);
-            this.panel1.TabIndex = 32;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(398, 462);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(392, 172);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Usuarios";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btn_Caja_Click_2);
-            // 
             // frm_Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -637,15 +554,15 @@
         private System.Windows.Forms.ToolStripMenuItem enviosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recibidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cambioContraseñaToolStripMenuItem;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_Inventario;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_ControlCaja;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_Ventas;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_Caja;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem articulosToolStripMenuItem;
         private System.Windows.Forms.Button btn_Usuarios;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Caja;
+        private System.Windows.Forms.Button btn_Inventario;
+        private System.Windows.Forms.Button btn_ControlCaja;
+        private System.Windows.Forms.Button btn_Ventas;
+        private System.Windows.Forms.Panel panel2;
     }
 }

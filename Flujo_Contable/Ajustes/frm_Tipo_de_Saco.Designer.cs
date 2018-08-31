@@ -41,14 +41,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_TipoSaco = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btn_Agregar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Agregar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TipoSacos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,9 +58,9 @@
             // 
             this.groupBox2.Controls.Add(this.dgv_TipoSacos);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.groupBox2.Location = new System.Drawing.Point(325, 70);
+            this.groupBox2.Location = new System.Drawing.Point(325, 47);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(305, 250);
+            this.groupBox2.Size = new System.Drawing.Size(318, 284);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lista de Tipos de Sacos";
@@ -122,7 +124,7 @@
             this.dgv_TipoSacos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
             this.dgv_TipoSacos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_TipoSacos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_TipoSacos.Size = new System.Drawing.Size(299, 225);
+            this.dgv_TipoSacos.Size = new System.Drawing.Size(312, 259);
             this.dgv_TipoSacos.TabIndex = 2;
             // 
             // Descripcion
@@ -137,11 +139,11 @@
             // 
             this.groupBox1.Controls.Add(this.txt_TipoSaco);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.groupBox1.Location = new System.Drawing.Point(13, 70);
+            this.groupBox1.Location = new System.Drawing.Point(13, 47);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(305, 176);
+            this.groupBox1.Size = new System.Drawing.Size(305, 192);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo de Saco";
@@ -169,6 +171,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btn_Salir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -178,12 +181,21 @@
             this.panel1.Size = new System.Drawing.Size(655, 40);
             this.panel1.TabIndex = 9;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(5, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Location = new System.Drawing.Point(41, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 26);
             this.label2.TabIndex = 0;
@@ -210,41 +222,18 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_Agregar.BackColor = System.Drawing.Color.White;
-            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Agregar.BorderRadius = 0;
-            this.btn_Agregar.ButtonText = "Agregar";
-            this.btn_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Agregar.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.btn_Agregar.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Iconimage")));
-            this.btn_Agregar.Iconimage_right = null;
-            this.btn_Agregar.Iconimage_right_Selected = null;
-            this.btn_Agregar.Iconimage_Selected = null;
-            this.btn_Agregar.IconMarginLeft = 0;
-            this.btn_Agregar.IconMarginRight = 0;
-            this.btn_Agregar.IconRightVisible = true;
-            this.btn_Agregar.IconRightZoom = 0D;
-            this.btn_Agregar.IconVisible = true;
-            this.btn_Agregar.IconZoom = 50D;
-            this.btn_Agregar.IsTab = false;
-            this.btn_Agregar.Location = new System.Drawing.Point(68, 258);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.btn_Agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.BackgroundImage")));
+            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Agregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Agregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Agregar.Location = new System.Drawing.Point(12, 246);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Normalcolor = System.Drawing.Color.White;
-            this.btn_Agregar.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Agregar.selected = false;
-            this.btn_Agregar.Size = new System.Drawing.Size(181, 62);
-            this.btn_Agregar.TabIndex = 12;
-            this.btn_Agregar.Text = "Agregar";
-            this.btn_Agregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Agregar.Textcolor = System.Drawing.Color.Black;
-            this.btn_Agregar.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar.Size = new System.Drawing.Size(305, 85);
+            this.btn_Agregar.TabIndex = 14;
+            this.btn_Agregar.UseVisualStyleBackColor = false;
             this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
             // 
             // frm_Tipo_de_Saco
@@ -260,6 +249,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_Tipo_de_Saco";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -269,6 +259,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TipoSacos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
             this.ResumeLayout(false);
 
@@ -283,7 +274,8 @@
         private Bunifu.Framework.UI.BunifuImageButton btn_Salir;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_Agregar;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_TipoSaco;
+        private System.Windows.Forms.Button btn_Agregar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Departamentos));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgv_Departamentos = new System.Windows.Forms.DataGridView();
@@ -42,13 +42,15 @@
             this.txt_Departamento = new System.Windows.Forms.TextBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_Agregar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Agregar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Departamentos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(330, 56);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(305, 158);
+            this.groupBox2.Size = new System.Drawing.Size(305, 213);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lista de Departamentos";
@@ -69,35 +71,35 @@
             this.dgv_Departamentos.AllowUserToDeleteRows = false;
             this.dgv_Departamentos.AllowUserToResizeColumns = false;
             this.dgv_Departamentos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_Departamentos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_Departamentos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Departamentos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Departamentos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Departamentos.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_Departamentos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_Departamentos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_Departamentos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Departamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Departamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Departamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_Departamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Descripcion});
             this.dgv_Departamentos.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Departamentos.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Departamentos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Departamentos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Departamentos.EnableHeadersVisualStyles = false;
             this.dgv_Departamentos.GridColor = System.Drawing.Color.Gray;
@@ -106,23 +108,23 @@
             this.dgv_Departamentos.Name = "dgv_Departamentos";
             this.dgv_Departamentos.ReadOnly = true;
             this.dgv_Departamentos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Departamentos.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Departamentos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_Departamentos.RowHeadersVisible = false;
             this.dgv_Departamentos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_Departamentos.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_Departamentos.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Departamentos.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgv_Departamentos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
             this.dgv_Departamentos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_Departamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Departamentos.Size = new System.Drawing.Size(299, 132);
+            this.dgv_Departamentos.Size = new System.Drawing.Size(299, 187);
             this.dgv_Departamentos.TabIndex = 2;
             // 
             // Descripcion
@@ -142,7 +144,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(305, 64);
+            this.groupBox1.Size = new System.Drawing.Size(305, 118);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Departamento";
@@ -162,6 +164,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btn_Salir);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -169,6 +172,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(647, 40);
             this.panel1.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // btn_Salir
             // 
@@ -197,41 +210,18 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_Agregar.BackColor = System.Drawing.Color.White;
-            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Agregar.BorderRadius = 0;
-            this.btn_Agregar.ButtonText = "Agregar";
-            this.btn_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Agregar.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Agregar.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Iconimage")));
-            this.btn_Agregar.Iconimage_right = null;
-            this.btn_Agregar.Iconimage_right_Selected = null;
-            this.btn_Agregar.Iconimage_Selected = null;
-            this.btn_Agregar.IconMarginLeft = 0;
-            this.btn_Agregar.IconMarginRight = 0;
-            this.btn_Agregar.IconRightVisible = true;
-            this.btn_Agregar.IconRightZoom = 0D;
-            this.btn_Agregar.IconVisible = true;
-            this.btn_Agregar.IconZoom = 50D;
-            this.btn_Agregar.IsTab = false;
-            this.btn_Agregar.Location = new System.Drawing.Point(9, 145);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.BackgroundImage")));
+            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Agregar.FlatAppearance.BorderSize = 0;
+            this.btn_Agregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Agregar.Location = new System.Drawing.Point(9, 181);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Normalcolor = System.Drawing.Color.White;
-            this.btn_Agregar.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Agregar.selected = false;
-            this.btn_Agregar.Size = new System.Drawing.Size(305, 69);
-            this.btn_Agregar.TabIndex = 10;
-            this.btn_Agregar.Text = "Agregar";
-            this.btn_Agregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Agregar.Textcolor = System.Drawing.Color.Black;
-            this.btn_Agregar.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar.Size = new System.Drawing.Size(305, 85);
+            this.btn_Agregar.TabIndex = 11;
+            this.btn_Agregar.UseVisualStyleBackColor = false;
             this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
             // 
             // frm_Departamentos
@@ -239,13 +229,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(647, 235);
+            this.ClientSize = new System.Drawing.Size(647, 285);
             this.Controls.Add(this.btn_Agregar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_Departamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -256,6 +247,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
             this.ResumeLayout(false);
 
@@ -271,6 +263,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuImageButton btn_Salir;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_Agregar;
+        private System.Windows.Forms.Button btn_Agregar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

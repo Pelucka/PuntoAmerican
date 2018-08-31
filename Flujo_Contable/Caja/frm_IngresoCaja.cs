@@ -44,7 +44,7 @@ namespace Flujo_Contable
             {
                 MessageBox.Show("Se tienen que agregar productos para la venta", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if(txt_ClientePago.Text == string.Empty)
+            else if (txt_ClientePago.Text == string.Empty)
             {
                 MessageBox.Show("Precio de Cliente no puede ser nulo", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -79,29 +79,9 @@ namespace Flujo_Contable
                 objCreaXML.INSERT_VENTATOTALES();
                 if (objCreaXML.Validacion == "Insertado")
                 {
-<<<<<<< HEAD
-                    string Clave = "fe-" + "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
-                    string Clave2 = "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
-                    //--AQUI VA EL FIRMADOR DEL CERTIFICADO--//
-                    this.FIRMADOR(Clave,objCreaXML.Certificado);
-                    objCreaXML.Secuencia = Convert.ToString(Convert.ToInt32(objCreaXML.Secuencia) + 1);
-                    //--AQUI TERMINA EL FIRMADOR DEL CERTIFICADO--//
-                    //--AQUI VA EL INICIO DE ENVIO A HACIENDA--//
-
-                    XmlDocument xmlElectronica = new XmlDocument();
-                    //xmlElectronica.Load("D:\\Documents\\Facturas\\" + Clave + "firmado.xml");
-                    xmlElectronica.Load("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "firmado.xml");
-                    Emisor myEmisor = new Emisor();
-                    myEmisor.numeroIdentificacion = objCreaXML.Cedula;
-                    myEmisor.TipoIdentificacion = objCreaXML.TipoIdentificacionfin;
-
-                    Receptor myReceptor = new Receptor();
-                    if ((objCreaXML.Tipo_IdentificacionRE.Trim().Length > 0))
-=======
                     int valor = 0;
                     valor = dgv_Consecutivos.Rows.Count;
                     for (int i = 0; i < valor; i++)
->>>>>>> 25ce43125621d60cb666843ffe6a96f517e84943
                     {
                         objCreaXML.Descripcion = dgv_Consecutivos.Rows[i].Cells[1].Value.ToString();
                         objCreaXML.Descuento = dgv_Consecutivos.Rows[i].Cells[5].Value.ToString();
@@ -116,52 +96,15 @@ namespace Flujo_Contable
                     {
                         objCreaXML.qweasd = Convert.ToInt32(objCreaXML.Id_VentaTotal);
                     }
-<<<<<<< HEAD
-
-                    Recepcion myRecepcion = new Recepcion();
-                    myRecepcion.emisor = myEmisor;
-                    myRecepcion.receptor = myReceptor;
-
-                    myRecepcion.clave = Clave2;
-                    myRecepcion.fecha = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz");
-                    myRecepcion.comprobanteXml = Funciones.EncodeStrToBase64(xmlElectronica.OuterXml);
-
-                    xmlElectronica = null;
-
-                    string Token = "";
-                    Token = getToken();
-                    Comunicacion enviaFactura = new Comunicacion();
-                    enviaFactura.EnvioDatos(Token, myRecepcion);
-
-
-                    string jsonEnvio = "";
-                    jsonEnvio = enviaFactura.jsonEnvio;
-                    string jsonRespuesta = "";
-                    jsonRespuesta = enviaFactura.jsonRespuesta;
-                    System.IO.StreamWriter outputFile = new System.IO.StreamWriter("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_03_jsonEnvio.txt");
-                    outputFile.Write(jsonEnvio);
-                    outputFile.Close();
-                    outputFile = new System.IO.StreamWriter("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_04_jsonRespuesta.txt");
-                    outputFile.Write(jsonRespuesta);
-                    outputFile.Close();
-                    if (!(enviaFactura.xmlRespuesta == null))
-                    {
-                        enviaFactura.xmlRespuesta.Save("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP.xml");
-=======
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message + "CARGA_FACTURA()");
->>>>>>> 25ce43125621d60cb666843ffe6a96f517e84943
                     }
                     objCreaXML.SecuenciaUpdate = Convert.ToString(Convert.ToInt32(objCreaXML.Secuencia) + 1);
                     objCreaXML.UPDATE_SECUENCIA();
                     valor = 0;
                     if (objCreaXML.Validacion == "Actualizado")
                     {
-<<<<<<< HEAD
-                        outputFile = new System.IO.StreamWriter("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP_SinRespuesta.txt");
-                        outputFile.Write("");
-=======
                         #region Firmador
                         string Clave = "fe-" + "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
                         string Clave2 = "506" + objCreaXML.Diafin + objCreaXML.Mesfin + objCreaXML.Añofin + objCreaXML.Cedulafin + objCreaXML.Consecutivofin + "00001" + "01" + objCreaXML.Secuenciafin + "1" + objCreaXML.CodSeguridad;
@@ -170,7 +113,7 @@ namespace Flujo_Contable
                         #region Enviar Hacienda
                         XmlDocument xmlElectronica = new XmlDocument();
                         //xmlElectronica.Load("D:\\Documents\\Facturas\\" + Clave + "firmado.xml");
-                        xmlElectronica.Load("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "firmado.xml");
+                        xmlElectronica.Load("G:\\Mi Unidad\\"+lbl_Ubicacion.Text+"\\" + Clave + "firmado.xml");
                         Emisor myEmisor = new Emisor();
                         myEmisor.numeroIdentificacion = objCreaXML.Cedula;
                         myEmisor.TipoIdentificacion = objCreaXML.TipoIdentificacionfin;
@@ -207,24 +150,22 @@ namespace Flujo_Contable
                         jsonEnvio = enviaFactura.jsonEnvio;
                         string jsonRespuesta = "";
                         jsonRespuesta = enviaFactura.jsonRespuesta;
-                        System.IO.StreamWriter outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_03_jsonEnvio.txt");
+                        System.IO.StreamWriter outputFile = new System.IO.StreamWriter("G:\\Mi Unidad\\" +lbl_Ubicacion.Text +"\\" + Clave + "_03_jsonEnvio.txt");
                         outputFile.Write(jsonEnvio);
->>>>>>> 25ce43125621d60cb666843ffe6a96f517e84943
                         outputFile.Close();
-                        outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_04_jsonRespuesta.txt");
+                        outputFile = new System.IO.StreamWriter("G:\\Mi Unidad\\" + lbl_Ubicacion.Text + "\\" + Clave + "_04_jsonRespuesta.txt");
                         outputFile.Write(jsonRespuesta);
                         outputFile.Close();
                         if (!(enviaFactura.xmlRespuesta == null))
                         {
-                            enviaFactura.xmlRespuesta.Save("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP.xml");
+                            enviaFactura.xmlRespuesta.Save("G:\\Mi Unidad\\" + lbl_Ubicacion.Text + "\\" + Clave + "_05_RESP.xml");
                         }
                         else
                         {
-                            outputFile = new System.IO.StreamWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\" + Clave + "_05_RESP_SinRespuesta.txt");
+                            outputFile = new System.IO.StreamWriter("G:\\Mi Unidad\\" + lbl_Ubicacion.Text + "\\" + Clave + "_05_RESP_SinRespuesta.txt");
                             outputFile.Write("");
                             outputFile.Close();
                         }
-                        MessageBox.Show(enviaFactura.mensajeRespuesta);
                         #endregion
                         this.Limpieza();
                     }
@@ -311,6 +252,7 @@ namespace Flujo_Contable
                     int rowIndex = dgv_Consecutivos.CurrentCell.RowIndex;
                     dgv_Consecutivos.Rows.RemoveAt(rowIndex);
                     lbl_ValidarEliminar.Text = "0";
+                    Numero = "0";
                 }
                 else
                 {
@@ -330,30 +272,6 @@ namespace Flujo_Contable
 
 
         /*Metodo para la seleccion de filas de datos a eliminar*/
-        private void dgv_Caja_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-
-                if (dgv_Consecutivos.GetCellCount(DataGridViewElementStates.Selected) == 1)
-                {
-                    lbl_ValidarEliminar.Text = "1";
-                    Numero = dgv_Consecutivos.Rows[e.RowIndex].Cells[5].Value.ToString();
-                }
-                else
-                {
-                    MessageBox.Show("Favor seleccionar el Dato a eliminar", "Error de Eliminacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + "dgv_Caja_CellContentClick");
-
-            }
-
-        }
 
         private void txt_ClientePago_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -920,9 +838,9 @@ namespace Flujo_Contable
             fe.AppendChild(Normativa);
             //--FINNORMATIVA--//
             doc.AppendChild(fe);
-            doc.Save("D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\fe-" + clave.InnerText+".xml");
+            doc.Save("G:\\Mi Unidad\\"+lbl_Ubicacion.Text+"\\fe-" + clave.InnerText+".xml");
             //doc.Save("D:\\Documents\\Facturas\\fe-"+clave.InnerText+".xml");
-            XmlTextWriter xmltextwriter = new XmlTextWriter("F:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\fe-" + clave.InnerText + ".xml",new System.Text.UTF8Encoding(false));
+            XmlTextWriter xmltextwriter = new XmlTextWriter("G:\\Mi Unidad\\" + lbl_Ubicacion.Text + "\\fe-" + clave.InnerText + ".xml",new System.Text.UTF8Encoding(false));
             doc.WriteTo(xmltextwriter);
             xmltextwriter.Close();
             doc = null;
@@ -930,7 +848,7 @@ namespace Flujo_Contable
         }
         public void FIRMADOR(string clave,string certificado) 
         {
-            string directorio = "D:\\Proyectos\\PuntoAmerican\\Ejemplos_Factura\\";
+            string directorio = "G:\\Mi Unidad\\"+lbl_Ubicacion.Text+"\\";
             //string directorio = "D:\\Documents\\Facturas\\";
             string nombreArchivo = directorio + clave;
             objfirma.FirmaXML_Xades(nombreArchivo, certificado);
@@ -1008,14 +926,28 @@ namespace Flujo_Contable
             dgv_Consecutivos.Rows.Clear();
             lbl_DineroaPagar.Text = "0";
             lbl_IdCliente.Text = string.Empty;
+            lbl_ValidarEliminar.Text = string.Empty;
         }
 
+        private void dgv_Consecutivos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
 
+
+                    lbl_ValidarEliminar.Text = "1";
+                    Numero = dgv_Consecutivos.Rows[e.RowIndex].Cells[7].Value.ToString();
+                
+
+
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "dgv_Caja_CellContentClick");
+
+            }
+        }
     }
-
-
-    
-
-
-
 }

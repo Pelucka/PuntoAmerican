@@ -59,6 +59,7 @@
             this.txt_SaldoFinal = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbo_Ubicacion = new System.Windows.Forms.ComboBox();
             this.txt_Usuario = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -66,18 +67,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Aceptar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Total = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label17 = new System.Windows.Forms.Label();
-            this.cbo_Ubicacion = new System.Windows.Forms.ComboBox();
             this.lbl_Ubicacion = new System.Windows.Forms.Label();
+            this.btn_Aceptar = new System.Windows.Forms.Button();
+            this.btn_Total = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Total)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -386,6 +385,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ajustes Finales";
             // 
+            // cbo_Ubicacion
+            // 
+            this.cbo_Ubicacion.FormattingEnabled = true;
+            this.cbo_Ubicacion.Location = new System.Drawing.Point(176, 51);
+            this.cbo_Ubicacion.Name = "cbo_Ubicacion";
+            this.cbo_Ubicacion.Size = new System.Drawing.Size(190, 28);
+            this.cbo_Ubicacion.TabIndex = 23;
+            // 
             // txt_Usuario
             // 
             this.txt_Usuario.Enabled = false;
@@ -406,9 +413,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(422, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(431, 52);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(305, 255);
+            this.pictureBox1.Size = new System.Drawing.Size(287, 255);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
@@ -421,6 +428,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.btn_Salir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -434,7 +442,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(26, 9);
+            this.label16.Location = new System.Drawing.Point(39, 9);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(176, 27);
             this.label16.TabIndex = 18;
@@ -454,52 +462,6 @@
             this.btn_Salir.Zoom = 10;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
-            this.btn_Aceptar.ImageActive = null;
-            this.btn_Aceptar.Location = new System.Drawing.Point(547, 474);
-            this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(64, 64);
-            this.btn_Aceptar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Aceptar.TabIndex = 24;
-            this.btn_Aceptar.TabStop = false;
-            this.btn_Aceptar.Zoom = 10;
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
-            // 
-            // btn_Total
-            // 
-            this.btn_Total.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Total.Image = ((System.Drawing.Image)(resources.GetObject("btn_Total.Image")));
-            this.btn_Total.ImageActive = null;
-            this.btn_Total.Location = new System.Drawing.Point(39, 474);
-            this.btn_Total.Name = "btn_Total";
-            this.btn_Total.Size = new System.Drawing.Size(64, 64);
-            this.btn_Total.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Total.TabIndex = 25;
-            this.btn_Total.TabStop = false;
-            this.btn_Total.Zoom = 10;
-            this.btn_Total.Click += new System.EventHandler(this.btn_Total_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(132, 499);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(42, 20);
-            this.label17.TabIndex = 26;
-            this.label17.Text = "Total";
-            // 
-            // cbo_Ubicacion
-            // 
-            this.cbo_Ubicacion.FormattingEnabled = true;
-            this.cbo_Ubicacion.Location = new System.Drawing.Point(176, 51);
-            this.cbo_Ubicacion.Name = "cbo_Ubicacion";
-            this.cbo_Ubicacion.Size = new System.Drawing.Size(190, 28);
-            this.cbo_Ubicacion.TabIndex = 23;
-            // 
             // lbl_Ubicacion
             // 
             this.lbl_Ubicacion.AutoSize = true;
@@ -510,6 +472,51 @@
             this.lbl_Ubicacion.Text = "0";
             this.lbl_Ubicacion.Visible = false;
             // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Aceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.BackgroundImage")));
+            this.btn_Aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Aceptar.FlatAppearance.BorderSize = 0;
+            this.btn_Aceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Aceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Aceptar.Location = new System.Drawing.Point(405, 463);
+            this.btn_Aceptar.Name = "btn_Aceptar";
+            this.btn_Aceptar.Size = new System.Drawing.Size(353, 85);
+            this.btn_Aceptar.TabIndex = 43;
+            this.btn_Aceptar.UseVisualStyleBackColor = false;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
+            // 
+            // btn_Total
+            // 
+            this.btn_Total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Total.FlatAppearance.BorderSize = 0;
+            this.btn_Total.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Total.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Total.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Total.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Total.ForeColor = System.Drawing.Color.White;
+            this.btn_Total.Image = ((System.Drawing.Image)(resources.GetObject("btn_Total.Image")));
+            this.btn_Total.Location = new System.Drawing.Point(26, 464);
+            this.btn_Total.Name = "btn_Total";
+            this.btn_Total.Size = new System.Drawing.Size(342, 85);
+            this.btn_Total.TabIndex = 47;
+            this.btn_Total.Text = "Total";
+            this.btn_Total.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Total.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Total.UseVisualStyleBackColor = false;
+            this.btn_Total.Click += new System.EventHandler(this.btn_Total_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
             // frm_InicioCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -517,16 +524,16 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(774, 559);
             this.ControlBox = false;
-            this.Controls.Add(this.lbl_Ubicacion);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.btn_Total);
             this.Controls.Add(this.btn_Aceptar);
+            this.Controls.Add(this.lbl_Ubicacion);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_InicioCaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -539,8 +546,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Total)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -584,10 +590,10 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton btn_Salir;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Total;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Aceptar;
         public System.Windows.Forms.ComboBox cbo_Ubicacion;
         public System.Windows.Forms.Label lbl_Ubicacion;
+        private System.Windows.Forms.Button btn_Aceptar;
+        private System.Windows.Forms.Button btn_Total;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

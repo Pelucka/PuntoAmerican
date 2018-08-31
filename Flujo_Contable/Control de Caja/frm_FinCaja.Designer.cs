@@ -66,7 +66,6 @@
             this.txt_TotalenCaja = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btn_Aceptar = new Bunifu.Framework.UI.BunifuImageButton();
             this.txt_Total = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -74,12 +73,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Total = new Bunifu.Framework.UI.BunifuImageButton();
             this.label21 = new System.Windows.Forms.Label();
+            this.btn_Aceptar = new System.Windows.Forms.Button();
+            this.btn_Eliminar = new System.Windows.Forms.Button();
+            this.btn_Total = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Total)).BeginInit();
@@ -474,20 +474,6 @@
             this.groupBox3.Text = "Ajustes";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
-            this.btn_Aceptar.ImageActive = null;
-            this.btn_Aceptar.Location = new System.Drawing.Point(166, 194);
-            this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(64, 64);
-            this.btn_Aceptar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Aceptar.TabIndex = 30;
-            this.btn_Aceptar.TabStop = false;
-            this.btn_Aceptar.Zoom = 10;
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
-            // 
             // txt_Total
             // 
             this.txt_Total.Location = new System.Drawing.Point(166, 109);
@@ -562,6 +548,51 @@
             this.btn_Salir.Zoom = 10;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(249, 506);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(42, 20);
+            this.label21.TabIndex = 31;
+            this.label21.Text = "Total";
+            // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Aceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.BackgroundImage")));
+            this.btn_Aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Aceptar.FlatAppearance.BorderSize = 0;
+            this.btn_Aceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Aceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Aceptar.Location = new System.Drawing.Point(14, 184);
+            this.btn_Aceptar.Name = "btn_Aceptar";
+            this.btn_Aceptar.Size = new System.Drawing.Size(342, 85);
+            this.btn_Aceptar.TabIndex = 42;
+            this.btn_Aceptar.UseVisualStyleBackColor = false;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_Eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.ForeColor = System.Drawing.Color.White;
+            this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
+            this.btn_Eliminar.Location = new System.Drawing.Point(403, 471);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(94, 85);
+            this.btn_Eliminar.TabIndex = 46;
+            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Eliminar.UseVisualStyleBackColor = false;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Total_Click);
+            // 
             // btn_Total
             // 
             this.btn_Total.BackColor = System.Drawing.Color.Transparent;
@@ -576,16 +607,6 @@
             this.btn_Total.Zoom = 10;
             this.btn_Total.Click += new System.EventHandler(this.btn_Total_Click);
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(249, 506);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 20);
-            this.label21.TabIndex = 31;
-            this.label21.Text = "Total";
-            // 
             // frm_FinCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -593,6 +614,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(776, 572);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Eliminar);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.btn_Total);
             this.Controls.Add(this.panel1);
@@ -601,6 +623,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_FinCaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -612,7 +635,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Total)).EndInit();
@@ -666,8 +688,9 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton btn_Salir;
         private System.Windows.Forms.Label label20;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Aceptar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Total;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button btn_Aceptar;
+        private System.Windows.Forms.Button btn_Eliminar;
+        private Bunifu.Framework.UI.BunifuImageButton btn_Total;
     }
 }

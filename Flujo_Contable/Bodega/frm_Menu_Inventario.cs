@@ -45,6 +45,8 @@ namespace Flujo_Contable
             {
                 frm_ListaBodega ventana = new frm_ListaBodega();
                 ventana.lbl_Usuario.Text = lbl_Usuario.Text;
+                ventana.lbl_Ubica.Text = lbl_Ubicacion.Text;
+                ventana.lbl_Rol.Text = lbl_Rol.Text;
                 ventana.Show();
             }
             catch (Exception ex)
@@ -53,5 +55,14 @@ namespace Flujo_Contable
             }
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_Menu_Inventario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

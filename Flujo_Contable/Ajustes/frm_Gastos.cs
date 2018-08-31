@@ -68,49 +68,7 @@ namespace Flujo_Contable.Otros
         /*Metodo para agregar informacion de gastos, utlizando por instancia metodo de la clase Gastos e Ingresos*/
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
-            try
-            {
 
-                #region Validaciones
-                if (txt_Gasto.Text == string.Empty)
-                {
-                    MessageBox.Show("Favor Ingresar el Monto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txt_Gasto.Focus();
-                    return;
-                }
-                else if (txt_Descripcion.Text == string.Empty)
-                {
-                    MessageBox.Show("Favor Ingresar una Descripción", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txt_Descripcion.Focus();
-                    return;
-                }
-                else if (cb_TipoGasto.Text == string.Empty)
-                {
-                    MessageBox.Show("Favor Escoger Tipo de Gasto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    cb_TipoGasto.Focus();
-                    return;
-
-                }
-                #endregion
-
-                objgastos.Gastos = txt_Gasto.Text;
-                objgastos.Descripcion = txt_Descripcion.Text;
-                objgastos.Ubicacion = lbl_Ubicacion.Text;
-                objgastos.TipoGasto = cb_TipoGasto.Text;
-                objgastos.INSERT_GASTOS();
-                if (objgastos.Validacion == "Insertado")
-                {
-                    MessageBox.Show("Gasto Nuevo Insertado", "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txt_Descripcion.Text = string.Empty;
-                    txt_Gasto.Text = string.Empty;
-                    cb_TipoGasto.Text = string.Empty;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + "btn_Agregar_Click");
-
-            }
         }
 
         private void frm_Gastos_Load(object sender, EventArgs e)

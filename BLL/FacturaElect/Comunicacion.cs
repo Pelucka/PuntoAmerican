@@ -53,7 +53,6 @@ namespace BLL.FacturaElect
                 string res = await response.Content.ReadAsStringAsync();
 
                 object Localizacion = response.StatusCode;
-                MessageBox.Show(Convert.ToString(Localizacion));
 
 
                 http = new HttpClient();
@@ -69,18 +68,27 @@ namespace BLL.FacturaElect
                 {
                     xmlRespuesta = Funciones.DecodeBase64ToXML(RH.respuesta_xml);
                 }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
 
 
-
-                estadoFactura = RH.ind_estado;
-                statusCode = response.StatusCode.ToString();
-
-                mensajeRespuesta = ("Confirmación: " + (statusCode + "\r\n"));
-                mensajeRespuesta = (mensajeRespuesta + ("Estado: " + estadoFactura));
+                if(RH.ind_estado == null)
+                {
+                    estadoFactura = "En Proceso";
+                    statusCode = response.StatusCode.ToString();
+                }
+                else
+                {
+                    estadoFactura = RH.ind_estado;
+                    statusCode = response.StatusCode.ToString();
+                }
+                
             }
             catch (Exception ex)
             {
-                throw ex;
+                MessageBox.Show("Factura en Proceso");
             }
         }
 

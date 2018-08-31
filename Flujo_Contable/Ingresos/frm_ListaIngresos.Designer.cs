@@ -48,15 +48,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtp_Fecha2 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_Buscar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Refrescar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Ingresos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Buscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Refrescar)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -96,7 +94,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(6, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -145,7 +143,7 @@
             // 
             this.rb_TipoPago.AutoSize = true;
             this.rb_TipoPago.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_TipoPago.Location = new System.Drawing.Point(33, 160);
+            this.rb_TipoPago.Location = new System.Drawing.Point(31, 154);
             this.rb_TipoPago.Name = "rb_TipoPago";
             this.rb_TipoPago.Size = new System.Drawing.Size(14, 13);
             this.rb_TipoPago.TabIndex = 50;
@@ -157,7 +155,7 @@
             // 
             this.rb_Fecha.AutoSize = true;
             this.rb_Fecha.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_Fecha.Location = new System.Drawing.Point(33, 108);
+            this.rb_Fecha.Location = new System.Drawing.Point(31, 112);
             this.rb_Fecha.Name = "rb_Fecha";
             this.rb_Fecha.Size = new System.Drawing.Size(14, 13);
             this.rb_Fecha.TabIndex = 49;
@@ -169,7 +167,7 @@
             // 
             this.rb_Ubicacion.AutoSize = true;
             this.rb_Ubicacion.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_Ubicacion.Location = new System.Drawing.Point(33, 62);
+            this.rb_Ubicacion.Location = new System.Drawing.Point(31, 63);
             this.rb_Ubicacion.Name = "rb_Ubicacion";
             this.rb_Ubicacion.Size = new System.Drawing.Size(14, 13);
             this.rb_Ubicacion.TabIndex = 48;
@@ -183,7 +181,7 @@
             this.dtp_Fecha.Enabled = false;
             this.dtp_Fecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_Fecha.Location = new System.Drawing.Point(207, 111);
+            this.dtp_Fecha.Location = new System.Drawing.Point(174, 105);
             this.dtp_Fecha.Name = "dtp_Fecha";
             this.dtp_Fecha.Size = new System.Drawing.Size(94, 23);
             this.dtp_Fecha.TabIndex = 47;
@@ -193,7 +191,7 @@
             this.cbo_Ubicacion.Enabled = false;
             this.cbo_Ubicacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_Ubicacion.FormattingEnabled = true;
-            this.cbo_Ubicacion.Location = new System.Drawing.Point(207, 57);
+            this.cbo_Ubicacion.Location = new System.Drawing.Point(174, 51);
             this.cbo_Ubicacion.Name = "cbo_Ubicacion";
             this.cbo_Ubicacion.Size = new System.Drawing.Size(234, 25);
             this.cbo_Ubicacion.TabIndex = 46;
@@ -206,7 +204,7 @@
             this.cbo_TipoPago.Items.AddRange(new object[] {
             "Efectivo",
             "Tarjeta"});
-            this.cbo_TipoPago.Location = new System.Drawing.Point(207, 155);
+            this.cbo_TipoPago.Location = new System.Drawing.Point(174, 149);
             this.cbo_TipoPago.Name = "cbo_TipoPago";
             this.cbo_TipoPago.Size = new System.Drawing.Size(234, 25);
             this.cbo_TipoPago.TabIndex = 45;
@@ -215,7 +213,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(66, 160);
+            this.label3.Location = new System.Drawing.Point(54, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 20);
             this.label3.TabIndex = 44;
@@ -225,7 +223,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 101);
+            this.label2.Location = new System.Drawing.Point(54, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 43;
@@ -235,7 +233,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(66, 62);
+            this.label1.Location = new System.Drawing.Point(54, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 42;
@@ -247,7 +245,7 @@
             this.dtp_Fecha2.Enabled = false;
             this.dtp_Fecha2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_Fecha2.Location = new System.Drawing.Point(347, 111);
+            this.dtp_Fecha2.Location = new System.Drawing.Point(319, 105);
             this.dtp_Fecha2.Name = "dtp_Fecha2";
             this.dtp_Fecha2.Size = new System.Drawing.Size(94, 23);
             this.dtp_Fecha2.TabIndex = 53;
@@ -256,41 +254,43 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(324, 114);
+            this.label5.Location = new System.Drawing.Point(288, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(17, 20);
             this.label5.TabIndex = 54;
             this.label5.Text = "y";
             // 
-            // btn_Buscar
+            // button1
             // 
-            this.btn_Buscar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.Image")));
-            this.btn_Buscar.ImageActive = null;
-            this.btn_Buscar.Location = new System.Drawing.Point(475, 95);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(55, 55);
-            this.btn_Buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Buscar.TabIndex = 55;
-            this.btn_Buscar.TabStop = false;
-            this.btn_Buscar.Zoom = 10;
-            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(426, 79);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 85);
+            this.button1.TabIndex = 51;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
-            // btn_Refrescar
+            // button2
             // 
-            this.btn_Refrescar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Refrescar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refrescar.Image")));
-            this.btn_Refrescar.ImageActive = null;
-            this.btn_Refrescar.Location = new System.Drawing.Point(545, 94);
-            this.btn_Refrescar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Refrescar.Name = "btn_Refrescar";
-            this.btn_Refrescar.Size = new System.Drawing.Size(55, 55);
-            this.btn_Refrescar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Refrescar.TabIndex = 56;
-            this.btn_Refrescar.TabStop = false;
-            this.btn_Refrescar.Zoom = 10;
-            this.btn_Refrescar.Click += new System.EventHandler(this.btn_Refrescar_Click);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(179)))), ((int)(((byte)(215)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(521, 79);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 85);
+            this.button2.TabIndex = 50;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btn_Refrescar_Click);
             // 
             // frm_ListaIngresos
             // 
@@ -298,8 +298,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(627, 626);
-            this.Controls.Add(this.btn_Refrescar);
-            this.Controls.Add(this.btn_Buscar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dtp_Fecha2);
             this.Controls.Add(this.rb_TipoPago);
@@ -314,6 +314,7 @@
             this.Controls.Add(this.dgv_Ingresos);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_ListaIngresos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_ListaIngresos";
@@ -323,8 +324,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Ingresos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Buscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Refrescar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,7 +349,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtp_Fecha2;
         private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Buscar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Refrescar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

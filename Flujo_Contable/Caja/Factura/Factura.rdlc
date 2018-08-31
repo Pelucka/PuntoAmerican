@@ -150,7 +150,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -239,7 +238,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>6.82871cm</Top>
+        <Top>6.19371cm</Top>
         <Left>0.62834cm</Left>
         <Height>1.2cm</Height>
         <Width>6.2688cm</Width>
@@ -264,8 +263,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>5.01777cm</Top>
-        <Left>3.67987cm</Left>
+        <Top>4.70027cm</Top>
+        <Left>2.72737cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>1</ZIndex>
@@ -296,7 +295,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>10.20155cm</Top>
+        <Top>10.86301cm</Top>
         <Left>2.52861cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
@@ -326,8 +325,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>5.92793cm</Top>
-        <Left>2.51097cm</Left>
+        <Top>5.29293cm</Top>
+        <Left>1.55847cm</Left>
         <Height>0.6cm</Height>
         <Width>3.56306cm</Width>
         <ZIndex>3</ZIndex>
@@ -358,7 +357,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>9.31374cm</Top>
+        <Top>8.36124cm</Top>
         <Left>4.39714cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
@@ -390,7 +389,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox17</rd:DefaultName>
-        <Top>8.6079cm</Top>
+        <Top>7.6554cm</Top>
         <Left>4.39714cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
@@ -420,7 +419,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>8.6079cm</Top>
+        <Top>7.6554cm</Top>
         <Left>2.51097cm</Left>
         <Height>0.6cm</Height>
         <Width>1.88617cm</Width>
@@ -450,7 +449,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>9.31374cm</Top>
+        <Top>8.36124cm</Top>
         <Left>2.91666cm</Left>
         <Height>0.6cm</Height>
         <Width>1.4452cm</Width>
@@ -480,8 +479,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
-        <Top>5.92793cm</Top>
-        <Left>1.07404cm</Left>
+        <Top>5.29293cm</Top>
+        <Left>0.12154cm</Left>
         <Height>0.6cm</Height>
         <Width>1.40166cm</Width>
         <ZIndex>8</ZIndex>
@@ -510,8 +509,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox7</rd:DefaultName>
-        <Top>5.01777cm</Top>
-        <Left>1.07404cm</Left>
+        <Top>4.70027cm</Top>
+        <Left>0.12154cm</Left>
         <Height>0.6cm</Height>
         <Width>2.60583cm</Width>
         <ZIndex>9</ZIndex>
@@ -529,10 +528,9 @@
         <Source>Embedded</Source>
         <Value>BlancoyNegro</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>0.15339in</Top>
         <Left>0.63138in</Left>
         <Height>1.71875in</Height>
-        <Width>2.46803in</Width>
+        <Width>1.72872in</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -540,8 +538,40 @@
           </Border>
         </Style>
       </Image>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Emitida conforme lo establece el Numero de Resolucion DGT-R-48-2016 del 07 de Octubre de 2016</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox8</rd:DefaultName>
+        <Top>3.65536in</Top>
+        <Left>0.24738in</Left>
+        <Height>0.55173in</Height>
+        <Width>2.46803in</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>4.35164in</Height>
+    <Height>4.69008in</Height>
     <Style>
       <Border>
         <Style>None</Style>

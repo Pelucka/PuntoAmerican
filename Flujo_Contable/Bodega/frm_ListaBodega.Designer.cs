@@ -46,16 +46,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lbl_Ubica = new System.Windows.Forms.Label();
+            this.lbl_Rol = new System.Windows.Forms.Label();
             this.lbl_Usuario = new System.Windows.Forms.Label();
             this.cbo_Ubicacion = new System.Windows.Forms.ComboBox();
             this.cbo_TipoSaco = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_Codigo = new System.Windows.Forms.Label();
-            this.btn_Eliminar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Aceptar = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_Buscar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_Buscar = new System.Windows.Forms.Button();
             this.cbo_Ubicacionbusqueda = new System.Windows.Forms.ComboBox();
             this.cbo_tiposacobusqueda = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -69,7 +69,9 @@
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Login = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btn_Resetear = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_resetear = new System.Windows.Forms.Button();
+            this.btn_Eliminar = new System.Windows.Forms.Button();
+            this.btn_Aceptar = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -83,14 +85,10 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Buscar)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Inventario)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Resetear)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
@@ -101,6 +99,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lbl_Ubica);
+            this.groupBox3.Controls.Add(this.lbl_Rol);
             this.groupBox3.Controls.Add(this.lbl_Usuario);
             this.groupBox3.Controls.Add(this.cbo_Ubicacion);
             this.groupBox3.Controls.Add(this.cbo_TipoSaco);
@@ -108,13 +108,31 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.lbl_Codigo);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 51);
+            this.groupBox3.Location = new System.Drawing.Point(12, 46);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(355, 323);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Información de Saco";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // lbl_Ubica
+            // 
+            this.lbl_Ubica.AutoSize = true;
+            this.lbl_Ubica.Location = new System.Drawing.Point(35, 275);
+            this.lbl_Ubica.Name = "lbl_Ubica";
+            this.lbl_Ubica.Size = new System.Drawing.Size(0, 20);
+            this.lbl_Ubica.TabIndex = 17;
+            this.lbl_Ubica.Visible = false;
+            // 
+            // lbl_Rol
+            // 
+            this.lbl_Rol.AutoSize = true;
+            this.lbl_Rol.Location = new System.Drawing.Point(35, 235);
+            this.lbl_Rol.Name = "lbl_Rol";
+            this.lbl_Rol.Size = new System.Drawing.Size(0, 20);
+            this.lbl_Rol.TabIndex = 16;
+            this.lbl_Rol.Visible = false;
             // 
             // lbl_Usuario
             // 
@@ -173,36 +191,6 @@
             this.lbl_Codigo.TabIndex = 0;
             this.lbl_Codigo.Visible = false;
             // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
-            this.btn_Eliminar.ImageActive = null;
-            this.btn_Eliminar.Location = new System.Drawing.Point(274, 42);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(55, 55);
-            this.btn_Eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Eliminar.TabIndex = 17;
-            this.btn_Eliminar.TabStop = false;
-            this.btn_Eliminar.Zoom = 10;
-            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
-            // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
-            this.btn_Aceptar.ImageActive = null;
-            this.btn_Aceptar.Location = new System.Drawing.Point(156, 42);
-            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(55, 55);
-            this.btn_Aceptar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Aceptar.TabIndex = 16;
-            this.btn_Aceptar.TabStop = false;
-            this.btn_Aceptar.Zoom = 10;
-            this.btn_Aceptar.Click += new System.EventHandler(this.txt_aceptar_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btn_Buscar);
@@ -212,27 +200,27 @@
             this.groupBox2.Controls.Add(this.rb_Ubicacion);
             this.groupBox2.Controls.Add(this.rb_Saco);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(376, 51);
+            this.groupBox2.Location = new System.Drawing.Point(376, 46);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(594, 112);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Busqueda de Apartado";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btn_Buscar
             // 
             this.btn_Buscar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.Image")));
-            this.btn_Buscar.ImageActive = null;
-            this.btn_Buscar.Location = new System.Drawing.Point(519, 35);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.BackgroundImage")));
+            this.btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Buscar.FlatAppearance.BorderSize = 0;
+            this.btn_Buscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.btn_Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Buscar.Location = new System.Drawing.Point(494, 19);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(55, 55);
-            this.btn_Buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Buscar.TabIndex = 10;
-            this.btn_Buscar.TabStop = false;
-            this.btn_Buscar.Zoom = 10;
+            this.btn_Buscar.Size = new System.Drawing.Size(94, 85);
+            this.btn_Buscar.TabIndex = 39;
+            this.btn_Buscar.UseVisualStyleBackColor = false;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // cbo_Ubicacionbusqueda
@@ -265,9 +253,10 @@
             // rb_Ubicacion
             // 
             this.rb_Ubicacion.AutoSize = true;
+            this.rb_Ubicacion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_Ubicacion.Location = new System.Drawing.Point(31, 63);
             this.rb_Ubicacion.Name = "rb_Ubicacion";
-            this.rb_Ubicacion.Size = new System.Drawing.Size(103, 24);
+            this.rb_Ubicacion.Size = new System.Drawing.Size(107, 25);
             this.rb_Ubicacion.TabIndex = 4;
             this.rb_Ubicacion.TabStop = true;
             this.rb_Ubicacion.Text = "Ubicación";
@@ -277,9 +266,10 @@
             // rb_Saco
             // 
             this.rb_Saco.AutoSize = true;
+            this.rb_Saco.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_Saco.Location = new System.Drawing.Point(31, 30);
             this.rb_Saco.Name = "rb_Saco";
-            this.rb_Saco.Size = new System.Drawing.Size(120, 24);
+            this.rb_Saco.Size = new System.Drawing.Size(128, 25);
             this.rb_Saco.TabIndex = 3;
             this.rb_Saco.TabStop = true;
             this.rb_Saco.Text = "Tipo de Saco";
@@ -290,7 +280,7 @@
             // 
             this.groupBox1.Controls.Add(this.dgv_Inventario);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(373, 169);
+            this.groupBox1.Location = new System.Drawing.Point(373, 164);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(597, 324);
             this.groupBox1.TabIndex = 8;
@@ -403,31 +393,67 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.btn_resetear);
             this.groupBox4.Controls.Add(this.btn_Eliminar);
-            this.groupBox4.Controls.Add(this.btn_Resetear);
             this.groupBox4.Controls.Add(this.btn_Aceptar);
             this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(12, 379);
+            this.groupBox4.Location = new System.Drawing.Point(12, 374);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(355, 114);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Opciones";
             // 
-            // btn_Resetear
+            // btn_resetear
             // 
-            this.btn_Resetear.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Resetear.Image = ((System.Drawing.Image)(resources.GetObject("btn_Resetear.Image")));
-            this.btn_Resetear.ImageActive = null;
-            this.btn_Resetear.Location = new System.Drawing.Point(26, 42);
-            this.btn_Resetear.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Resetear.Name = "btn_Resetear";
-            this.btn_Resetear.Size = new System.Drawing.Size(55, 55);
-            this.btn_Resetear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Resetear.TabIndex = 7;
-            this.btn_Resetear.TabStop = false;
-            this.btn_Resetear.Zoom = 10;
-            this.btn_Resetear.Click += new System.EventHandler(this.btn_resetear_Click);
+            this.btn_resetear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.btn_resetear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_resetear.BackgroundImage")));
+            this.btn_resetear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_resetear.FlatAppearance.BorderSize = 0;
+            this.btn_resetear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btn_resetear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(179)))), ((int)(((byte)(215)))));
+            this.btn_resetear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_resetear.Location = new System.Drawing.Point(255, 23);
+            this.btn_resetear.Name = "btn_resetear";
+            this.btn_resetear.Size = new System.Drawing.Size(94, 85);
+            this.btn_resetear.TabIndex = 38;
+            this.btn_resetear.UseVisualStyleBackColor = false;
+            this.btn_resetear.Click += new System.EventHandler(this.btn_resetear_Click);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_Eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.ForeColor = System.Drawing.Color.White;
+            this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
+            this.btn_Eliminar.Location = new System.Drawing.Point(161, 23);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(94, 85);
+            this.btn_Eliminar.TabIndex = 37;
+            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Eliminar.UseVisualStyleBackColor = false;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
+            // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Aceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.BackgroundImage")));
+            this.btn_Aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Aceptar.FlatAppearance.BorderSize = 0;
+            this.btn_Aceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Aceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Aceptar.Location = new System.Drawing.Point(6, 23);
+            this.btn_Aceptar.Name = "btn_Aceptar";
+            this.btn_Aceptar.Size = new System.Drawing.Size(155, 85);
+            this.btn_Aceptar.TabIndex = 36;
+            this.btn_Aceptar.UseVisualStyleBackColor = false;
+            this.btn_Aceptar.Click += new System.EventHandler(this.txt_aceptar_Click);
             // 
             // bunifuElipse1
             // 
@@ -451,8 +477,8 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(8, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
@@ -461,12 +487,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 9);
+            this.label2.Location = new System.Drawing.Point(47, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 20);
             this.label2.TabIndex = 17;
             this.label2.Text = "Lista de Sacos";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btn_Salir
             // 
@@ -487,12 +512,12 @@
             this.grb_Opciones.Controls.Add(this.dgv_CantidadUbicacion);
             this.grb_Opciones.Controls.Add(this.dgv_Sacos);
             this.grb_Opciones.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grb_Opciones.Location = new System.Drawing.Point(976, 51);
+            this.grb_Opciones.Location = new System.Drawing.Point(976, 46);
             this.grb_Opciones.Name = "grb_Opciones";
             this.grb_Opciones.Size = new System.Drawing.Size(378, 442);
             this.grb_Opciones.TabIndex = 12;
             this.grb_Opciones.TabStop = false;
-            this.grb_Opciones.Text = "Opciones";
+            this.grb_Opciones.Text = "Localización";
             // 
             // dgv_CantidadUbicacion
             // 
@@ -503,7 +528,7 @@
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
             this.dgv_CantidadUbicacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_CantidadUbicacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_CantidadUbicacion.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgv_CantidadUbicacion.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_CantidadUbicacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_CantidadUbicacion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_CantidadUbicacion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -651,7 +676,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1366, 505);
+            this.ClientSize = new System.Drawing.Size(1366, 497);
             this.ControlBox = false;
             this.Controls.Add(this.grb_Opciones);
             this.Controls.Add(this.panel1);
@@ -668,15 +693,11 @@
             this.Load += new System.EventHandler(this.frm_ListaBodega_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Buscar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Inventario)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Resetear)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
@@ -709,10 +730,6 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuImageButton btn_Salir;
         public System.Windows.Forms.Label lbl_Usuario;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Buscar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Eliminar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Aceptar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Resetear;
         private System.Windows.Forms.GroupBox grb_Opciones;
         private System.Windows.Forms.DataGridView dgv_Sacos;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -725,5 +742,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TipodeSaco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Login;
+        private System.Windows.Forms.Button btn_Eliminar;
+        private System.Windows.Forms.Button btn_Aceptar;
+        private System.Windows.Forms.Button btn_resetear;
+        private System.Windows.Forms.Button btn_Buscar;
+        public System.Windows.Forms.Label lbl_Ubica;
+        public System.Windows.Forms.Label lbl_Rol;
     }
 }

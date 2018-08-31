@@ -87,30 +87,29 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(16, 63);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(419, 354);
+            this.groupBox1.Size = new System.Drawing.Size(314, 288);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información";
             // 
             // txt_PrecioProducto
             // 
-            this.txt_PrecioProducto.Location = new System.Drawing.Point(211, 228);
-            this.txt_PrecioProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_PrecioProducto.Location = new System.Drawing.Point(158, 185);
+            this.txt_PrecioProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_PrecioProducto.Name = "txt_PrecioProducto";
-            this.txt_PrecioProducto.Size = new System.Drawing.Size(196, 30);
+            this.txt_PrecioProducto.Size = new System.Drawing.Size(148, 26);
             this.txt_PrecioProducto.TabIndex = 6;
             this.txt_PrecioProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_PrecioProducto_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 231);
+            this.label3.Location = new System.Drawing.Point(13, 188);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 22);
+            this.label3.Size = new System.Drawing.Size(132, 20);
             this.label3.TabIndex = 16;
             this.label3.Text = "Precio Producto:";
             // 
@@ -118,11 +117,9 @@
             // 
             this.groupBox2.Controls.Add(this.rb_Juguete);
             this.groupBox2.Controls.Add(this.rb_Ropa);
-            this.groupBox2.Location = new System.Drawing.Point(12, 135);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(9, 110);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(396, 68);
+            this.groupBox2.Size = new System.Drawing.Size(297, 55);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tipo de Apartado:";
@@ -130,10 +127,9 @@
             // rb_Juguete
             // 
             this.rb_Juguete.AutoSize = true;
-            this.rb_Juguete.Location = new System.Drawing.Point(57, 23);
-            this.rb_Juguete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rb_Juguete.Location = new System.Drawing.Point(43, 19);
             this.rb_Juguete.Name = "rb_Juguete";
-            this.rb_Juguete.Size = new System.Drawing.Size(108, 26);
+            this.rb_Juguete.Size = new System.Drawing.Size(87, 24);
             this.rb_Juguete.TabIndex = 4;
             this.rb_Juguete.TabStop = true;
             this.rb_Juguete.Text = "Juguete";
@@ -143,10 +139,9 @@
             // rb_Ropa
             // 
             this.rb_Ropa.AutoSize = true;
-            this.rb_Ropa.Location = new System.Drawing.Point(249, 23);
-            this.rb_Ropa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rb_Ropa.Location = new System.Drawing.Point(187, 19);
             this.rb_Ropa.Name = "rb_Ropa";
-            this.rb_Ropa.Size = new System.Drawing.Size(81, 26);
+            this.rb_Ropa.Size = new System.Drawing.Size(66, 24);
             this.rb_Ropa.TabIndex = 5;
             this.rb_Ropa.TabStop = true;
             this.rb_Ropa.Text = "Ropa";
@@ -155,49 +150,44 @@
             // 
             // mtxt_Telefono
             // 
-            this.mtxt_Telefono.Location = new System.Drawing.Point(192, 95);
-            this.mtxt_Telefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mtxt_Telefono.Location = new System.Drawing.Point(144, 77);
             this.mtxt_Telefono.Mask = "####-####";
             this.mtxt_Telefono.Name = "mtxt_Telefono";
-            this.mtxt_Telefono.Size = new System.Drawing.Size(204, 30);
+            this.mtxt_Telefono.Size = new System.Drawing.Size(154, 26);
             this.mtxt_Telefono.TabIndex = 3;
             this.mtxt_Telefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtxt_Telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxt_Telefono_KeyPress);
             // 
             // txt_CantidadPagado
             // 
-            this.txt_CantidadPagado.Location = new System.Drawing.Point(211, 270);
-            this.txt_CantidadPagado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_CantidadPagado.Location = new System.Drawing.Point(158, 219);
             this.txt_CantidadPagado.Name = "txt_CantidadPagado";
-            this.txt_CantidadPagado.Size = new System.Drawing.Size(196, 30);
+            this.txt_CantidadPagado.Size = new System.Drawing.Size(148, 26);
             this.txt_CantidadPagado.TabIndex = 7;
             this.txt_CantidadPagado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CantidadPagado_KeyPress);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 273);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(7, 222);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(184, 22);
+            this.label6.Size = new System.Drawing.Size(145, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Cantidad Pagado:";
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(192, 58);
-            this.txt_Nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Nombre.Location = new System.Drawing.Point(144, 47);
             this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(204, 30);
+            this.txt_Nombre.Size = new System.Drawing.Size(154, 26);
             this.txt_Nombre.TabIndex = 2;
             // 
             // mtxt_Cedula
             // 
-            this.mtxt_Cedula.Location = new System.Drawing.Point(192, 21);
-            this.mtxt_Cedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mtxt_Cedula.Location = new System.Drawing.Point(144, 17);
             this.mtxt_Cedula.Mask = "#-####-####";
             this.mtxt_Cedula.Name = "mtxt_Cedula";
-            this.mtxt_Cedula.Size = new System.Drawing.Size(204, 30);
+            this.mtxt_Cedula.Size = new System.Drawing.Size(154, 26);
             this.mtxt_Cedula.TabIndex = 1;
             this.mtxt_Cedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtxt_Cedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxt_Cedula_KeyPress);
@@ -205,30 +195,27 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 100);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(6, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 22);
+            this.label4.Size = new System.Drawing.Size(75, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Teléfono:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 62);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(7, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 22);
+            this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(7, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 22);
+            this.label1.Size = new System.Drawing.Size(67, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cedula:";
             // 
@@ -238,31 +225,28 @@
             this.grb_TipoApartado.Controls.Add(this.label5);
             this.grb_TipoApartado.Enabled = false;
             this.grb_TipoApartado.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grb_TipoApartado.Location = new System.Drawing.Point(441, 64);
-            this.grb_TipoApartado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grb_TipoApartado.Location = new System.Drawing.Point(331, 52);
             this.grb_TipoApartado.Name = "grb_TipoApartado";
-            this.grb_TipoApartado.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grb_TipoApartado.Size = new System.Drawing.Size(439, 86);
+            this.grb_TipoApartado.Size = new System.Drawing.Size(329, 70);
             this.grb_TipoApartado.TabIndex = 4;
             this.grb_TipoApartado.TabStop = false;
             this.grb_TipoApartado.Text = "Descripción";
             // 
             // txt_Decripcion
             // 
-            this.txt_Decripcion.Location = new System.Drawing.Point(147, 16);
-            this.txt_Decripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Decripcion.Location = new System.Drawing.Point(110, 13);
+            this.txt_Decripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_Decripcion.Multiline = true;
             this.txt_Decripcion.Name = "txt_Decripcion";
-            this.txt_Decripcion.Size = new System.Drawing.Size(279, 59);
+            this.txt_Decripcion.Size = new System.Drawing.Size(210, 49);
             this.txt_Decripcion.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 20);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(25, 16);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 22);
+            this.label5.Size = new System.Drawing.Size(84, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "Apartado:";
             // 
@@ -273,11 +257,11 @@
             this.groupBox3.Controls.Add(this.rb_15Dias);
             this.groupBox3.Controls.Add(this.rb_Mes);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(441, 158);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Location = new System.Drawing.Point(331, 128);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(439, 73);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(329, 59);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tiempo del Apartado";
@@ -285,29 +269,27 @@
             // lbl_Usuario
             // 
             this.lbl_Usuario.AutoSize = true;
-            this.lbl_Usuario.Location = new System.Drawing.Point(37, 64);
-            this.lbl_Usuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Usuario.Location = new System.Drawing.Point(28, 52);
             this.lbl_Usuario.Name = "lbl_Usuario";
-            this.lbl_Usuario.Size = new System.Drawing.Size(0, 22);
+            this.lbl_Usuario.Size = new System.Drawing.Size(0, 20);
             this.lbl_Usuario.TabIndex = 12;
             // 
             // lbl_Ubicacion
             // 
             this.lbl_Ubicacion.AutoSize = true;
-            this.lbl_Ubicacion.Location = new System.Drawing.Point(199, 23);
-            this.lbl_Ubicacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Ubicacion.Location = new System.Drawing.Point(149, 19);
             this.lbl_Ubicacion.Name = "lbl_Ubicacion";
-            this.lbl_Ubicacion.Size = new System.Drawing.Size(0, 22);
+            this.lbl_Ubicacion.Size = new System.Drawing.Size(0, 20);
             this.lbl_Ubicacion.TabIndex = 11;
             this.lbl_Ubicacion.Visible = false;
             // 
             // rb_15Dias
             // 
             this.rb_15Dias.AutoSize = true;
-            this.rb_15Dias.Location = new System.Drawing.Point(281, 28);
-            this.rb_15Dias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rb_15Dias.Location = new System.Drawing.Point(211, 23);
+            this.rb_15Dias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rb_15Dias.Name = "rb_15Dias";
-            this.rb_15Dias.Size = new System.Drawing.Size(95, 26);
+            this.rb_15Dias.Size = new System.Drawing.Size(77, 24);
             this.rb_15Dias.TabIndex = 10;
             this.rb_15Dias.TabStop = true;
             this.rb_15Dias.Text = "15 Días";
@@ -316,10 +298,10 @@
             // rb_Mes
             // 
             this.rb_Mes.AutoSize = true;
-            this.rb_Mes.Location = new System.Drawing.Point(69, 28);
-            this.rb_Mes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rb_Mes.Location = new System.Drawing.Point(52, 23);
+            this.rb_Mes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rb_Mes.Name = "rb_Mes";
-            this.rb_Mes.Size = new System.Drawing.Size(83, 26);
+            this.rb_Mes.Size = new System.Drawing.Size(70, 24);
             this.rb_Mes.TabIndex = 9;
             this.rb_Mes.TabStop = true;
             this.rb_Mes.Text = "1 Mes";
@@ -330,11 +312,11 @@
             this.groupBox4.Controls.Add(this.rb_Tarjeta);
             this.groupBox4.Controls.Add(this.rb_Efectivo);
             this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(441, 249);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Location = new System.Drawing.Point(331, 202);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(439, 73);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(329, 59);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Tipo de Pago";
@@ -342,10 +324,10 @@
             // rb_Tarjeta
             // 
             this.rb_Tarjeta.AutoSize = true;
-            this.rb_Tarjeta.Location = new System.Drawing.Point(281, 28);
-            this.rb_Tarjeta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rb_Tarjeta.Location = new System.Drawing.Point(211, 23);
+            this.rb_Tarjeta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rb_Tarjeta.Name = "rb_Tarjeta";
-            this.rb_Tarjeta.Size = new System.Drawing.Size(93, 26);
+            this.rb_Tarjeta.Size = new System.Drawing.Size(75, 24);
             this.rb_Tarjeta.TabIndex = 1;
             this.rb_Tarjeta.TabStop = true;
             this.rb_Tarjeta.Text = "Tarjeta";
@@ -354,10 +336,10 @@
             // rb_Efectivo
             // 
             this.rb_Efectivo.AutoSize = true;
-            this.rb_Efectivo.Location = new System.Drawing.Point(69, 31);
-            this.rb_Efectivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rb_Efectivo.Location = new System.Drawing.Point(52, 25);
+            this.rb_Efectivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rb_Efectivo.Name = "rb_Efectivo";
-            this.rb_Efectivo.Size = new System.Drawing.Size(106, 26);
+            this.rb_Efectivo.Size = new System.Drawing.Size(88, 24);
             this.rb_Efectivo.TabIndex = 0;
             this.rb_Efectivo.TabStop = true;
             this.rb_Efectivo.Text = "Efectivo";
@@ -376,9 +358,8 @@
             this.panel1.Controls.Add(this.btn_Salir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(897, 49);
+            this.panel1.Size = new System.Drawing.Size(673, 40);
             this.panel1.TabIndex = 15;
             // 
             // label7
@@ -386,20 +367,18 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(65, 12);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(49, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(185, 25);
+            this.label7.Size = new System.Drawing.Size(139, 20);
             this.label7.TabIndex = 20;
             this.label7.Text = "Apartados";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 33);
+            this.pictureBox1.Size = new System.Drawing.Size(36, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
@@ -409,10 +388,9 @@
             this.btn_Salir.BackColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
             this.btn_Salir.ImageActive = null;
-            this.btn_Salir.Location = new System.Drawing.Point(851, 5);
-            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Salir.Location = new System.Drawing.Point(638, 4);
             this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(40, 37);
+            this.btn_Salir.Size = new System.Drawing.Size(30, 30);
             this.btn_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Salir.TabIndex = 18;
             this.btn_Salir.TabStop = false;
@@ -442,14 +420,14 @@
             this.btn_Agregar.IconVisible = true;
             this.btn_Agregar.IconZoom = 90D;
             this.btn_Agregar.IsTab = false;
-            this.btn_Agregar.Location = new System.Drawing.Point(447, 331);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btn_Agregar.Location = new System.Drawing.Point(335, 269);
+            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Normalcolor = System.Drawing.Color.White;
             this.btn_Agregar.OnHovercolor = System.Drawing.Color.Transparent;
             this.btn_Agregar.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Agregar.selected = false;
-            this.btn_Agregar.Size = new System.Drawing.Size(217, 91);
+            this.btn_Agregar.Size = new System.Drawing.Size(163, 74);
             this.btn_Agregar.TabIndex = 21;
             this.btn_Agregar.Text = "Agregar";
             this.btn_Agregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -480,14 +458,14 @@
             this.btn_Limpiar.IconVisible = true;
             this.btn_Limpiar.IconZoom = 90D;
             this.btn_Limpiar.IsTab = false;
-            this.btn_Limpiar.Location = new System.Drawing.Point(671, 331);
-            this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btn_Limpiar.Location = new System.Drawing.Point(503, 269);
+            this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Normalcolor = System.Drawing.Color.White;
             this.btn_Limpiar.OnHovercolor = System.Drawing.Color.Transparent;
             this.btn_Limpiar.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Limpiar.selected = false;
-            this.btn_Limpiar.Size = new System.Drawing.Size(217, 91);
+            this.btn_Limpiar.Size = new System.Drawing.Size(163, 74);
             this.btn_Limpiar.TabIndex = 22;
             this.btn_Limpiar.Text = "Limpiar";
             this.btn_Limpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -496,10 +474,10 @@
             // 
             // frm_Apartados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(897, 433);
+            this.ClientSize = new System.Drawing.Size(673, 352);
             this.ControlBox = false;
             this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.btn_Agregar);
@@ -509,7 +487,7 @@
             this.Controls.Add(this.grb_TipoApartado);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Apartados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Apartados";

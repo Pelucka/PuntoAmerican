@@ -42,10 +42,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btn_Agregar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Agregar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -139,6 +141,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btn_Salir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -152,7 +155,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(13, 9);
+            this.label4.Location = new System.Drawing.Point(42, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 25);
             this.label4.TabIndex = 14;
@@ -177,43 +180,29 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_Agregar
             // 
-            this.btn_Agregar.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_Agregar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Agregar.BorderRadius = 0;
-            this.btn_Agregar.ButtonText = "Agregar";
-            this.btn_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Agregar.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.btn_Agregar.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Iconimage")));
-            this.btn_Agregar.Iconimage_right = null;
-            this.btn_Agregar.Iconimage_right_Selected = null;
-            this.btn_Agregar.Iconimage_Selected = null;
-            this.btn_Agregar.IconMarginLeft = 0;
-            this.btn_Agregar.IconMarginRight = 0;
-            this.btn_Agregar.IconRightVisible = true;
-            this.btn_Agregar.IconRightZoom = 0D;
-            this.btn_Agregar.IconVisible = true;
-            this.btn_Agregar.IconZoom = 50D;
-            this.btn_Agregar.IsTab = false;
-            this.btn_Agregar.Location = new System.Drawing.Point(17, 283);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_Agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.BackgroundImage")));
+            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Agregar.FlatAppearance.BorderSize = 0;
+            this.btn_Agregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Agregar.Location = new System.Drawing.Point(13, 277);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
-            this.btn_Agregar.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Agregar.selected = false;
-            this.btn_Agregar.Size = new System.Drawing.Size(294, 70);
-            this.btn_Agregar.TabIndex = 11;
-            this.btn_Agregar.Text = "Agregar";
-            this.btn_Agregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Agregar.Textcolor = System.Drawing.Color.Black;
-            this.btn_Agregar.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar.Size = new System.Drawing.Size(305, 85);
+            this.btn_Agregar.TabIndex = 12;
+            this.btn_Agregar.UseVisualStyleBackColor = false;
             this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
             // 
             // frm_Gastos
@@ -238,6 +227,7 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -255,6 +245,7 @@
         private Bunifu.Framework.UI.BunifuImageButton btn_Salir;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_Agregar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_Agregar;
     }
 }

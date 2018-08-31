@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Ingresos_Mes));
             this.lbl_AnoHoy = new System.Windows.Forms.Label();
             this.cha_Gastos = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -60,16 +60,14 @@
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.tmr_Timer = new System.Windows.Forms.Timer(this.components);
-            this.btn_Buscar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Original = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_InicioCaja = new System.Windows.Forms.Button();
+            this.btn_Apartados = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cha_Gastos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cha_Ganancia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cha_Ingresos)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Buscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Original)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_AnoHoy
@@ -88,13 +86,13 @@
             this.cha_Gastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.cha_Gastos.BorderlineColor = System.Drawing.Color.Transparent;
             this.cha_Gastos.BorderlineWidth = 0;
-            chartArea1.Name = "ChartArea1";
-            this.cha_Gastos.ChartAreas.Add(chartArea1);
+            chartArea10.Name = "ChartArea1";
+            this.cha_Gastos.ChartAreas.Add(chartArea10);
             this.cha_Gastos.Cursor = System.Windows.Forms.Cursors.Hand;
-            legend1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Legend1";
-            this.cha_Gastos.Legends.Add(legend1);
+            legend10.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend10.IsTextAutoFit = false;
+            legend10.Name = "Legend1";
+            this.cha_Gastos.Legends.Add(legend10);
             this.cha_Gastos.Location = new System.Drawing.Point(526, 57);
             this.cha_Gastos.Margin = new System.Windows.Forms.Padding(4);
             this.cha_Gastos.Name = "cha_Gastos";
@@ -107,30 +105,30 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(153)))), ((int)(((byte)(68))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(102))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))))};
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Legend = "Legend1";
-            series1.Name = "Gastos";
-            this.cha_Gastos.Series.Add(series1);
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series10.Legend = "Legend1";
+            series10.Name = "Gastos";
+            this.cha_Gastos.Series.Add(series10);
             this.cha_Gastos.Size = new System.Drawing.Size(452, 284);
             this.cha_Gastos.TabIndex = 17;
             this.cha_Gastos.Text = "Gastos de la Empresa";
-            title1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Gastos de la Empresa";
-            title1.Text = "Gastos";
-            this.cha_Gastos.Titles.Add(title1);
+            title10.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title10.Name = "Gastos de la Empresa";
+            title10.Text = "Gastos";
+            this.cha_Gastos.Titles.Add(title10);
             this.cha_Gastos.Click += new System.EventHandler(this.cha_Gastos_Click);
             // 
             // cha_Ganancia
             // 
             this.cha_Ganancia.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.cha_Ganancia.ChartAreas.Add(chartArea2);
-            legend2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend2.IsTextAutoFit = false;
-            legend2.Name = "Legend1";
-            this.cha_Ganancia.Legends.Add(legend2);
+            chartArea11.Name = "ChartArea1";
+            this.cha_Ganancia.ChartAreas.Add(chartArea11);
+            legend11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend11.IsTextAutoFit = false;
+            legend11.Name = "Legend1";
+            this.cha_Ganancia.Legends.Add(legend11);
             this.cha_Ganancia.Location = new System.Drawing.Point(430, 349);
             this.cha_Ganancia.Margin = new System.Windows.Forms.Padding(4);
             this.cha_Ganancia.Name = "cha_Ganancia";
@@ -143,20 +141,20 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(153)))), ((int)(((byte)(68))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(102))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))))};
-            series2.ChartArea = "ChartArea1";
-            series2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.IsValueShownAsLabel = true;
-            series2.Legend = "Legend1";
-            series2.Name = "Ganancias";
-            series2.YValuesPerPoint = 2;
-            this.cha_Ganancia.Series.Add(series2);
+            series11.ChartArea = "ChartArea1";
+            series11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series11.IsValueShownAsLabel = true;
+            series11.Legend = "Legend1";
+            series11.Name = "Ganancias";
+            series11.YValuesPerPoint = 2;
+            this.cha_Ganancia.Series.Add(series11);
             this.cha_Ganancia.Size = new System.Drawing.Size(555, 289);
             this.cha_Ganancia.TabIndex = 18;
             this.cha_Ganancia.Text = "Ganancia Total de la Empresa";
-            title2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "Ganancia Total";
-            title2.Text = "Ganancias";
-            this.cha_Ganancia.Titles.Add(title2);
+            title11.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title11.Name = "Ganancia Total";
+            title11.Text = "Ganancias";
+            this.cha_Ganancia.Titles.Add(title11);
             // 
             // cha_Ingresos
             // 
@@ -165,13 +163,13 @@
             this.cha_Ingresos.BorderlineColor = System.Drawing.Color.Transparent;
             this.cha_Ingresos.BorderlineWidth = 0;
             this.cha_Ingresos.BorderSkin.BorderWidth = 0;
-            chartArea3.Name = "ChartArea1";
-            this.cha_Ingresos.ChartAreas.Add(chartArea3);
+            chartArea12.Name = "ChartArea1";
+            this.cha_Ingresos.ChartAreas.Add(chartArea12);
             this.cha_Ingresos.Cursor = System.Windows.Forms.Cursors.Hand;
-            legend3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend3.IsTextAutoFit = false;
-            legend3.Name = "Legend1";
-            this.cha_Ingresos.Legends.Add(legend3);
+            legend12.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend12.IsTextAutoFit = false;
+            legend12.Name = "Legend1";
+            this.cha_Ingresos.Legends.Add(legend12);
             this.cha_Ingresos.Location = new System.Drawing.Point(13, 57);
             this.cha_Ingresos.Margin = new System.Windows.Forms.Padding(4);
             this.cha_Ingresos.Name = "cha_Ingresos";
@@ -184,23 +182,23 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(153)))), ((int)(((byte)(68))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(102))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))))};
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Color = System.Drawing.Color.White;
-            series3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series3.LabelBorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            series3.LabelBorderWidth = 0;
-            series3.Legend = "Legend1";
-            series3.MarkerSize = 7;
-            series3.Name = "Ingresos";
-            this.cha_Ingresos.Series.Add(series3);
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series12.Color = System.Drawing.Color.White;
+            series12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series12.LabelBorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            series12.LabelBorderWidth = 0;
+            series12.Legend = "Legend1";
+            series12.MarkerSize = 7;
+            series12.Name = "Ingresos";
+            this.cha_Ingresos.Series.Add(series12);
             this.cha_Ingresos.Size = new System.Drawing.Size(452, 284);
             this.cha_Ingresos.TabIndex = 19;
             this.cha_Ingresos.Text = "Gastos de la Empresa";
-            title3.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.Name = "Ingresos de la Empresa";
-            title3.Text = "Ingresos";
-            this.cha_Ingresos.Titles.Add(title3);
+            title12.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title12.Name = "Ingresos de la Empresa";
+            title12.Text = "Ingresos";
+            this.cha_Ingresos.Titles.Add(title12);
             this.cha_Ingresos.Click += new System.EventHandler(this.cha_Ingresos_Click);
             // 
             // cbo_Mes
@@ -220,7 +218,7 @@
             "Octubre",
             "Noviembre",
             "Diciembre"});
-            this.cbo_Mes.Location = new System.Drawing.Point(130, 473);
+            this.cbo_Mes.Location = new System.Drawing.Point(130, 461);
             this.cbo_Mes.Name = "cbo_Mes";
             this.cbo_Mes.Size = new System.Drawing.Size(189, 28);
             this.cbo_Mes.TabIndex = 22;
@@ -230,7 +228,7 @@
             // 
             this.lbl_Mes.AutoSize = true;
             this.lbl_Mes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Mes.Location = new System.Drawing.Point(42, 481);
+            this.lbl_Mes.Location = new System.Drawing.Point(42, 467);
             this.lbl_Mes.Name = "lbl_Mes";
             this.lbl_Mes.Size = new System.Drawing.Size(44, 20);
             this.lbl_Mes.TabIndex = 23;
@@ -241,7 +239,7 @@
             // 
             this.rb_Mes.AutoSize = true;
             this.rb_Mes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_Mes.Location = new System.Drawing.Point(132, 419);
+            this.rb_Mes.Location = new System.Drawing.Point(132, 407);
             this.rb_Mes.Name = "rb_Mes";
             this.rb_Mes.Size = new System.Drawing.Size(58, 24);
             this.rb_Mes.TabIndex = 24;
@@ -255,7 +253,7 @@
             // 
             this.rb_Ano.AutoSize = true;
             this.rb_Ano.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_Ano.Location = new System.Drawing.Point(246, 419);
+            this.rb_Ano.Location = new System.Drawing.Point(246, 407);
             this.rb_Ano.Name = "rb_Ano";
             this.rb_Ano.Size = new System.Drawing.Size(57, 24);
             this.rb_Ano.TabIndex = 25;
@@ -269,7 +267,7 @@
             // 
             this.lbl_Ano.AutoSize = true;
             this.lbl_Ano.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Ano.Location = new System.Drawing.Point(43, 531);
+            this.lbl_Ano.Location = new System.Drawing.Point(43, 517);
             this.lbl_Ano.Name = "lbl_Ano";
             this.lbl_Ano.Size = new System.Drawing.Size(43, 20);
             this.lbl_Ano.TabIndex = 26;
@@ -279,7 +277,7 @@
             // txt_Año
             // 
             this.txt_Año.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Año.Location = new System.Drawing.Point(130, 525);
+            this.txt_Año.Location = new System.Drawing.Point(130, 513);
             this.txt_Año.Multiline = true;
             this.txt_Año.Name = "txt_Año";
             this.txt_Año.Size = new System.Drawing.Size(189, 26);
@@ -362,33 +360,37 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // btn_Buscar
+            // btn_InicioCaja
             // 
-            this.btn_Buscar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.Image")));
-            this.btn_Buscar.ImageActive = null;
-            this.btn_Buscar.Location = new System.Drawing.Point(144, 569);
-            this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(55, 55);
-            this.btn_Buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Buscar.TabIndex = 32;
-            this.btn_Buscar.TabStop = false;
-            this.btn_Buscar.Zoom = 10;
-            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            this.btn_InicioCaja.BackColor = System.Drawing.Color.Transparent;
+            this.btn_InicioCaja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_InicioCaja.BackgroundImage")));
+            this.btn_InicioCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_InicioCaja.FlatAppearance.BorderSize = 0;
+            this.btn_InicioCaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.btn_InicioCaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.btn_InicioCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_InicioCaja.Location = new System.Drawing.Point(6, 553);
+            this.btn_InicioCaja.Name = "btn_InicioCaja";
+            this.btn_InicioCaja.Size = new System.Drawing.Size(216, 85);
+            this.btn_InicioCaja.TabIndex = 42;
+            this.btn_InicioCaja.UseVisualStyleBackColor = false;
+            this.btn_InicioCaja.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
-            // btn_Original
+            // btn_Apartados
             // 
-            this.btn_Original.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Original.Image = ((System.Drawing.Image)(resources.GetObject("btn_Original.Image")));
-            this.btn_Original.ImageActive = null;
-            this.btn_Original.Location = new System.Drawing.Point(247, 569);
-            this.btn_Original.Name = "btn_Original";
-            this.btn_Original.Size = new System.Drawing.Size(55, 55);
-            this.btn_Original.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Original.TabIndex = 33;
-            this.btn_Original.TabStop = false;
-            this.btn_Original.Zoom = 10;
-            this.btn_Original.Click += new System.EventHandler(this.btn_Original_Click);
+            this.btn_Apartados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.btn_Apartados.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Apartados.BackgroundImage")));
+            this.btn_Apartados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Apartados.FlatAppearance.BorderSize = 0;
+            this.btn_Apartados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btn_Apartados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(179)))), ((int)(((byte)(215)))));
+            this.btn_Apartados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Apartados.Location = new System.Drawing.Point(223, 553);
+            this.btn_Apartados.Name = "btn_Apartados";
+            this.btn_Apartados.Size = new System.Drawing.Size(210, 85);
+            this.btn_Apartados.TabIndex = 44;
+            this.btn_Apartados.UseVisualStyleBackColor = false;
+            this.btn_Apartados.Click += new System.EventHandler(this.btn_Original_Click);
             // 
             // frm_Ingresos_Mes
             // 
@@ -397,8 +399,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1038, 642);
             this.ControlBox = false;
-            this.Controls.Add(this.btn_Original);
-            this.Controls.Add(this.btn_Buscar);
+            this.Controls.Add(this.btn_Apartados);
+            this.Controls.Add(this.btn_InicioCaja);
             this.Controls.Add(this.cha_Ingresos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txt_Año);
@@ -414,6 +416,7 @@
             this.Controls.Add(this.lbl_AnoHoy);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -429,8 +432,6 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Buscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Original)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,7 +457,7 @@
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuImageButton btn_Salir;
         private System.Windows.Forms.Timer tmr_Timer;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Original;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Buscar;
+        private System.Windows.Forms.Button btn_InicioCaja;
+        private System.Windows.Forms.Button btn_Apartados;
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Formulario_de_Envio));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.msk_Cedula = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_Nombre = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -86,9 +86,9 @@
             this.groupBox1.Controls.Add(this.txt_Nombre);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(30, 62);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(338, 134);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -107,7 +107,7 @@
             this.msk_Cedula.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.msk_Cedula.LineThickness = 3;
             this.msk_Cedula.Location = new System.Drawing.Point(14, 74);
-            this.msk_Cedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.msk_Cedula.Margin = new System.Windows.Forms.Padding(4);
             this.msk_Cedula.Name = "msk_Cedula";
             this.msk_Cedula.Size = new System.Drawing.Size(302, 31);
             this.msk_Cedula.TabIndex = 4;
@@ -128,7 +128,7 @@
             this.txt_Nombre.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Nombre.LineThickness = 3;
             this.txt_Nombre.Location = new System.Drawing.Point(14, 27);
-            this.txt_Nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(299, 31);
             this.txt_Nombre.TabIndex = 3;
@@ -139,9 +139,9 @@
             this.groupBox2.Controls.Add(this.txt_Placa);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(378, 68);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(321, 128);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -160,7 +160,7 @@
             this.txt_Placa.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Placa.LineThickness = 3;
             this.txt_Placa.Location = new System.Drawing.Point(17, 44);
-            this.txt_Placa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Placa.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Placa.Name = "txt_Placa";
             this.txt_Placa.Size = new System.Drawing.Size(293, 31);
             this.txt_Placa.TabIndex = 5;
@@ -182,7 +182,7 @@
             this.cbo_Sucursales.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_Sucursales.FormattingEnabled = true;
             this.cbo_Sucursales.Location = new System.Drawing.Point(167, 26);
-            this.cbo_Sucursales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbo_Sucursales.Margin = new System.Windows.Forms.Padding(2);
             this.cbo_Sucursales.Name = "cbo_Sucursales";
             this.cbo_Sucursales.Size = new System.Drawing.Size(147, 27);
             this.cbo_Sucursales.TabIndex = 4;
@@ -195,9 +195,9 @@
             this.groupBox3.Controls.Add(this.cbo_Sucursales);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(30, 200);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(669, 68);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
@@ -207,7 +207,7 @@
             // 
             this.txt_Descripcion.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Descripcion.Location = new System.Drawing.Point(445, 16);
-            this.txt_Descripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Descripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Descripcion.Multiline = true;
             this.txt_Descripcion.Name = "txt_Descripcion";
             this.txt_Descripcion.Size = new System.Drawing.Size(215, 48);
@@ -232,9 +232,9 @@
             this.groupBox4.Controls.Add(this.dgv_InventarioEnvio);
             this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(30, 272);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(832, 256);
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
@@ -246,7 +246,7 @@
             this.btn_Quitar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Quitar.Image")));
             this.btn_Quitar.ImageActive = null;
             this.btn_Quitar.Location = new System.Drawing.Point(400, 165);
-            this.btn_Quitar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Quitar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Quitar.Name = "btn_Quitar";
             this.btn_Quitar.Size = new System.Drawing.Size(24, 26);
             this.btn_Quitar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -261,7 +261,7 @@
             this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
             this.btn_Agregar.ImageActive = null;
             this.btn_Agregar.Location = new System.Drawing.Point(400, 92);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(24, 26);
             this.btn_Agregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -272,19 +272,19 @@
             // 
             // dgv_Inventario
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgv_Inventario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgv_Inventario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Inventario.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_Inventario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_Inventario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Inventario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Inventario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Inventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Inventario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id_Saco,
@@ -299,7 +299,7 @@
             this.dgv_Inventario.HeaderBgColor = System.Drawing.Color.MidnightBlue;
             this.dgv_Inventario.HeaderForeColor = System.Drawing.Color.White;
             this.dgv_Inventario.Location = new System.Drawing.Point(6, 22);
-            this.dgv_Inventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_Inventario.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_Inventario.Name = "dgv_Inventario";
             this.dgv_Inventario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_Inventario.RowTemplate.Height = 24;
@@ -355,7 +355,7 @@
             this.TipodeSaco1});
             this.dgv_InventarioEnvio.GridColor = System.Drawing.Color.Gray;
             this.dgv_InventarioEnvio.Location = new System.Drawing.Point(445, 22);
-            this.dgv_InventarioEnvio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_InventarioEnvio.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_InventarioEnvio.Name = "dgv_InventarioEnvio";
             this.dgv_InventarioEnvio.RowTemplate.Height = 24;
             this.dgv_InventarioEnvio.Size = new System.Drawing.Size(382, 229);
@@ -416,7 +416,7 @@
             // txt_Prueba
             // 
             this.txt_Prueba.Location = new System.Drawing.Point(378, 534);
-            this.txt_Prueba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Prueba.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Prueba.Name = "txt_Prueba";
             this.txt_Prueba.Size = new System.Drawing.Size(122, 20);
             this.txt_Prueba.TabIndex = 13;
@@ -494,7 +494,7 @@
             this.btn_Enviar.IconZoom = 90D;
             this.btn_Enviar.IsTab = false;
             this.btn_Enviar.Location = new System.Drawing.Point(720, 89);
-            this.btn_Enviar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Enviar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Enviar.Name = "btn_Enviar";
             this.btn_Enviar.Normalcolor = System.Drawing.Color.White;
             this.btn_Enviar.OnHovercolor = System.Drawing.Color.Transparent;
@@ -532,7 +532,7 @@
             this.btn_Limpiar.IconZoom = 90D;
             this.btn_Limpiar.IsTab = false;
             this.btn_Limpiar.Location = new System.Drawing.Point(720, 174);
-            this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Normalcolor = System.Drawing.Color.White;
             this.btn_Limpiar.OnHovercolor = System.Drawing.Color.Transparent;
@@ -563,7 +563,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_Formulario_de_Envio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario Envío";

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Roles));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_Rol = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -58,19 +58,19 @@
             this.Usuarios = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Traslados = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btn_Agregar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Refrescar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_Agregar = new System.Windows.Forms.Button();
+            this.btn_Refrescar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Roles)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Refrescar)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -82,7 +82,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(305, 353);
+            this.groupBox1.Size = new System.Drawing.Size(407, 353);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Roles";
@@ -102,7 +102,7 @@
             this.txt_Rol.Location = new System.Drawing.Point(17, 35);
             this.txt_Rol.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Rol.Name = "txt_Rol";
-            this.txt_Rol.Size = new System.Drawing.Size(268, 31);
+            this.txt_Rol.Size = new System.Drawing.Size(382, 31);
             this.txt_Rol.TabIndex = 1;
             this.txt_Rol.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -118,7 +118,7 @@
             this.groupBox3.Controls.Add(this.chk_Control);
             this.groupBox3.Location = new System.Drawing.Point(14, 82);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(271, 264);
+            this.groupBox3.Size = new System.Drawing.Size(385, 264);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Permisos";
@@ -128,7 +128,7 @@
             this.chk_Admin.AutoSize = true;
             this.chk_Admin.Checked = true;
             this.chk_Admin.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk_Admin.Location = new System.Drawing.Point(74, 34);
+            this.chk_Admin.Location = new System.Drawing.Point(126, 34);
             this.chk_Admin.Name = "chk_Admin";
             this.chk_Admin.Size = new System.Drawing.Size(135, 24);
             this.chk_Admin.TabIndex = 16;
@@ -140,7 +140,7 @@
             this.chk_IngresosyGastos.AutoSize = true;
             this.chk_IngresosyGastos.Checked = true;
             this.chk_IngresosyGastos.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk_IngresosyGastos.Location = new System.Drawing.Point(74, 142);
+            this.chk_IngresosyGastos.Location = new System.Drawing.Point(126, 142);
             this.chk_IngresosyGastos.Name = "chk_IngresosyGastos";
             this.chk_IngresosyGastos.Size = new System.Drawing.Size(155, 24);
             this.chk_IngresosyGastos.TabIndex = 12;
@@ -153,7 +153,7 @@
             this.chk_Traslados.Checked = true;
             this.chk_Traslados.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chk_Traslados.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.chk_Traslados.Location = new System.Drawing.Point(74, 228);
+            this.chk_Traslados.Location = new System.Drawing.Point(126, 228);
             this.chk_Traslados.Name = "chk_Traslados";
             this.chk_Traslados.Size = new System.Drawing.Size(93, 24);
             this.chk_Traslados.TabIndex = 12;
@@ -165,7 +165,7 @@
             this.chk_Ajustes.AutoSize = true;
             this.chk_Ajustes.Checked = true;
             this.chk_Ajustes.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk_Ajustes.Location = new System.Drawing.Point(74, 58);
+            this.chk_Ajustes.Location = new System.Drawing.Point(126, 58);
             this.chk_Ajustes.Name = "chk_Ajustes";
             this.chk_Ajustes.Size = new System.Drawing.Size(78, 24);
             this.chk_Ajustes.TabIndex = 15;
@@ -177,7 +177,7 @@
             this.chk_Usuarios.AutoSize = true;
             this.chk_Usuarios.Checked = true;
             this.chk_Usuarios.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk_Usuarios.Location = new System.Drawing.Point(74, 198);
+            this.chk_Usuarios.Location = new System.Drawing.Point(126, 198);
             this.chk_Usuarios.Name = "chk_Usuarios";
             this.chk_Usuarios.Size = new System.Drawing.Size(88, 24);
             this.chk_Usuarios.TabIndex = 10;
@@ -189,7 +189,7 @@
             this.chk_Caja.AutoSize = true;
             this.chk_Caja.Checked = true;
             this.chk_Caja.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk_Caja.Location = new System.Drawing.Point(74, 86);
+            this.chk_Caja.Location = new System.Drawing.Point(126, 86);
             this.chk_Caja.Name = "chk_Caja";
             this.chk_Caja.Size = new System.Drawing.Size(63, 24);
             this.chk_Caja.TabIndex = 14;
@@ -201,7 +201,7 @@
             this.chk_Inventario.AutoSize = true;
             this.chk_Inventario.Checked = true;
             this.chk_Inventario.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk_Inventario.Location = new System.Drawing.Point(74, 170);
+            this.chk_Inventario.Location = new System.Drawing.Point(126, 170);
             this.chk_Inventario.Name = "chk_Inventario";
             this.chk_Inventario.Size = new System.Drawing.Size(104, 24);
             this.chk_Inventario.TabIndex = 11;
@@ -213,7 +213,7 @@
             this.chk_Control.AutoSize = true;
             this.chk_Control.Checked = true;
             this.chk_Control.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk_Control.Location = new System.Drawing.Point(74, 114);
+            this.chk_Control.Location = new System.Drawing.Point(126, 114);
             this.chk_Control.Name = "chk_Control";
             this.chk_Control.Size = new System.Drawing.Size(82, 24);
             this.chk_Control.TabIndex = 13;
@@ -224,7 +224,7 @@
             // 
             this.groupBox2.Controls.Add(this.dgv_Roles);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.groupBox2.Location = new System.Drawing.Point(325, 47);
+            this.groupBox2.Location = new System.Drawing.Point(424, 47);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(305, 451);
             this.groupBox2.TabIndex = 2;
@@ -237,23 +237,23 @@
             this.dgv_Roles.AllowUserToDeleteRows = false;
             this.dgv_Roles.AllowUserToResizeColumns = false;
             this.dgv_Roles.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_Roles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_Roles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Roles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Roles.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Roles.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_Roles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_Roles.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgv_Roles.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Roles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Roles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Roles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_Roles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Descripcion,
@@ -266,14 +266,14 @@
             this.Usuarios,
             this.Traslados});
             this.dgv_Roles.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Roles.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Roles.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Roles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Roles.EnableHeadersVisualStyles = false;
             this.dgv_Roles.GridColor = System.Drawing.Color.Gray;
@@ -282,18 +282,18 @@
             this.dgv_Roles.Name = "dgv_Roles";
             this.dgv_Roles.ReadOnly = true;
             this.dgv_Roles.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Roles.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Roles.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_Roles.RowHeadersVisible = false;
             this.dgv_Roles.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
-            this.dgv_Roles.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
+            this.dgv_Roles.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Roles.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgv_Roles.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(202)))));
             this.dgv_Roles.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
@@ -387,20 +387,30 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(112)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btn_Salir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(636, 40);
+            this.panel1.Size = new System.Drawing.Size(741, 40);
             this.panel1.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(5, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(23, 9);
+            this.label2.Location = new System.Drawing.Point(42, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(241, 29);
             this.label2.TabIndex = 12;
@@ -412,7 +422,7 @@
             this.btn_Salir.BackColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
             this.btn_Salir.ImageActive = null;
-            this.btn_Salir.Location = new System.Drawing.Point(601, 5);
+            this.btn_Salir.Location = new System.Drawing.Point(708, 5);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(30, 30);
             this.btn_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -428,30 +438,34 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
-            this.btn_Agregar.ImageActive = null;
-            this.btn_Agregar.Location = new System.Drawing.Point(46, 424);
+            this.btn_Agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.BackgroundImage")));
+            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Agregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Agregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Agregar.Location = new System.Drawing.Point(12, 410);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(64, 64);
-            this.btn_Agregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_Agregar.Size = new System.Drawing.Size(314, 85);
             this.btn_Agregar.TabIndex = 13;
-            this.btn_Agregar.TabStop = false;
-            this.btn_Agregar.Zoom = 3;
+            this.btn_Agregar.UseVisualStyleBackColor = false;
             this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click_1);
             // 
             // btn_Refrescar
             // 
-            this.btn_Refrescar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Refrescar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refrescar.Image")));
-            this.btn_Refrescar.ImageActive = null;
-            this.btn_Refrescar.Location = new System.Drawing.Point(217, 424);
+            this.btn_Refrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.btn_Refrescar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Refrescar.BackgroundImage")));
+            this.btn_Refrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Refrescar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.btn_Refrescar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(146)))), ((int)(((byte)(178)))));
+            this.btn_Refrescar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(176)))), ((int)(((byte)(213)))));
+            this.btn_Refrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Refrescar.Location = new System.Drawing.Point(326, 410);
             this.btn_Refrescar.Name = "btn_Refrescar";
-            this.btn_Refrescar.Size = new System.Drawing.Size(64, 64);
-            this.btn_Refrescar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Refrescar.TabIndex = 14;
-            this.btn_Refrescar.TabStop = false;
-            this.btn_Refrescar.Zoom = 3;
+            this.btn_Refrescar.Size = new System.Drawing.Size(94, 85);
+            this.btn_Refrescar.TabIndex = 15;
+            this.btn_Refrescar.UseVisualStyleBackColor = false;
             this.btn_Refrescar.Click += new System.EventHandler(this.btn_Refrescar_Click);
             // 
             // frm_Roles
@@ -459,7 +473,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(636, 510);
+            this.ClientSize = new System.Drawing.Size(741, 510);
             this.ControlBox = false;
             this.Controls.Add(this.btn_Refrescar);
             this.Controls.Add(this.btn_Agregar);
@@ -468,6 +482,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_Roles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -479,9 +494,8 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Roles)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Refrescar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -514,7 +528,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Inventario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuarios;
         private System.Windows.Forms.DataGridViewTextBoxColumn Traslados;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Refrescar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Agregar;
+        private System.Windows.Forms.Button btn_Agregar;
+        private System.Windows.Forms.Button btn_Refrescar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

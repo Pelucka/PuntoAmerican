@@ -43,14 +43,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Salir = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Agregar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Borrar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_Agregar = new System.Windows.Forms.Button();
+            this.btn_Inventario = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Borrar)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -64,7 +62,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.groupBox1.Location = new System.Drawing.Point(12, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(360, 253);
+            this.groupBox1.Size = new System.Drawing.Size(360, 215);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información";
@@ -149,7 +147,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(49, 9);
+            this.label5.Location = new System.Drawing.Point(44, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 20);
             this.label5.TabIndex = 19;
@@ -160,7 +158,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(6, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -181,42 +179,47 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
-            this.btn_Agregar.ImageActive = null;
-            this.btn_Agregar.Location = new System.Drawing.Point(12, 309);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.BackgroundImage")));
+            this.btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Agregar.FlatAppearance.BorderSize = 0;
+            this.btn_Agregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Agregar.Location = new System.Drawing.Point(12, 272);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(206, 55);
-            this.btn_Agregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Agregar.TabIndex = 5;
-            this.btn_Agregar.TabStop = false;
-            this.btn_Agregar.Zoom = 10;
+            this.btn_Agregar.Size = new System.Drawing.Size(266, 85);
+            this.btn_Agregar.TabIndex = 9;
+            this.btn_Agregar.UseVisualStyleBackColor = false;
             this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
-            // btn_Borrar
+            // btn_Inventario
             // 
-            this.btn_Borrar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Borrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Borrar.Image")));
-            this.btn_Borrar.ImageActive = null;
-            this.btn_Borrar.Location = new System.Drawing.Point(222, 309);
-            this.btn_Borrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Borrar.Name = "btn_Borrar";
-            this.btn_Borrar.Size = new System.Drawing.Size(150, 55);
-            this.btn_Borrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Borrar.TabIndex = 6;
-            this.btn_Borrar.TabStop = false;
-            this.btn_Borrar.Zoom = 10;
-            this.btn_Borrar.Click += new System.EventHandler(this.btn_Borrar_Click);
+            this.btn_Inventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btn_Inventario.FlatAppearance.BorderSize = 0;
+            this.btn_Inventario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
+            this.btn_Inventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(48)))), ((int)(((byte)(44)))));
+            this.btn_Inventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Inventario.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Inventario.ForeColor = System.Drawing.Color.White;
+            this.btn_Inventario.Image = ((System.Drawing.Image)(resources.GetObject("btn_Inventario.Image")));
+            this.btn_Inventario.Location = new System.Drawing.Point(278, 272);
+            this.btn_Inventario.Name = "btn_Inventario";
+            this.btn_Inventario.Size = new System.Drawing.Size(94, 85);
+            this.btn_Inventario.TabIndex = 35;
+            this.btn_Inventario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Inventario.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Inventario.UseVisualStyleBackColor = false;
+            this.btn_Inventario.Click += new System.EventHandler(this.btn_Borrar_Click);
             // 
             // frm_Bodega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(384, 377);
+            this.ClientSize = new System.Drawing.Size(384, 364);
             this.ControlBox = false;
-            this.Controls.Add(this.btn_Borrar);
+            this.Controls.Add(this.btn_Inventario);
             this.Controls.Add(this.btn_Agregar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
@@ -231,8 +234,6 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Borrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,7 +253,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuImageButton btn_Salir;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Borrar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Agregar;
+        private System.Windows.Forms.Button btn_Agregar;
+        private System.Windows.Forms.Button btn_Inventario;
     }
 }

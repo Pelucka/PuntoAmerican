@@ -74,6 +74,13 @@ namespace BLL
             set { _UbicacionUpdate = value; }
         }
 
+        private string _Rol;
+
+        public string Rol
+        {
+            get { return _Rol; }
+            set { _Rol = value; }
+        }
 
 
 
@@ -205,18 +212,21 @@ namespace BLL
             {
                 /*Instancia a un Procedimiento Almacenado*/
                 sql = "USP_SACOS_SELECT";
-                ds = cls_DAL.ejecuta_dataset(conexion, sql, true, ref mensaje_error, ref numero_error);
+                ParamStruct[] parametros = new ParamStruct[2];
+                cls_DAL.agregar_datos_estructura_parametros(ref parametros, 0, "@ubica", SqlDbType.VarChar, _Ubicacion);
+                cls_DAL.agregar_datos_estructura_parametros(ref parametros, 1, "@rol", SqlDbType.VarChar, _Rol);
+                ds = cls_DAL.ejecuta_dataset(conexion, sql, true, parametros, ref mensaje_error, ref numero_error);
 
 
                 if (numero_error != 0)
                 {
                     /*Instancia a un Procedimiento Almacenado*/
                     sql = " USP_ERROR_INSERT";
-                    ParamStruct[] parametros = new ParamStruct[2];
-                    cls_DAL.agregar_datos_estructura_parametros(ref parametros, 0, "@msgerror", SqlDbType.VarChar, mensaje_error);
-                    cls_DAL.agregar_datos_estructura_parametros(ref parametros, 1, "@numerror", SqlDbType.Int, numero_error);
+                    ParamStruct[] parametros1 = new ParamStruct[2];
+                    cls_DAL.agregar_datos_estructura_parametros(ref parametros1, 0, "@msgerror", SqlDbType.VarChar, mensaje_error);
+                    cls_DAL.agregar_datos_estructura_parametros(ref parametros1, 1, "@numerror", SqlDbType.Int, numero_error);
                     cls_DAL.conectar(conexion, ref mensaje_error, ref numero_error);
-                    cls_DAL.ejecuta_sqlcommand(conexion, sql, true, parametros, ref mensaje_error, ref numero_error);
+                    cls_DAL.ejecuta_sqlcommand(conexion, sql, true, parametros1, ref mensaje_error, ref numero_error);
                     cls_DAL.desconectar(conexion, ref mensaje_error, ref numero_error);
                     return null;
                 }

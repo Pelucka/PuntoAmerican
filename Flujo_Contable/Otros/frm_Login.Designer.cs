@@ -38,21 +38,20 @@
             this.btn_Cancelar = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Aceptar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_Aceptar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(26, 58);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 58);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(351, 295);
+            this.pictureBox1.Size = new System.Drawing.Size(321, 295);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -71,7 +70,7 @@
             this.txt_Login.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(121)))), ((int)(((byte)(157)))));
             this.txt_Login.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(121)))), ((int)(((byte)(157)))));
             this.txt_Login.LineThickness = 4;
-            this.txt_Login.Location = new System.Drawing.Point(26, 390);
+            this.txt_Login.Location = new System.Drawing.Point(27, 390);
             this.txt_Login.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Login.Name = "txt_Login";
             this.txt_Login.Size = new System.Drawing.Size(351, 33);
@@ -90,7 +89,7 @@
             this.txt_Contraseña.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(121)))), ((int)(((byte)(157)))));
             this.txt_Contraseña.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(121)))), ((int)(((byte)(157)))));
             this.txt_Contraseña.LineThickness = 4;
-            this.txt_Contraseña.Location = new System.Drawing.Point(26, 465);
+            this.txt_Contraseña.Location = new System.Drawing.Point(27, 465);
             this.txt_Contraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Contraseña.Name = "txt_Contraseña";
             this.txt_Contraseña.Size = new System.Drawing.Size(351, 33);
@@ -154,16 +153,18 @@
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
-            this.btn_Aceptar.ImageActive = null;
-            this.btn_Aceptar.Location = new System.Drawing.Point(283, 528);
+            this.btn_Aceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_Aceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.BackgroundImage")));
+            this.btn_Aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Aceptar.FlatAppearance.BorderSize = 0;
+            this.btn_Aceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(152)))), ((int)(((byte)(66)))));
+            this.btn_Aceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(164)))), ((int)(((byte)(71)))));
+            this.btn_Aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Aceptar.Location = new System.Drawing.Point(69, 514);
             this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(94, 71);
-            this.btn_Aceptar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Aceptar.TabIndex = 38;
-            this.btn_Aceptar.TabStop = false;
-            this.btn_Aceptar.Zoom = 10;
+            this.btn_Aceptar.Size = new System.Drawing.Size(266, 85);
+            this.btn_Aceptar.TabIndex = 39;
+            this.btn_Aceptar.UseVisualStyleBackColor = false;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
             // 
             // frm_InicioSesion
@@ -192,7 +193,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Aceptar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -206,7 +206,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton btn_Cancelar;
-        private Bunifu.Framework.UI.BunifuImageButton btn_Aceptar;
+        private System.Windows.Forms.Button btn_Aceptar;
     }
 }
 

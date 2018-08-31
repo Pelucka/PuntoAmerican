@@ -104,6 +104,8 @@ namespace Flujo_Contable
         {
             try
             {
+                objinventario.Ubicacion = lbl_Ubica.Text;
+                objinventario.Rol = lbl_Rol.Text;
                 dgv_Inventario.DataSource = objinventario.CARGA_SACOS().Tables[0];
 
             }
@@ -411,23 +413,6 @@ namespace Flujo_Contable
                 MessageBox.Show(ex.Message + "dgv_Inventario_CellContentClick");
 
             }
-        }
-
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Limpiar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

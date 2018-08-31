@@ -71,6 +71,7 @@
             this.ClientSize = new System.Drawing.Size(140, 140);
             this.Controls.Add(this.cpb_Cargando);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Cargando";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
